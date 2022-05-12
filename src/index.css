@@ -1,0 +1,62 @@
+.logo {
+  width: 250px;
+}
+.navbar-toggler {
+  background: #c6c282 !important;
+}
+.navbar {
+  background-color: darkkhaki !important;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .logo {
+    width: 160px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .logo {
+    width: 140px;
+  }
+}
+
+/* ------------- */
+/* 
+@import "./mixins.scss";
+@import "./variables.scss";
+@import "../home/home.scss";
+
+
+
+@function weight($weight-name){
+  @return map-get($font-weight,$weight-name )
+}
+
+@font-face {
+  font-family:Ethnocentric ;
+  src: url(../../fonts/Ethnocentric/ethnocentric\ rg.otf);
+  }
+
+  @mixin  generalTest {
+      font-size: 55px;
+      font-weight: weight(regular);
+      font-family: Ethnocentric , sans-serif;
+  }
+  .welcome {
+    color: red;
+  }
+
+
+
+$font-weight: (
+    "regular":400,
+    "medium":500,
+    "bold":700
+);
+
+ 
+ */

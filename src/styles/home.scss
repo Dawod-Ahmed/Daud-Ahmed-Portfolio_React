@@ -1,0 +1,265 @@
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
+
+// ------------  Universal  Styling  ---------------
+
+// .cards-section,
+// .hero-section,
+// .h-second-sec,
+// .testimonials-section,
+// .about-me-section,
+// .experience-section,
+// .skill-section,
+// .projects-section,
+// .serve-qulaity-section,
+// .serve-qulaity-section,
+// .work-method-section,
+// .freelancing-section-parent,
+// .contact-left-content,
+// .contact-right-form,
+// .accordion-section
+section {
+  @include sectionHorizontalPadding(50px, 50px);
+}
+
+.PagesParent {
+  @include FlexCenter;
+}
+
+.theme-background-second-layer {
+  @include themeSecondLayerView(1600px, 55px);
+
+  @include desktopSecondBpMixin() {
+    width: 1500px;
+  }
+
+  @include desktopThridBpMixin() {
+    width: 1300px;
+  }
+}
+
+.heading-first {
+  @include generalHeading(50px);
+}
+.heading-second {
+  @include generalHeadingOne(45px);
+}
+
+.btn {
+  @include button();
+}
+
+.general-text {
+  @include generalText(22px);
+}
+
+// ------------ End  Universal  Styling    ---------------
+
+// -------------  Home Section   --------------------
+
+.hero-section {
+  @include flexCenterColumn();
+  overflow: hidden;
+}
+
+.hero-two-parts-parent {
+  @include flexRow(space-between, null);
+}
+
+.left-content-part {
+  @include flexColumn(center, start);
+  max-width: 790px;
+}
+
+.welcome-txt {
+  @include generalMedumSizeText(27px);
+}
+
+.dev-name {
+  width: max-content;
+  line-height: 1.4;
+}
+.btns-group {
+  @include FlexCenter();
+}
+.btn-play-video {
+  @include backgroundImage(
+    "../../assets/Home/Icons/homePlaybtn.svg",
+    "../../assets/Home/Icons/HomePlayBtnHover.svg",
+    140px
+  );
+  padding-right: 30px;
+}
+
+.right-img-part {
+  width: 600px;
+  height: 600px;
+  margin-right: -55px;
+
+  @include FlexCenter();
+}
+
+.dev-img {
+  @include desktopThridBpMixin() {
+    margin-right: 130px;
+  }
+  min-width: 880px;
+  height: 600px;
+}
+
+.scroll-down-element {
+  @include flexCenterColumn();
+}
+
+.hero-scroll-first-line {
+  font-size: 20px;
+  color: $white-text;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero-scroll-second-line {
+  font-size: 20px;
+  color: $theme-green-color;
+  font-family: "Poppins", sans-serif;
+}
+
+// -------------   Home Page Second Section ------------------
+
+.h-second-sec {
+  @include sectionVerticalPadding(60px, 130px);
+}
+
+.contact-btn {
+  @include backgroundImage(
+    "../../assets/Home/Icons/HomecontactBtn.svg",
+    "../../assets/Home/Icons/HomecontactBtnHover.svg",
+    15px
+  );
+
+  width: max-content;
+  padding: 30px 20px 35px 67px;
+  background-size: 27px 27px;
+
+  &:hover {
+    background-size: 43px 43px;
+  }
+}
+.problem-solver-txt,
+.query-type-text,
+.short-about-para {
+  @include generalMedumSizeText(32px);
+  color: $white-text;
+}
+.problem-solver-txt {
+  @include generalMedumSizeText(22px);
+  color: $white-text;
+}
+
+.home-background-text {
+  top: 22%;
+  left: 0%;
+}
+
+// -------Universal Media Queries-------
+
+.problem-solver-txt,
+.query-type-text {
+  width: max-content;
+}
+.h-sec-right-part,
+.h-sec-left-part {
+  z-index: 1;
+}
+.h-sec-right-part {
+  width: 750px;
+}
+
+.exp-txt {
+  @include generalText(22px);
+  color: $white-text;
+  padding-left: 10px;
+}
+.exp-digit {
+  @include generalHeadingOne(70px);
+}
+
+.query-txt-parent,
+.short-about-para {
+  margin: 4.5rem 0rem;
+}
+
+// ---------- Home  Cards Section-------------------
+
+.cards-section {
+  background: linear-gradient(180deg, rgba(0, 0, 36, 1) 50%, rgb(2 2 67) 50%);
+  @include sectionVerticalPadding(0, 80px);
+}
+
+.cards-parent {
+  @include cardParent(360px, auto);
+  padding: 35px 35px 35px 35px;
+  &:hover .cards-para {
+    color: $white-text;
+  }
+  &:hover .completed-projects {
+    color: $white-text;
+  }
+
+  &:hover .card-img-underline {
+    background-color: $white-text;
+  }
+
+  &:hover .card-img {
+    background-color: $white-text;
+  }
+}
+.ui-ux-design-img {
+  @include backgroundCardImage(
+    "../../assets/Services/Icons/cardsIcons/UIUXDesign.svg",
+    "../../assets/Services/Icons/cardsIcons/UIUXDesignHover.svg"
+  );
+}
+
+.front-end-design-img {
+  @include backgroundCardImage(
+    "../../assets/Services/Icons/cardsIcons/frontEnd.svg",
+    "../../assets/Services/Icons/cardsIcons/frontEndHover.svg"
+  );
+}
+
+.full-stack-design-img {
+  @include backgroundCardImage(
+    "../../assets/Services/Icons/cardsIcons/fullStack.svg",
+    "../../assets/Services/Icons/cardsIcons/fullStackHover.svg"
+  );
+}
+.bugs-fixer-img {
+  @include backgroundCardImage(
+    "../../assets/Services/Icons/cardsIcons/bugsFix.svg",
+    "../../assets/Services/Icons/cardsIcons/bugsFixHover.svg"
+  );
+}
+
+.cards-title {
+  @include font(30, bold, #ffffff, #ffffff);
+}
+.cards-para {
+  @include font(20, "regular", $general-normalSize-text-color, #ffffff);
+}
+
+.card-img-underline {
+  width: 19px;
+  height: 2px;
+  border-radius: 30px;
+  background-color: $theme-green-color;
+}
+.completed-projects {
+  @include font(22, "regular", $theme-green-color, #ffffff);
+}
+
+// -------------  Testinmonials section ----------------------
+
+.testimonials-image {
+  width: 200px;
+  height: 800px;
+}
