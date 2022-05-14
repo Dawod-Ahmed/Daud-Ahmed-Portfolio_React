@@ -44,6 +44,7 @@ export { default as Faqs } from "../contact/sections/Faqs";
 // -------Reuseable Components Exports----------
 
 export { default as CardComponent } from "../components/cards";
+export { default as TestimonialComp } from "../components/testimonialDetail";
 export { default as ExperienceCard } from "./experienceCard";
 export { default as SkillsComponent } from "./skillsIcons";
 export { default as ProjectComponent } from "./project";

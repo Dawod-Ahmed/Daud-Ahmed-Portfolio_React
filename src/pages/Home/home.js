@@ -2,15 +2,16 @@ import React from "react";
 import {
   HeroSection,
   ShortIntroSection,
-  HomeCardsSec,TestimonialsSec
+  HomeCardsSec,
+  TestimonialsSec,
 } from "../components/pagesExport";
 const Home = () => {
   return (
     <main className="theme-background-second-layer d-flex-direction  ">
-      {/* <HeroSection />
+      <HeroSection />
       <ShortIntroSection />
-      <HomeCardsSec /> */}
-      <TestimonialsSec />
+      <HomeCardsSec />
+      {/* <TestimonialsSec /> */}
     </main>
   );
 };

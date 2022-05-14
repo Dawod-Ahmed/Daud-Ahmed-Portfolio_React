@@ -259,7 +259,111 @@ section {
 
 // -------------  Testinmonials section ----------------------
 
-.testimonials-image {
-  width: 200px;
-  height: 800px;
+.testimonials-section {
+  padding-bottom: 170px;
+}
+
+.carousel {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.carousel-inner {
+  position: relative !important;
+}
+
+.carousel-indicators {
+  top: 550px;
+  left: 53px !important;
+}
+
+.carousel-item {
+  // display: flex !important;
+  // flex-direction: column;
+  // align-items: start !important;
+  //  justify-content: center !important;
+  left: 93px !important;
+}
+
+.carousel-caption {
+  position: absolute !important;
+  top: -20px;
+  left: 300px;
+  padding: 50px 80px 0px 30px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  text-align: start !important;
+}
+
+.carousel-heading {
+  font-family: "Poppins" !important;
+  font-size: 22px !important;
+  font-weight: 500 !important;
+}
+.carousel-paragraph {
+  font-family: "Poppins" !important;
+  font-size: 18px !important;
+  font-weight: lighter !important;
+  color: $general-normalSize-text-color;
+}
+
+.testimonial-image {
+  position: relative !important;
+  width: 300px !important;
+  height: 350px !important;
+}
+
+.carosalBtn {
+  border-radius: 50% !important;
+  width: 15px !important;
+  height: 15px !important;
+  opacity: 1 !important;
+  background-color: white !important;
+}
+
+.carousel-indicators .active {
+  background-color: $theme-green-color !important;
+}
+.carousel-control-prev {
+  width: auto !important;
+}
+
+.carousel-control-btn {
+  width: min-content !important;
+  left: 570px !important;
+
+  position: absolute !important;
+  top: 500px !important;
+
+  height: fit-content !important;
+}
+
+.carousel-control-next {
+  left: 648px !important;
+}
+.carousel-control-prev-icon {
+  background-image: url(../assets/Home/Icons/preIcon.svg) !important;
+}
+.carousel-control-next-icon {
+  background-image: url(../assets/Home/Icons/nexticon.svg) !important;
+}
+.comma {
+  width: 32px;
+}
+
+.star {
+  padding-right: 5px;
+}
+
+.testimonial-personName {
+  color: #ffffff !important;
+  font-size: 24px !important;
+  font-weight: bold !important;
+}
+.reviewStars {
+  font-size: 20px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
 }

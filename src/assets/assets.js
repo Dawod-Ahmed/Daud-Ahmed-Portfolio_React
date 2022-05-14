@@ -16,6 +16,13 @@ export { default as ReviewImage4 } from "./Home/Images/review_image4.svg";
 export { default as ReviewImage5 } from "./Home/Images/review_image5.svg";
 export { default as ReviewImage6 } from "./Home/Images/review_image6.svg";
 
+export { default as HalfFillStar70 } from "./Home/Icons/fillStar70.svg";
+export { default as FullFillStar } from "./Home/Icons/fullFill.svg";
+export { default as CommaTop } from "./Home/Icons/CommaTop.svg";
+export { default as CommaDown } from "./Home/Icons/CommaDown.svg";
+export { default as PreIcon } from "./Home/Icons/preIcon.svg";
+export { default as NextIcon } from "./Home/Icons/nexticon.svg";
+
 // ----- About Me  Page------
 
 // export { default as AboutMeVideo } from "./About/Sample.mp4";
