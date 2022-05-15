@@ -18,12 +18,19 @@
 // .contact-left-content,
 // .contact-right-form,
 // .accordion-section
-section {
-  @include sectionHorizontalPadding(50px, 50px);
+section:not(.video-section, .portfolio-section),
+.header {
+  @include HorizontalPadding(50px, 50px);
 }
-
+main,
+header {
+  margin: 0 auto !important;
+}
+main {
+  padding-top: 80px;
+}
 .PagesParent {
-  @include FlexCenter;
+  @include FlexCenterRow;
 }
 
 .theme-background-second-layer {
@@ -31,10 +38,28 @@ section {
 
   @include desktopSecondBpMixin() {
     width: 1500px;
+    .carousel-item {
+      left: 11%;
+    }
+    .carousel-control-prev {
+      left: 670px !important;
+    }
+    .carousel-control-next {
+      left: 747px !important;
+    }
   }
 
   @include desktopThridBpMixin() {
     width: 1300px;
+    .carousel-item {
+      left: 7%;
+    }
+    .carousel-control-prev {
+      left: 570px !important;
+    }
+    .carousel-control-next {
+      left: 644px !important;
+    }
   }
 }
 
@@ -80,7 +105,7 @@ section {
   line-height: 1.4;
 }
 .btns-group {
-  @include FlexCenter();
+  @include FlexCenterRow();
 }
 .btn-play-video {
   @include backgroundImage(
@@ -94,14 +119,14 @@ section {
 .right-img-part {
   width: 600px;
   height: 600px;
-  margin-right: -55px;
+  // margin-right: -55px;
 
-  @include FlexCenter();
+  @include FlexCenterRow();
 }
 
 .dev-img {
   @include desktopThridBpMixin() {
-    margin-right: 130px;
+    // margin-right: 130px;
   }
   min-width: 880px;
   height: 600px;
@@ -126,7 +151,7 @@ section {
 // -------------   Home Page Second Section ------------------
 
 .h-second-sec {
-  @include sectionVerticalPadding(60px, 130px);
+  @include VerticalPadding(60px, 130px);
 }
 
 .contact-btn {
@@ -192,7 +217,7 @@ section {
 
 .cards-section {
   background: linear-gradient(180deg, rgba(0, 0, 36, 1) 50%, rgb(2 2 67) 50%);
-  @include sectionVerticalPadding(0, 80px);
+  @include VerticalPadding(80px, 80px);
 }
 
 .cards-parent {
@@ -250,6 +275,7 @@ section {
 .card-img-underline {
   width: 19px;
   height: 2px;
+
   border-radius: 30px;
   background-color: $theme-green-color;
 }
@@ -268,6 +294,7 @@ section {
   display: flex;
   align-items: center;
   padding-top: 100px;
+  @include flexColumn(center, center);
 }
 
 .carousel-inner {
@@ -280,18 +307,14 @@ section {
 }
 
 .carousel-item {
-  // display: flex !important;
-  // flex-direction: column;
-  // align-items: start !important;
-  //  justify-content: center !important;
-  left: 93px !important;
+  left: 11%;
 }
 
 .carousel-caption {
-  position: absolute !important;
-  top: -20px;
+  width: 800px;
   left: 300px;
-  padding: 50px 80px 0px 30px !important;
+  padding: 50px 80px 20px 30px !important;
+  top: -20px;
   display: flex !important;
   flex-direction: column !important;
   text-align: start !important;
@@ -340,9 +363,17 @@ section {
   height: fit-content !important;
 }
 
-.carousel-control-next {
-  left: 648px !important;
+div .carousel-control-btn,
+div .carousel-indicators {
+  position: static !important;
 }
+
+.scroll-events-parent {
+  position: absolute;
+  bottom: -110px;
+  @include flexColumn(unset,center)
+}
+
 .carousel-control-prev-icon {
   background-image: url(../assets/Home/Icons/preIcon.svg) !important;
 }

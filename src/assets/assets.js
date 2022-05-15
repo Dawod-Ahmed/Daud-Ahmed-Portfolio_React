@@ -5,6 +5,14 @@ export { default as MidRight } from "./BackgroundShapes/MidRight.svg";
 export { default as MidLeft } from "./BackgroundShapes/MidLeft.svg";
 export { default as TopRight } from "./BackgroundShapes/TopRight.svg";
 
+// ------  Header Bar  -------
+
+export { default as Logo } from "./generalIcons/Logo.svg";
+export { default as Github } from "./generalIcons/socialIcons/github.svg";
+export { default as Linkdin } from "./generalIcons/socialIcons/linkdin.svg";
+export { default as Facebook } from "./generalIcons/socialIcons/facebook.svg";
+export { default as Whatsapp } from "./generalIcons/socialIcons/whatsapp.svg";
+
 // ------  Home Page  -------
 
 export { default as homeSrcolldownButton } from "./Home/Icons/homeSrcolldownButton.svg";

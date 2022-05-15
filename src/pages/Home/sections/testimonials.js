@@ -74,7 +74,7 @@ const Testimonials = () => {
           class="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner">
+          <div class="carousel-inner ">
             {testimonialData.map((value, index) => {
               return (
                 <>
@@ -95,7 +95,33 @@ const Testimonials = () => {
             })}
           </div>
           <div className="scroll-events-parent">
-            <div class="carousel-indicators ">
+            <div className="d-flex justify-content-between w-100">
+              <button
+                class="carousel-control-prev  h-auto carousel-control-btn position-static"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon "
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next  h-auto carousel-control-btn position-static"
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon "
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <div class="carousel-indicators mt-3">
               <button
                 className="carosalBtn active"
                 type="button"
@@ -141,30 +167,6 @@ const Testimonials = () => {
                 aria-label="Slide 6"
               ></button>
             </div>
-            <button
-              class="carousel-control-prev  h-auto carousel-control-btn"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon "
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next  h-auto carousel-control-btn"
-              type="button"
-              data-bs-target="#carouselExampleCaptions"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon "
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
         </div>
       </section>

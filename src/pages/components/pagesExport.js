@@ -51,5 +51,6 @@ export { default as ProjectComponent } from "./project";
 export { default as HandleProject } from "./handleProject";
 export { default as FormField } from "./formFields";
 export { default as Accordion } from "./accordion";
+export { default as Header } from "./header";
 
 // -------End Reuseable Components Exports----------

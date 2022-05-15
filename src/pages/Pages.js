@@ -1,28 +1,38 @@
-import React from "react";
-import {
-  Home,
-  ThemeFirstLayer,
-  AboutMe,
-  Portfolio,
-  Services,
-  ContactPage,
-} from "./components/pagesExport";
+// import React from "react";
+// import {
+//   Home,
+//   ThemeFirstLayer,
+//   AboutMe,
+//   Portfolio,
+//   Services,
+//   ContactPage,
+//   Header,
+// } from "./components/pagesExport";
+// import { Route, Switch, Redirect } from "react-router-dom";
 
-const Pages = () => {
-  return (
-    <>
-      <ThemeFirstLayer />+
-      <div className="PagesParent ">
-        {/* <h1>Pages</h1> */}
+// const Pages = () => {
+//   return (
+//     <>
+//       {/* <ThemeFirstLayer /> */}
+      
+    
+//       <Header />
+//       {/* <Home /> */}
+//       {/* <AboutMe /> */}
+//       {/* <Portfolio /> */}
+//       {/* <Services /> */}
+//       {/* <ContactPage /> */}
+   
+//       <Switch>
+//         <Route exact path="/home" component={Home} />
+//         <Route exact path="/aboutme" component={AboutMe} />
+//         <Route exact path="/services" component={Services} />
+//         <Route exact path="/portfolio" component={Portfolio} />
+//         <Route exact path="/contact" component={ContactPage} />
+//         <Redirect exact to="/home" />
+//       </Switch>
+//     </>
+//   );
+// };
 
-        <Home />
-        {/* <AboutMe /> */}
-        {/* <Portfolio /> */}
-        {/* <Services /> */}
-        {/* <ContactPage /> */}
-      </div>
-    </>
-  );
-};
-
-export default Pages;
+// export default Pages;

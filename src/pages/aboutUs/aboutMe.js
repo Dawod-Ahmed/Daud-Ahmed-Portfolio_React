@@ -8,7 +8,7 @@ import {
 const AboutUs = () => {
   return (
     <>
-      <main className="theme-background-second-layer d-flex-direction ">
+      <main className="theme-background-second-layer d-flex-direction about-main ">
         <AboutvideoSec />
         <AboutSection />
         <ExperienceSection />

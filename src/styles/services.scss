@@ -1,271 +1,271 @@
-// @import "./general/variables.scss";
-// @import "./general/mixins.scss";
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
 
 // ------------  Mixins ---------------
 
-@font-face {
-  font-family: "Ethnocentric";
-  src: url(../fonts/Ethnocentric/ethnocentric.otf);
-}
+// @font-face {
+//   font-family: "Ethnocentric";
+//   src: url(../fonts/Ethnocentric/ethnocentric.otf);
+// }
 
-@font-face {
-  font-family: "Poppins";
-  src: url(../fonts/Poppins/Poppins.ttf);
-}
+// @font-face {
+//   font-family: "Poppins";
+//   src: url(../fonts/Poppins/Poppins.ttf);
+// }
 
-@function weight($weight-name) {
-  @return map-get($font-weight, $weight-name);
-}
+// @function weight($weight-name) {
+//   @return map-get($font-weight, $weight-name);
+// }
 
-@mixin desktopSecondBpMixin {
-  @media (max-width: $desktopSecondBp) {
-    @content;
-  }
-}
-@mixin desktopThridBpMixin {
-  @media (max-width: $desktopthirdBp) {
-    @content;
-  }
-}
+// @mixin desktopSecondBpMixin {
+//   @media (max-width: $desktopSecondBp) {
+//     @content;
+//   }
+// }
+// @mixin desktopThridBpMixin {
+//   @media (max-width: $desktopthirdBp) {
+//     @content;
+//   }
+// }
 
-@mixin generalHeading($fontSize) {
-  font-size: $fontSize;
-  color: $heading-text-color-first;
-  font-weight: weight(bold);
-  font-family: "Ethnocentric", sans-serif;
-}
-// 27
-@mixin generalHeadingOne($fontSize) {
-  font-size: $fontSize;
-  color: $heading-text-color-second;
-  font-weight: weight(bold);
-  font-family: "Ethnocentric", sans-serif;
-}
+// @mixin generalHeading($fontSize) {
+//   font-size: $fontSize;
+//   color: $heading-text-color-first;
+//   font-weight: weight(bold);
+//   font-family: "Ethnocentric", sans-serif;
+// }
+// // 27
+// @mixin generalHeadingOne($fontSize) {
+//   font-size: $fontSize;
+//   color: $heading-text-color-second;
+//   font-weight: weight(bold);
+//   font-family: "Ethnocentric", sans-serif;
+// }
 
-@mixin menuLinks {
-  font-size: $fontSize;
-  color: $menu-links-color;
-  font-weight: weight(medium);
-  font-family: "Poppins", sans-serif;
-}
+// @mixin menuLinks {
+//   font-size: $fontSize;
+//   color: $menu-links-color;
+//   font-weight: weight(medium);
+//   font-family: "Poppins", sans-serif;
+// }
 
-@mixin generalText($fontSize) {
-  font-size: $fontSize;
-  color: $general-normalSize-text-color;
-  font-weight: weight(light);
-  font-family: "Poppins", sans-serif;
-}
+// @mixin generalText($fontSize) {
+//   font-size: $fontSize;
+//   color: $general-normalSize-text-color;
+//   font-weight: weight(light);
+//   font-family: "Poppins", sans-serif;
+// }
 
-@mixin generalMedumSizeText($fontSize) {
-  font-size: $fontSize;
-  color: $general-normalSize-text-color;
-  font-weight: weight(medium);
-  font-family: "Poppins", sans-serif;
-}
+// @mixin generalMedumSizeText($fontSize) {
+//   font-size: $fontSize;
+//   color: $general-normalSize-text-color;
+//   font-weight: weight(medium);
+//   font-family: "Poppins", sans-serif;
+// }
 
-@mixin FlexCenterRow {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// @mixin FlexCenterRow {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-@mixin flexCenterColumn {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+// @mixin flexCenterColumn {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-@mixin flexRow($xAxis, $yAxis) {
-  display: flex;
-  justify-content: $xAxis;
-  align-items: $yAxis;
-}
+// @mixin flexRow($xAxis, $yAxis) {
+//   display: flex;
+//   justify-content: $xAxis;
+//   align-items: $yAxis;
+// }
 
-@mixin flexColumn($xAxis, $yAxis) {
-  display: flex;
-  flex-direction: column;
-  justify-content: $xAxis;
-  align-items: $yAxis;
-}
+// @mixin flexColumn($xAxis, $yAxis) {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: $xAxis;
+//   align-items: $yAxis;
+// }
 
-@mixin themeSecondLayerView($width, $marginTop) {
-  position: relative;
-  width: $width;
-  margin-top: $marginTop;
-  background-color: $theme-seconds-background-color;
-}
+// @mixin themeSecondLayerView($width, $marginTop) {
+//   position: relative;
+//   width: $width;
+//   margin-top: $marginTop;
+//   background-color: $theme-seconds-background-color;
+// }
 
-@mixin button {
-  width: max-content;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: transparent;
-  width: 230px;
-  height: 70px;
-  font-size: 27px;
-  font-weight: map-get($font-weight, medium);
-  border: 2px solid $theme-green-color;
-  border-radius: 50px;
-  color: $theme-green-color;
-  transition-duration: 0.2s;
-  padding-bottom: 10px;
-  &:hover {
-    background-color: $button-hover-color;
-    color: $white-text;
-  }
-}
+// @mixin button {
+//   width: max-content;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background-color: transparent;
+//   width: 230px;
+//   height: 70px;
+//   font-size: 27px;
+//   font-weight: map-get($font-weight, medium);
+//   border: 2px solid $theme-green-color;
+//   border-radius: 50px;
+//   color: $theme-green-color;
+//   transition-duration: 0.2s;
+//   padding-bottom: 10px;
+//   &:hover {
+//     background-color: $button-hover-color;
+//     color: $white-text;
+//   }
+// }
 
-@mixin backgroundImage($Img, $imgHover, $backPosition) {
-  background-image: url($Img);
-  background-repeat: no-repeat;
-  background-size: 35px 35px;
-  padding-bottom: 5px;
-  background-position: $backPosition center;
-  &:hover {
-    background-image: url($imgHover);
-  }
-}
+// @mixin backgroundImage($Img, $imgHover, $backPosition) {
+//   background-image: url($Img);
+//   background-repeat: no-repeat;
+//   background-size: 35px 35px;
+//   padding-bottom: 5px;
+//   background-position: $backPosition center;
+//   &:hover {
+//     background-image: url($imgHover);
+//   }
+// }
 
-@mixin GeneralbackgroundImage($Img, $imgHover, $Size, $backPosition) {
-  background-image: url($Img);
-  background-repeat: no-repeat;
-  background-size: $Size;
-  background-position: $backPosition;
-  center &:hover {
-    background-image: url($imgHover);
-  }
-}
+// @mixin GeneralbackgroundImage($Img, $imgHover, $Size, $backPosition) {
+//   background-image: url($Img);
+//   background-repeat: no-repeat;
+//   background-size: $Size;
+//   background-position: $backPosition;
+//   center &:hover {
+//     background-image: url($imgHover);
+//   }
+// }
 
-@mixin BackgroundImageServciesWorkMethod($Img, $imgHover, $Size) {
-  background-image: url($Img);
-  background-repeat: no-repeat;
-  background-size: $Size;
-  background-position: center center;
-  transition-duration: 0.2s;
-  &:hover {
-    background-image: url($imgHover);
-  }
-}
+// @mixin BackgroundImageServciesWorkMethod($Img, $imgHover, $Size) {
+//   background-image: url($Img);
+//   background-repeat: no-repeat;
+//   background-size: $Size;
+//   background-position: center center;
+//   transition-duration: 0.2s;
+//   &:hover {
+//     background-image: url($imgHover);
+//   }
+// }
 
-@mixin font($fontSize, $weight, $color, $hoverColor) {
-  font-size: $fontSize;
-  font-weight: weight($weight);
-  color: $color;
-  font-family: "Poppins", sans-serif;
-  &:hover {
-    color: $hoverColor;
-  }
-}
+// @mixin font($fontSize, $weight, $color, $hoverColor) {
+//   font-size: $fontSize;
+//   font-weight: weight($weight);
+//   color: $color;
+//   font-family: "Poppins", sans-serif;
+//   &:hover {
+//     color: $hoverColor;
+//   }
+// }
 
-// --------------Cards Mixins---------
+// // --------------Cards Mixins---------
 
-@mixin cardParent($width, $height) {
-  min-width: $width;
-  height: $height;
-  @include flexColumn(center, start);
-  border-radius: 30px;
-  background-color: $cards-background-color;
-  transition-duration: 0.2s;
-  &:hover {
-    background-color: $cards-hover-color;
-  }
-}
+// @mixin cardParent($width, $height) {
+//   min-width: $width;
+//   height: $height;
+//   @include flexColumn(center, start);
+//   border-radius: 30px;
+//   background-color: $cards-background-color;
+//   transition-duration: 0.2s;
+//   &:hover {
+//     background-color: $cards-hover-color;
+//   }
+// }
 
-@mixin backgroundCardImage($Img, $imgHover) {
-  width: 110px;
-  min-height: 100px;
-  border-radius: 8px;
-  background-image: url($Img);
-  background-repeat: no-repeat;
-  background-size: 68%;
+// @mixin backgroundCardImage($Img, $imgHover) {
+//   width: 110px;
+//   min-height: 100px;
+//   border-radius: 8px;
+//   background-image: url($Img);
+//   background-repeat: no-repeat;
+//   background-size: 68%;
 
-  background-position: center center;
-  transition-duration: 0.2s;
-  // &:hover {
-  // background-color: $white-text;
-  // background-image: url($imgHover);
-  // }
-}
+//   background-position: center center;
+//   transition-duration: 0.2s;
+//   // &:hover {
+//   // background-color: $white-text;
+//   // background-image: url($imgHover);
+//   // }
+// }
 
-@mixin card {
-  width: 350px;
-  height: 440px;
-  background-color: $cards-background-color;
-  transition-duration: 0.2s;
-  &:hover {
-    background-color: $cards-hover-color;
-    color: $white-text;
-  }
-}
+// @mixin card {
+//   width: 350px;
+//   height: 440px;
+//   background-color: $cards-background-color;
+//   transition-duration: 0.2s;
+//   &:hover {
+//     background-color: $cards-hover-color;
+//     color: $white-text;
+//   }
+// }
 
-@mixin VerticalPadding($top, $bottom) {
-  padding-top: $top;
-  padding-bottom: $bottom;
-}
+// @mixin VerticalPadding($top, $bottom) {
+//   padding-top: $top;
+//   padding-bottom: $bottom;
+// }
 
-@mixin HorizontalPadding($top, $bottom) {
-  padding-right: $top;
-  padding-left: $bottom;
-}
+// @mixin HorizontalPadding($top, $bottom) {
+//   padding-right: $top;
+//   padding-left: $bottom;
+// }
 
-@mixin VerticalMargin($top, $bottom) {
-  margin-top: $top;
-  margin-bottom: $bottom;
-}
+// @mixin VerticalMargin($top, $bottom) {
+//   margin-top: $top;
+//   margin-bottom: $bottom;
+// }
 
-@mixin HorizontalMargin($top, $bottom) {
-  margin-right: $top;
-  margin-left: $bottom;
-}
+// @mixin HorizontalMargin($top, $bottom) {
+//   margin-right: $top;
+//   margin-left: $bottom;
+// }
 
-@mixin elementSize($width, $height) {
-  width: $width;
-  height: $height;
-}
+// @mixin elementSize($width, $height) {
+//   width: $width;
+//   height: $height;
+// }
 
-//  -------------End Mixins-------------------
+// //  -------------End Mixins-------------------
 
-$font-weight: (
-  "extraLight": 200,
-  "light": 300,
-  "regular": 400,
-  "medium": 500,
-  "bold": 700,
-  "extrabold": 800,
-);
+// $font-weight: (
+//   "extraLight": 200,
+//   "light": 300,
+//   "regular": 400,
+//   "medium": 500,
+//   "bold": 700,
+//   "extrabold": 800,
+// );
 
-$desktopSecondBp: 1650px;
-$desktopthirdBp: 1540px;
+// $desktopSecondBp: 1650px;
+// $desktopthirdBp: 1540px;
 
-$heading-text-color-first: #ffffff;
-$heading-text-color-second: #00da5d;
+// $heading-text-color-first: #ffffff;
+// $heading-text-color-second: #00da5d;
 
-$theme-first-background-color: #00da5d;
-$button-hover-color: #00da5d;
-$second-text-color: #00da5d;
-$theme-green-color: #00da5d;
+// $theme-first-background-color: #00da5d;
+// $button-hover-color: #00da5d;
+// $second-text-color: #00da5d;
+// $theme-green-color: #00da5d;
 
-$menu-links-color: #ffffff;
-$menu-links-hover-color: #00da5d;
-$work-method-hover-color: #00da5d;
+// $menu-links-color: #ffffff;
+// $menu-links-hover-color: #00da5d;
+// $work-method-hover-color: #00da5d;
 
-$social-icons-hover: #0b5fba;
+// $social-icons-hover: #0b5fba;
 
-$general-normalSize-text-color: #c0c0c0;
-$general-mediumSize-text-color: #c0c0c0;
+// $general-normalSize-text-color: #c0c0c0;
+// $general-mediumSize-text-color: #c0c0c0;
 
-$white-text: #ffffff;
+// $white-text: #ffffff;
 
-$main-background-color: #000024;
+// $main-background-color: #000024;
 
-$skills-cards-hover-color: #020243;
-$home-third-sec-: #000033;
-$accordion-color: #020243;
-$theme-seconds-background-color: #020243;
-$cards-background-color: #010139;
-$cards-hover-color: #00da5d;
+// $skills-cards-hover-color: #020243;
+// $home-third-sec-: #000033;
+// $accordion-color: #020243;
+// $theme-seconds-background-color: #020243;
+// $cards-background-color: #010139;
+// $cards-hover-color: #00da5d;
 
 // -----------------------------------
 
@@ -284,6 +284,7 @@ $cards-hover-color: #00da5d;
   position: relative;
   @include flexRow(center, space-between);
   @include elementSize(1800px, 620px);
+  left: -60px;
 }
 .self-services-image {
   position: absolute;
@@ -373,7 +374,7 @@ $cards-hover-color: #00da5d;
 }
 .project-cycle-arrow {
   position: absolute;
-  top: 20%;
+  top: 67px;
   right: -7%;
 }
 .project-cycle-img {
@@ -389,29 +390,29 @@ $cards-hover-color: #00da5d;
 
 .requirements {
   @include BackgroundImageServciesWorkMethod(
-    "../assets/Services/Icons/workMethod/toDo.svg",
-    "../assets/Services/Icons/workMethod/toDoHover.svg",
+    "../../assets/Services/Icons/workMethod/toDo.svg",
+    "../../assets/Services/Icons/workMethod/toDoHover.svg",
     47%
   );
 }
 .development {
   @include BackgroundImageServciesWorkMethod(
-    "../assets/Services/Icons/workMethod/devUpdates.svg",
-    "../assets/Services/Icons/workMethod/devUpdatesHover.svg",
+    "../../assets/Services/Icons/workMethod/devUpdates.svg",
+    "../../assets/Services/Icons/workMethod/devUpdatesHover.svg",
     55%
   );
 }
 .testing {
   @include BackgroundImageServciesWorkMethod(
-    "../assets/Services/Icons/workMethod/testing.svg",
-    "../assets/Services/Icons/workMethod/testingHover.svg",
+    "../../assets/Services/Icons/workMethod/testing.svg",
+    "../../assets/Services/Icons/workMethod/testingHover.svg",
     55%
   );
 }
 .deliver {
   @include BackgroundImageServciesWorkMethod(
-    "../assets/Services/Icons/workMethod/deliver.svg",
-    "../assets/Services/Icons/workMethod/deliverHover.svg",
+    "../../assets/Services/Icons/workMethod/deliver.svg",
+    "../../assets/Services/Icons/workMethod/deliverHover.svg",
     75%
   );
 }
@@ -441,6 +442,11 @@ $cards-hover-color: #00da5d;
 
 .freelancin-btn {
   background-color: $theme-seconds-background-color;
+}
+
+.freelancin-btn:hover {
+  background-color: $white-text ;
+  color: $theme-green-color;
 }
 .freelancing-heading-one,
 .freelancing-heading-two,

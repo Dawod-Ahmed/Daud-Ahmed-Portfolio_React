@@ -1,0 +1,77 @@
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
+
+.header {
+  @include elementSize(100%, 120px);
+  border-bottom: 2px solid #373737cc;
+  background-color: $theme-seconds-background-color;
+  //   background-color: black;
+  @include flexRow(space-between, center);
+  z-index: 1;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.nav-li-link {
+  padding: 10px 25px 10px 25px;
+}
+.navbar-li {
+  color: $white-text !important;
+  font-size: 24px !important;
+}
+
+.active-link {
+  background-color: #11ed00;
+  border-radius: 50px;
+}
+
+// .nav-li-link:not(:active):hover .navbar-li {
+//   color: #c5c5c5 !important;
+// }
+
+// .nav-cross-parent:active .nav-cross {
+//   background-color: rgb(0, 175, 233) !important;
+// }
+
+// .nav-cross-top {
+//   transform: translate(0px, 12px) rotate(45deg);
+// }
+// .nav-cross-bottom {
+//   transform: translate(0px, -8px) rotate(-45deg);
+// }
+
+// .t-parent-link {
+//   width: 70px;
+// }
+
+// .t-parent {
+//   width: 60%;
+// }
+// .nav-cross-parent,
+// .t-parent {
+//   cursor: pointer;
+// }
+
+// .t-lines {
+//   height: 4px;
+//   transition: 0.3s ease-in-out;
+//   background: var(--logo-background);
+// }
+// .t-midddle {
+//   margin-top: 0.8px;
+// }
+
+// .t-parent-link {
+//   height: 50px;
+// }
+// .h-container-parent {
+//   position: fixed;
+//   box-shadow: 0px 3px 10px #bdbaba;
+
+//   width: 100%;
+//   z-index: 1;
+// }
+// .t-parent:active .t-lines {
+//   background-color: rgb(0, 175, 233);
+//   transition: -2s;
+// }

@@ -14,16 +14,18 @@ const PortfolioHeadinSection = () => {
       <section className="portfolio-section">
         <div className="heading-parent">
           <div className="portfolio-heading-parent">
-            <h1 className="heading">
-              <span className="heading-first">My</span>
-              <span className="heading-second"> Portfolio</span>
-            </h1>
-            <p className="portfolio-heading-detail">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-              nesciunt porro enim. Ut officiis ipsum minima.
-            </p>
+            <div className="heading-parent-child">
+              <h1 className="heading">
+                <span className="heading-first">My</span>
+                <span className="heading-second"> Portfolio</span>
+              </h1>
+              <p className="portfolio-heading-detail">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                nesciunt porro enim. Ut officiis ipsum minima.
+              </p>
+            </div>
+            <img src={portfolioDownArrow} alt="" />
           </div>
-          <img src={portfolioDownArrow} alt="" />
         </div>
       </section>
     </>
