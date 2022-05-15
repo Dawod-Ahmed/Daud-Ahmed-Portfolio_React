@@ -4,8 +4,8 @@ const Footer = () => {
   return (
     <>
     <div className="creator-parent">
-        <span className=""></span>
-        <h1 className="website-creator"></h1>
+        <span className="">Designed and developed by</span>
+        <h1 className="website-creator">Dawood <span className="">/</span>Ahmed</h1>
     </div>
     
     
