@@ -1,5 +1,5 @@
-@import "../general/variables.scss";
-@import "../general/mixins.scss";
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
 
 // $font-weight: (
 
@@ -123,40 +123,42 @@
 
 // // ------------  End  MIXINS  ---------------
 
-.theme-background-first-layer {
-  @include elementSize(100%, 100vh);
-
-  background-color: #00da5d;
-  overflow: hidden;
-}
-
-.shape-TopRight {
-  @include elementSize(400px, 400px);
-  right: -145px;
-  top: -170px;
-}
-.shape-TopLeft {
-  @include elementSize(220px, 220px);
-  left: -60px;
-  top: -35px;
-}
-.shape-MidLeft {
-  @include elementSize(280px, 280px);
-  left: -20px;
-  top: 60%;
-}
-.shape-MidRight {
-  @include elementSize(360px, 360px);
-  right: -110px;
-  top: 30%;
-}
-.shape-BottomLeft {
-  @include elementSize(360px, 360px);
-  left: -145px;
-  bottom: -6%;
-}
-.shape-BottomRight {
-  @include elementSize(430px, 430px);
-  right: -100px;
-  bottom: -125px;
-}
+// .theme-background-first-layer {
+//   @include elementSize(100%, 100vh);
+//   // @include HorizontalPadding(70px,70px);
+//   background-color: #00da5d;
+//   overflow: hidden;
+// }
+// .pages-parent {
+//   @include VerticalPadding(80px, 80px);
+// }
+// .shape-TopRight {
+//   @include elementSize(400px, 400px);
+//   right: -145px;
+//   top: -170px;
+// }
+// .shape-TopLeft {
+//   @include elementSize(220px, 220px);
+//   left: -60px;
+//   top: -35px;
+// }
+// .shape-MidLeft {
+//   @include elementSize(280px, 280px);
+//   left: -20px;
+//   top: 60%;
+// }
+// .shape-MidRight {
+//   @include elementSize(360px, 360px);
+//   right: -110px;
+//   top: 30%;
+// }
+// .shape-BottomLeft {
+//   @include elementSize(360px, 360px);
+//   left: -145px;
+//   bottom: -6%;
+// }
+// .shape-BottomRight {
+//   @include elementSize(430px, 430px);
+//   right: -100px;
+//   bottom: -125px;
+// }

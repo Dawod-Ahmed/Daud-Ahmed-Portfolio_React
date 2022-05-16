@@ -1,0 +1,21 @@
+@import "./general/variables.scss";
+@import "./general/mixins.scss";
+
+.footer {
+  border-top: 2px solid #373737cc;
+
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.footer-icon {
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  width: 60px;
+  height: 60px;
+}
+.created-text,
+.footer-slash {
+  color: $theme-green-color;
+  font-weight: bold;
+}

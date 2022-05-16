@@ -19,8 +19,12 @@
 // .contact-right-form,
 // .accordion-section
 section:not(.video-section, .portfolio-section),
-.header {
+.header,
+.footer {
   @include HorizontalPadding(50px, 50px);
+}
+.freelancing-section-parent {
+  padding-right: 0px !important;
 }
 main,
 header {
@@ -371,7 +375,7 @@ div .carousel-indicators {
 .scroll-events-parent {
   position: absolute;
   bottom: -110px;
-  @include flexColumn(unset,center)
+  @include flexColumn(unset, center);
 }
 
 .carousel-control-prev-icon {
@@ -398,3 +402,23 @@ div .carousel-indicators {
   font-weight: bold;
   font-family: "Poppins", sans-serif;
 }
+
+// ::-webkit-scrollbar-track {
+//   box-shadow: none;
+//   border-radius: 10px;
+//   background-color: #00000000;
+// }
+
+// /* Handle */
+// ::-webkit-scrollbar-thumb {
+//   background: rgb(161, 161, 161);
+//   border-radius: 10px;
+// }
+
+// /* Handle on hover */
+// ::-webkit-scrollbar-thumb:hover {
+//   background: #b30000;
+// }
+// body {
+//   overflow: scroll; /* Show scrollbars */
+// }

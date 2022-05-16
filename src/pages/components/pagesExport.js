@@ -1,5 +1,6 @@
 // -------Pages Exports----------
 export { default as ThemeFirstLayer } from "./themeFirstBackgroundLayer/FirstLayer";
+export { default as ShapeImage } from "./themeFirstBackgroundLayer/shapesImages";
 export { default as Home } from "../Home/home";
 export { default as AboutMe } from "../aboutUs/aboutMe";
 export { default as Portfolio } from "../portfolio/portfolio";
@@ -51,6 +52,8 @@ export { default as ProjectComponent } from "./project";
 export { default as HandleProject } from "./handleProject";
 export { default as FormField } from "./formFields";
 export { default as Accordion } from "./accordion";
-export { default as Header } from "./header";
+export { default as Header } from "./layout/header";
+export { default as Footer } from "./layout/footer";
+export { default as Layout } from "./layout/layouts";
 
 // -------End Reuseable Components Exports----------

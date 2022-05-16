@@ -1,0 +1,86 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+// body {
+//   overflow: scroll; /* Show scrollbars */
+// }
+
+// body::-webkit-scrollbar-track {
+//   box-shadow: none;
+//   border-radius: 10px;
+//   background-color: #00000000;
+// }
+
+// /* Handle */
+// body::-webkit-scrollbar-thumb {
+//   background: rgb(161, 161, 161);
+//   border-radius: 10px;
+// }
+
+// /* Handle on hover */
+
+.theme-background-first-layer {
+  @include elementSize(100%, 100vh);
+  // @include HorizontalPadding(70px,70px);
+  background-color: #00da5d;
+  overflow: hidden;
+}
+.pages-parent {
+  @include VerticalPadding(80px, 80px);
+}
+.shape-TopRight {
+  @include elementSize(350px, 350px);
+  right: -180px;
+  top: -150px;
+}
+.shape-TopLeft {
+  @include elementSize(220px, 220px);
+  left: -60px;
+  top: -35px;
+}
+.shape-MidLeft {
+  @include elementSize(220px, unset);
+  left: -12px;
+  top: 30%;
+}
+.shape-MidRight {
+  @include elementSize(180px, unset);
+  right: -77px;
+  top: 50%;
+}
+.shape-BottomLeft {
+  @include elementSize(230px, unset);
+  left: -92px;
+  bottom: -13%;
+}
+.shape-BottomRight {
+  @include elementSize(250px, 250px);
+
+  right: -70px;
+  bottom: -66px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #0000ff;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #000024;
+  //   background: #00000000;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #000092;
+  border-radius: 50px;
+}
+
+.scrollBar-Top {
+  width: 60px;
+  right: 20px;
+  right: 20px;
+  bottom: 20px;
+}

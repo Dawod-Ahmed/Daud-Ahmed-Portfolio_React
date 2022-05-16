@@ -7,19 +7,25 @@ import {
   Portfolio,
   Services,
   ContactPage,
+  Layout,
   Header,
+  Footer,
 } from "./pages/components/pagesExport";
+import {
+  TopRight,
+  TopLeft,
+  MidLeft,
+  MidRight,
+  BottomLeft,
+  BottomRight,
+} from "./assets/assets";
 import { Route, Switch, Redirect } from "react-router-dom";
 const App = () => {
   return (
     <>
       <ThemeFirstLayer />
-      {/* <Header /> */}
-      {/* <Home /> */}
-      {/* <AboutMe /> */}
-      {/* <Portfolio /> */}
-      {/* <Services /> */}
-      {/* <ContactPage /> */}
+<div className="pages-parent">
+      <Header />
 
       <Switch>
         <Route exact path="/home" component={Home} />
@@ -29,6 +35,9 @@ const App = () => {
         <Route exact path="/contact" component={ContactPage} />
         <Redirect exact to="/home" />
       </Switch>
+
+      <Footer />
+      </div>
     </>
   );
 };

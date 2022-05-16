@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Logo } from "../../assets/assets";
+import { Logo } from "../../../assets/assets";
 import { NavLink } from "react-router-dom";
 const Header = () => {
   const [navExp, setNavExp] = useState(false);
