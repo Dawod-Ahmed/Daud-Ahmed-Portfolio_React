@@ -5,7 +5,6 @@ export { default as MidRight } from "./BackgroundShapes/MidRight.svg";
 export { default as MidLeft } from "./BackgroundShapes/MidLeft.svg";
 export { default as TopRight } from "./BackgroundShapes/TopRight.svg";
 
-
 // ------  Header Bar  -------
 
 export { default as Logo } from "./generalIcons/Logo.svg";
@@ -39,6 +38,7 @@ export { default as NextIcon } from "./Home/Icons/nexticon.svg";
 // export { default as AboutMeVideo } from "./About/Sample.mp4";
 export { default as AboutImageShadow } from "./About/aboutSelfShadow.png";
 export { default as AboutBackImg } from "./About/AboutBackImg.svg";
+export { default as VideoPosterImage } from "./About/AboutBackImg.jpg";
 export { default as AboutDaud } from "./About/Daud.png";
 export { default as xd } from "./About/icons/skills icons/xd.svg";
 export { default as adobephotoshop } from "./About/icons/skills icons/adobephotoshop.svg";
@@ -78,6 +78,8 @@ export { default as FreelancingImage } from "./Services/freelancing.png";
 // ------  Contact Page  -------
 
 export { default as ContactRightArrow } from "./Contact/icons/contactrightArrow.svg";
+export { default as SelfHireImage } from "./Contact/images/SelfHireImage.png";
+export { default as Upworklogo } from "./Contact/images/UpworkLogo.png";
 export { default as FaqsDesktopView } from "./Contact/images/Desktop.svg";
 export { default as FaqsMobileView } from "./Contact/images/Mobile_View.svg";
 

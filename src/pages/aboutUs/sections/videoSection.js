@@ -1,5 +1,5 @@
 import React from "react";
-import { DaudImg } from "../../../assets/assets";
+import { VideoPosterImage } from "../../../assets/assets";
 import { Player, BigPlayButton } from "video-react";
 const VideoSection = () => {
   return (
@@ -8,10 +8,10 @@ const VideoSection = () => {
         {" "}
         <Player
           playsInline
-          poster={DaudImg}
+          poster={VideoPosterImage}
           src="Abouhttps://media.w3.org/2010/05/sintel/trailer_hd.mp4tSection"
         >
-          <BigPlayButton position="center" />
+          {/* <BigPlayButton position="center" /> */}
         </Player>
       </section>
     </>

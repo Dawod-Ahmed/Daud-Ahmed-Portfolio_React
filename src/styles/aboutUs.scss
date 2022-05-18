@@ -239,6 +239,18 @@
 .about-main {
   padding-top: 0px;
 }
+
+ 
+.video-react-poster{
+
+  background-image: url(../assets/About/AboutBackImg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%!important;
+  }
+
+  .video-react-button{
+    display: none!important;
+}
 .about-me-section {
   @include flexRow("between", center);
   overflow: hidden;

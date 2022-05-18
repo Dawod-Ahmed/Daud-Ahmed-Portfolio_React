@@ -361,6 +361,44 @@
   bottom: 75px;
 }
 
+.contact-right-form {
+  background: #00da5d;
+  @include elementSize(37%, auto);
+  padding-top: 0;
+}
+.card {
+  border-radius: 25px;
+}
+.card-body {
+  background-color: white;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+.card-img-top {
+  padding: 0 28px 0 0;
+}
+
+.card-title {
+  color: black;
+  font-size: 27px;
+  font-weight: bold;
+}
+.card-text,
+.hireMe-text {
+  color: black;
+}
+.hireMe-text {
+  font-size: 29px;
+  font-weight: bold;
+}
+.hireme-cta {
+  background-image: url(../assets/Contact/images/UpworkLogo.png);
+  background-repeat: no-repeat;
+  background-size: 90% 85%;
+  padding-bottom: 5px;
+  background-position: center center;
+}
+
 // -------------------------
 
 .accordion-section {

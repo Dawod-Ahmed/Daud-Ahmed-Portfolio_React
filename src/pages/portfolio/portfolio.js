@@ -3,7 +3,7 @@ import {PortfolioHeading,ProjectSection} from '../components/pagesExport'
 const Portfolio = () => {
   return (
     <>
-      <main className="theme-background-second-layer d-flex-direction  ">
+      <main className="theme-background-second-layer d-flex-direction pd-0 ">
        <PortfolioHeading/>
        <ProjectSection/>
       </main>

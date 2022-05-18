@@ -22,8 +22,8 @@ const ProjectComponents = (props) => {
               </h2>
               <p className="project-details mt-2">{projectDetails}</p>
               <div className="btn-parent mt-3">
-                <button className="btn btn-explore">Expolore</button>
-                <button className="btn mx-4 btn-github">Github code</button>
+                {/* <button className="btn btn-explore">Expolore</button> */}
+                <button className="btn  btn-github">Github code</button>
               </div>
             </div>
           </div>
@@ -43,8 +43,8 @@ const ProjectComponents = (props) => {
               </h2>
               <p className="project-details mt-2">{projectDetails}</p>
               <div className="btn-parent mt-3">
-                <button className="btn btn-explore">Expolore</button>
-                <button className="btn mx-4 btn-github">Github code</button>
+                {/* <button className="btn btn-explore">Expolore</button> */}
+                <button className="btn  btn-github">Github code</button>
               </div>
             </div>
             <img src={image} alt="" className="project-img" />

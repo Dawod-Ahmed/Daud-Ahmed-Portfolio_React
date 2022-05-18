@@ -1,6 +1,10 @@
 import React from "react";
 
 const ShortIntro = () => {
+  const changeHrefLink =()=>{
+    window.location.href = "/contact";
+  }
+
   return (
     <>
       <section className="h-second-sec d-flex justify-content-between position-relative">
@@ -13,7 +17,7 @@ const ShortIntro = () => {
               Any Type Of Query <br />& Discussion.
             </p>
           </div>
-          <button className="contact-btn btn mb-3">Faq's & Contact</button>
+          <button className="contact-btn btn mb-3" onClick={changeHrefLink}>Faq's & Contact</button>
         </div>
         <div className="h-sec-right-part d-flex flex-column justify-content-between">
           <p className="short-about-para">

@@ -1,6 +1,9 @@
 import React from "react";
 import { FreelancingImage } from "../../../assets/assets";
 const Freelancing = () => {
+  const changeHrefLink = () => {
+    window.location.href = "/contact";
+  };
   return (
     <>
       <section className="freelancing-section-parent">
@@ -19,7 +22,9 @@ const Freelancing = () => {
             industry. Lorem Ipsum has been the 1500s, when an unknown printer
             took..
           </p>
-          <button className="btn freelancin-btn">Contact Me</button>
+          <button className="btn freelancin-btn" onClick={changeHrefLink}>
+            Contact Me
+          </button>
         </div>
         <div className="freelancing-right-img">
           <img src={FreelancingImage} alt="img" className="freelancing-img" />

@@ -28,7 +28,7 @@ const AboutMe = () => {
             temporibus harum fuga consectetur dolore adipisci. Maiores
             architecto consequuntur officia nihil ratione?
           </p>
-          <button className="cv-btn btn">Resume</button>
+          {/* <button className="cv-btn btn">Resume</button> */}
         </div>
         
       </section>

@@ -1,6 +1,11 @@
 import React from "react";
 import { CardComponent } from "../../components/pagesExport";
 const offerServicesSection = () => {
+  
+const changeHrefLink =()=>{
+  window.location.href = "/contact";
+}
+
   return (
     <>
       <section className="serve-qulaity-section">
@@ -15,7 +20,7 @@ const offerServicesSection = () => {
             industry. Lorem Ipsum has been the 1500s, when an unknown printer
             took..
           </p>
-          <button className="btn">Contact Me</button>
+          <button className="btn" onClick={changeHrefLink}>Contact Me</button>
         </div>
         <div className="services-carsds-parent">
           <CardComponent

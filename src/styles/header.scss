@@ -1,7 +1,13 @@
 @import "./general/variables.scss";
 @import "./general/mixins.scss";
 
+.logo {
+  width: 350px;
+}
 .header {
+  // position: fixed!important;
+  // margin: 0 50px!important;
+
   @include elementSize(100%, 120px);
   border-bottom: 2px solid #373737cc;
   background-color: $theme-seconds-background-color;

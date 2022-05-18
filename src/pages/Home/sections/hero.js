@@ -1,6 +1,10 @@
 import React from "react";
 import { DaudImg, homeSrcolldownButton } from "../../../assets/assets";
 const hero = () => {
+
+  const changeHrefLink =()=>{
+    window.location.href = "/proejcts";
+  }
   return (
     <section className="hero-section d-flex justify-content-center">
       <div className="hero-two-parts-parent w-100 ">
@@ -14,15 +18,15 @@ const hero = () => {
           <p className="dev-intro-txt general-text  mt-2 mb-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took..
+            ever since the 1500s, when an unknown printer took.
           </p>
           <div class="btns-group border-0" aria-label="Basic example ">
-            <button type="button" class="btn btn-project ">
+            {/* <button type="button" class="btn btn-project " onClick={changeHrefLink}>
               Projects
-            </button>
-            <button type="button" class="btn btn-play-video mx-4">
+            </button> */}
+            {/* <button type="button" class="btn btn-play-video mx-4">
               Play <div className="btn-play-icon "></div>
-            </button>
+            </button> */}
           </div>
         </div>
 

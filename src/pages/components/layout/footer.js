@@ -8,6 +8,14 @@ import {
   ScrollToTop,
 } from "../../../assets/assets";
 const Footer = () => {
+  const scrolltotop = () => {
+    window.scrollTo(0, 0);
+  };
+  window.addEventListener("scroll", function () {
+    var scroll = document.querySelector(".scrollBar-Top");
+    scroll.classList.toggle("active-scrollToTop", window.scrollY > 250);
+  });
+
   return (
     <>
       <footer className="d-flex flex-column  align-items-center justify-content-center footer theme-background-second-layer mx-auto mt-0 py-5 ">
@@ -17,38 +25,51 @@ const Footer = () => {
         </h1>
 
         <div className="footer-icon-parent d-flex align-items-center justify-content-between py-4">
-          <div className="footer-icon d-flex align-items-center justify-content-center mx-3">
+          <a
+            href="https://github.com/Dawod-Ahmed"
+            className="footer-icon d-flex align-items-center justify-content-center mx-3"
+          >
             <img src={Github} alt="img" className="footer-icon-img w-50 h-50" />
-          </div>
-          <div className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3">
+          </a>
+          <a
+            href="https://www.facebook.com/profile.php?id=100066460706518"
+            className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3"
+          >
             <img
               src={Facebook}
               alt="img"
               className="footer-icon-img w-50 h-50"
             />
-          </div>
-          <div className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3">
+          </a>
+          {/* <a
+            href="./"
+            className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3"
+          >
             <img
               src={Linkdin}
               alt="img"
               className="footer-icon-img w-50 h-50"
             />
-          </div>
-          <div className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3">
+          </a> */}
+          <a
+            href="https://wa.me/+971521996785"
+            className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3"
+          >
             <img
               src={Whatsapp}
               alt="img"
               className="footer-icon-img w-50 h-50"
             />
-          </div>
+          </a>
         </div>
         <p className="copyrights-text general-text">
-        &copy; {new Date().getFullYear().toString()} All Rights Reserved
+          &copy; {new Date().getFullYear().toString()} All Rights Reserved
         </p>
         <img
           src={ScrollToTop}
           alt="img"
-          className="scrollBar-Top position-fixed"
+          className="scrollBar-Top position-fixed d-none "
+          onClick={scrolltotop}
         />
       </footer>
     </>

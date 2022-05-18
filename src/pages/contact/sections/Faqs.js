@@ -1,11 +1,11 @@
 import React from "react";
 import AccordionData from "./data";
-import { FaqsDesktopView, FaqsMobileView } from "../../../assets/assets";
+import { FaqsDesktopView, FaqsMobileView ,SelfHireImage} from "../../../assets/assets";
 import { Accordion } from "../../components/pagesExport";
 const Faqs = () => {
   return (
     <>
-      <section className="accordion-section mb-5 pb-5">
+      <section className="accordion-section  pb-5">
         <div className="faq-heading-parent pb-5 ">
           <h1 className="faq-headingg">
             <span className=" heading-first">FAQ</span>

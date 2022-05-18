@@ -84,3 +84,12 @@ body::-webkit-scrollbar-thumb {
   right: 73px;
   bottom: 20px;
 }
+
+div .active-scrollToTop {
+  display: block !important;
+  transition-duration: 2s;
+}
+
+// .theme-background-second-layer {
+//   margin-top: 118px !important;
+// }

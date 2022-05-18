@@ -2,7 +2,11 @@ import React, { useEffect } from "react";
 import { FormField } from "../../components/pagesExport";
 import { Formik, Form, Field } from "formik";
 import * as Yup from "yup";
-import { ContactRightArrow } from "../../../assets/assets";
+import {
+  ContactRightArrow,
+  SelfHireImage,
+  Upworklogo,
+} from "../../../assets/assets";
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
   email: Yup.string().email("Email is Invalid").required("Email is required"),
@@ -37,8 +41,21 @@ const ContactForm = () => {
           </div>
           <div className="background-text">Inquires</div>
         </div>
-
-        <div className="contact-right-form">
+        <div class="card contact-right-form">
+          <img src={SelfHireImage} class="card-img-top" alt="img" />
+          <div class="card-body">
+            <h5 class="card-title general-text">Upwork</h5>
+            <p class="card-text general-text">
+              The world best freelancing marketplace to hire professional
+              freelancers.
+            </p>
+            <div className="hireme-cta-parent d-flex align-items-center justify-content-around">
+              <p className="hireMe-text general-text mb-0">Hire me on</p>
+              <a href="https://www.upwork.com/freelancers/~01b5302c92f0a61e20" class="btn btn-primary hireme-cta"></a>
+            </div>
+          </div>
+        </div>
+        {/* <div className="contact-right-form">
           <Formik
             initialValues={{
               name: "",
@@ -66,27 +83,7 @@ const ContactForm = () => {
                   placeholder="Name"
                 />
 
-                {/* <div className="nameinpput-parent form-floating ">
-                  <Field
-                    type="text"
-                    className={`bg-transparent text-white border-0 border-bottom name-input input form-control  ${
-                      errors.name && touched.name ? "border-danger" : ""
-                    }`}
-                    name="name"
-                    id="floatingNameInput"
-                    placeholder="Name"
-                  />
-                  <label
-                    htmlFor="floatingNameInput "
-                    className="h-auto text-white floatinglbl "
-                  >
-                    &nbsp; Name{" "}
-                  </label>
-
-                  {errors.name && touched.name ? (
-                    <div className="error_msg text-danger">{errors.name}</div>
-                  ) : null}
-                </div> */}
+             
                 <FormField
                   type="email"
                   className={`email-input ${
@@ -96,28 +93,7 @@ const ContactForm = () => {
                   id="floatingEmailInput"
                   placeholder="Email address"
                 />
-
-                {/* <div className="emailinpput-parent form-floating ">
-                  <Field
-                    type="email"
-                    className={`email-input form-control  ${
-                      errors.email && touched.email ? "border-danger" : ""
-                    }`}
-                    name="email"
-                    id="floatingEmailInput"
-                    placeholder="Email address"
-                  />
-                  <label
-                    htmlFor="floatingEmailInput "
-                    className="h-auto text-muted  "
-                  >
-                    &nbsp; Email address{" "}
-                  </label>
-
-                  {errors.email && touched.email ? (
-                    <div className="error_msg text-danger">{errors.email}</div>
-                  ) : null}
-                </div> */}
+  
                 <FormField
                   type="text"
                   className={`number-input ${
@@ -127,29 +103,6 @@ const ContactForm = () => {
                   id="floatingNumberInput"
                   placeholder="Contact Number (Optional)"
                 />
-
-                {/* <div className="numberinpput-parent form-floating ">
-                  <Field
-                    type="text"
-                    className={`number-input form-control  ${
-                      errors.number && touched.number ? "border-danger" : ""
-                    }`}
-                    name="number"
-                    id="floatingNumberInput"
-                    placeholder="Contact Number (Optional)"
-                  />
-                  <label
-                    htmlFor="floatingNumberInput "
-                    className="h-auto text-muted  "
-                  >
-                    &nbsp; Contact Number (Optional){" "}
-                  </label>
-
-                  {errors.number && touched.number ? (
-                    <div className="error_msg text-danger">{errors.number}</div>
-                  ) : null}
-                </div> */}
-
                 <FormField
                   type="text"
                   className={`subject-input ${
@@ -170,7 +123,102 @@ const ContactForm = () => {
                   placeholder="Please write details here"
                 />
 
-                {/* <div className="textareainpput-parent form-floating ">
+
+
+ 
+
+                <button type="submit" className="btn form-btn mx-2">
+                  Send
+                </button>
+              </Form>
+            )}
+          </Formik>
+        </div> */}
+      </section>
+    </>
+  );
+};
+
+export default ContactForm;
+
+{
+  /* <div className="nameinpput-parent form-floating ">
+                  <Field
+                    type="text"
+                    className={`bg-transparent text-white border-0 border-bottom name-input input form-control  ${
+                      errors.name && touched.name ? "border-danger" : ""
+                    }`}
+                    name="name"
+                    id="floatingNameInput"
+                    placeholder="Name"
+                  />
+                  <label
+                    htmlFor="floatingNameInput "
+                    className="h-auto text-white floatinglbl "
+                  >
+                    &nbsp; Name{" "}
+                  </label>
+
+                  {errors.name && touched.name ? (
+                    <div className="error_msg text-danger">{errors.name}</div>
+                  ) : null}
+                </div> */
+}
+{
+  /* <div className="emailinpput-parent form-floating ">
+                  <Field
+                    type="email"
+                    className={`email-input form-control  ${
+                      errors.email && touched.email ? "border-danger" : ""
+                    }`}
+                    name="email"
+                    id="floatingEmailInput"
+                    placeholder="Email address"
+                  />
+                  <label
+                    htmlFor="floatingEmailInput "
+                    className="h-auto text-muted  "
+                  >
+                    &nbsp; Email address{" "}
+                  </label>
+
+                  {errors.email && touched.email ? (
+                    <div className="error_msg text-danger">{errors.email}</div>
+                  ) : null}
+                </div> */
+}
+{
+  /* <div className="numberinpput-parent form-floating ">
+                  <Field
+                    type="text"
+                    className={`number-input form-control  ${
+                      errors.number && touched.number ? "border-danger" : ""
+                    }`}
+                    name="number"
+                    id="floatingNumberInput"
+                    placeholder="Contact Number (Optional)"
+                  />
+                  <label
+                    htmlFor="floatingNumberInput "
+                    className="h-auto text-muted  "
+                  >
+                    &nbsp; Contact Number (Optional){" "}
+                  </label>
+
+                  {errors.number && touched.number ? (
+                    <div className="error_msg text-danger">{errors.number}</div>
+                  ) : null}
+                </div> */
+}
+
+{
+  /* 
+                
+                
+                
+                
+                
+                <div className="textareainpput-parent form-floating ">
                   <Field     
                     type="textarea" 
                     as="textarea"  className={`textarea-input form-control form-textarea  textarea ${
@@ -190,18 +238,5 @@ const ContactForm = () => {
                   {errors.detail && touched.detail ? (
                     <div className="error_msg text-danger">{errors.detail}</div>
                   ) : null}
-                </div> */}
-
-                <button type="submit" className="btn form-btn mx-2">
-                  Send
-                </button>
-              </Form>
-            )}
-          </Formik>
-        </div>
-      </section>
-    </>
-  );
-};
-
-export default ContactForm;
+                </div> */
+}
