@@ -19,7 +19,7 @@ import {
   BottomLeft,
   BottomRight,
 } from "./assets/assets";
-import { Route, Switch, Redirect } from "react-router-dom";
+import { Route,  Switch, Redirect } from "react-router-dom";
 const App = () => {
   return (
     <>
