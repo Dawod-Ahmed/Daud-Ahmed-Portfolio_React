@@ -18,69 +18,6 @@
 // .contact-left-content,
 // .contact-right-form,
 // .accordion-section
-section:not(.video-section, .portfolio-section),
-.header,
-.footer {
-  @include HorizontalPadding(50px, 50px);
-}
-.freelancing-section-parent {
-  padding-right: 0px !important;
-}
-main,
-header {
-  margin: 0 auto !important;
-}
-main {
-  padding-top: 80px;
-}
-.PagesParent {
-  @include FlexCenterRow;
-}
-
-.theme-background-second-layer {
-  @include themeSecondLayerView(1600px, 55px);
-
-  @include desktopSecondBpMixin() {
-    width: 1500px;
-    .carousel-item {
-      left: 11%;
-    }
-    .carousel-control-prev {
-      left: 670px !important;
-    }
-    .carousel-control-next {
-      left: 747px !important;
-    }
-  }
-
-  @include desktopThridBpMixin() {
-    width: 1300px;
-    .carousel-item {
-      left: 7%;
-    }
-    .carousel-control-prev {
-      left: 570px !important;
-    }
-    .carousel-control-next {
-      left: 644px !important;
-    }
-  }
-}
-
-.heading-first {
-  @include generalHeading(50px);
-}
-.heading-second {
-  @include generalHeadingOne(45px);
-}
-
-.btn {
-  @include button();
-}
-
-.general-text {
-  @include generalText(22px);
-}
 
 // ------------ End  Universal  Styling    ---------------
 
@@ -98,16 +35,156 @@ main {
 .left-content-part {
   @include flexColumn(center, start);
   max-width: 790px;
+  position: relative;
 }
 
 .welcome-txt {
   @include generalMedumSizeText(27px);
+  animation: FadeElement 1.2s 11;
+  position: absolute;
+  top: 55px;
+}
+@keyframes FadeElement {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 
 .dev-name {
   width: max-content;
   line-height: 1.4;
 }
+
+.hero-text {
+  opacity: 0;
+  position: absolute;
+  width: max-content;
+}
+.hero-text1 {
+  animation: hero-text1 17s infinite ease-in-out;
+}
+.hero-text2 {
+  animation: hero-text2 17s infinite ease-in-out;
+}
+.hero-text3 {
+  animation: hero-text3 17s infinite ease-in-out;
+}
+
+@keyframes hero-text1 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes hero-text2 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hero-text3 {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  60% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 .btns-group {
   @include FlexCenterRow();
 }
@@ -134,10 +211,27 @@ main {
   }
   min-width: 880px;
   height: 600px;
+  animation: MoveElementbyMargin 1.4s 1 ease-in-out;
 }
 
 .scroll-down-element {
   @include flexCenterColumn();
+}
+
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  50% {
+    top: 40px;
+  }
+  100% {
+    top: 0px;
+  }
+}
+.scroll-down-arrow-img {
+  animation: mymove 1.5s infinite;
+  position: relative;
 }
 
 .hero-scroll-first-line {

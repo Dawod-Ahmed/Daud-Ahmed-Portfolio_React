@@ -7,6 +7,12 @@ import {
   SelfHireImage,
   Upworklogo,
 } from "../../../assets/assets";
+
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer,
+} from "react-parallax-mouse";
+
 const SignupSchema = Yup.object().shape({
   name: Yup.string().required("Name is required"),
   email: Yup.string().email("Email is Invalid").required("Email is required"),
@@ -17,7 +23,7 @@ const SignupSchema = Yup.object().shape({
 const ContactForm = () => {
   return (
     <>
-      <section className="contact-section-parent">
+      <section className="contact-section-parent py-5 mb-5">
         <div className="contact-left-content position-relative">
           <h1 className="heading  freelancing-heading">
             <span className="heading-first">Let's</span>
@@ -33,7 +39,7 @@ const ContactForm = () => {
           <p id="testpara" className="general-text pt-3 pb-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the 1500s, when an unknown printer
-            took..
+            took.
           </p>
 
           <div className="open-for-porject position-absolute rounded-circle d-flex justify-content-center align-items-center text-center p-2">
@@ -41,8 +47,32 @@ const ContactForm = () => {
           </div>
           <div className="background-text">Inquires</div>
         </div>
+
         <div class="card contact-right-form">
-          <img src={SelfHireImage} class="card-img-top" alt="img" />
+          <MouseParallaxContainer
+            className="parallax"
+            containerStyles={{
+              width: "100%",
+              overflow: "visible",
+              gridTemplateColumns: "auto auto auto auto auto",
+            }}
+            resetOnLeave
+          >
+            <MouseParallaxChild
+              factorX={0.08}
+              factorY={0.06}
+              updateStyles={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                width: "auto",
+                height: "100%",
+                    
+              }}
+            >
+              <img src={SelfHireImage} class="card-img-top" alt="img" />
+            </MouseParallaxChild>
+          </MouseParallaxContainer>
           <div class="card-body">
             <h5 class="card-title general-text">Upwork</h5>
             <p class="card-text general-text">
@@ -51,10 +81,14 @@ const ContactForm = () => {
             </p>
             <div className="hireme-cta-parent d-flex align-items-center justify-content-around">
               <p className="hireMe-text general-text mb-0">Hire me on</p>
-              <a href="https://www.upwork.com/freelancers/~01b5302c92f0a61e20" class="btn btn-primary hireme-cta"></a>
+              <a
+                href="https://www.upwork.com/freelancers/~01b5302c92f0a61e20"
+                class="btn btn-primary hireme-cta"
+              ></a>
             </div>
           </div>
         </div>
+
         {/* <div className="contact-right-form">
           <Formik
             initialValues={{

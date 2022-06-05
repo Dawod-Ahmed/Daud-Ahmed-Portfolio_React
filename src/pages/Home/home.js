@@ -5,23 +5,25 @@ import {
   HomeCardsSec,
   TestimonialsSec,
 } from "../components/pagesExport";
+// import { Fade } from "react-reveal";
 
 const Home = () => {
   useEffect(() => {
-    document.title = "Home Page";
+    document.title = "Home | Dawood Ahmed";
   }, []);
 
   return (
     <>
-      <main className="theme-background-second-layer d-flex-direction  ">
-        <HeroSection />
-        <ShortIntroSection />
-        <HomeCardsSec />
-       
-        {/* <TestimonialsSec /> */}
-      </main>
+      {/* <Fade> */}
+        <main className="theme-background-second-layer d-flex-direction  ">
+          <HeroSection />
+          <ShortIntroSection />
+          <HomeCardsSec />
+
+          <TestimonialsSec />
+        </main>
+      {/* </Fade> */}
     </>
   );
 };
-
 export default Home;

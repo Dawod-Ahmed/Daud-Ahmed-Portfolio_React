@@ -24,7 +24,11 @@ const PortfolioHeadinSection = () => {
                 nesciunt porro enim. Ut officiis ipsum minima.
               </p>
             </div>
-            <img src={portfolioDownArrow} alt="" />
+            <img
+              src={portfolioDownArrow}
+              alt="img"
+              className="scroll-down-arrow-img"
+            />
           </div>
         </div>
       </section>

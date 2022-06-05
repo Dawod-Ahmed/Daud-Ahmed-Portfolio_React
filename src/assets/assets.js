@@ -5,6 +5,8 @@ export { default as MidRight } from "./BackgroundShapes/MidRight.svg";
 export { default as MidLeft } from "./BackgroundShapes/MidLeft.svg";
 export { default as TopRight } from "./BackgroundShapes/TopRight.svg";
 
+// export { default as Cursor } from "./generalIcons/cursor.png";
+
 // ------  Header Bar  -------
 
 export { default as Logo } from "./generalIcons/Logo.svg";
@@ -39,6 +41,7 @@ export { default as NextIcon } from "./Home/Icons/nexticon.svg";
 export { default as AboutImageShadow } from "./About/aboutSelfShadow.png";
 export { default as AboutBackImg } from "./About/AboutBackImg.svg";
 export { default as VideoPosterImage } from "./About/AboutBackImg.jpg";
+export { default as VideoPlayBtn } from "./About/icons/PlayButton.svg";
 export { default as AboutDaud } from "./About/Daud.png";
 export { default as xd } from "./About/icons/skills icons/xd.svg";
 export { default as adobephotoshop } from "./About/icons/skills icons/adobephotoshop.svg";
@@ -64,6 +67,9 @@ export { default as project1 } from "./Portfolio/project1.png";
 export { default as project2 } from "./Portfolio/project2.png";
 export { default as project3 } from "./Portfolio/project3.png";
 export { default as project4 } from "./Portfolio/project4.png";
+export { default as project5 } from "./Portfolio/project5.png";
+export { default as project6 } from "./Portfolio/project6.png";
+export { default as project7 } from "./Portfolio/project7.png";
 
 // ------  Services Page  -------
 

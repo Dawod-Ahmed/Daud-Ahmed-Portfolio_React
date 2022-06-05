@@ -4,7 +4,7 @@ import { HandleProject } from "../../components/pagesExport";
 const ServeQuality = () => {
   return (
     <>
-      <section className="work-method-section">
+      <section className="work-method-section pb-5">
         <div className="project-cycle-heading-parent">
           <h1 className="heading my-5 text-center">
             <span className="heading-first">Project</span>

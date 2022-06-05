@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { Fade } from "react-reveal";
+
 import {
   AboutvideoSec,
   AboutSection,
@@ -6,14 +8,20 @@ import {
   SkillsSection,
 } from "../components/pagesExport";
 const AboutUs = () => {
+  useEffect(() => {
+    document.title = "About | Dawood Ahmed";
+  }, []);
+
   return (
     <>
-      <main className="theme-background-second-layer d-flex-direction about-main ">
+      <Fade duration={4000} opposite collapse></Fade>
+      <main className="theme-background-second-layer d-flex-direction about-main pt-0">
         <AboutvideoSec />
         <AboutSection />
         <ExperienceSection />
         <SkillsSection />
       </main>
+      <Fade />
     </>
   );
 };

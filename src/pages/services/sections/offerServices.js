@@ -1,14 +1,13 @@
 import React from "react";
 import { CardComponent } from "../../components/pagesExport";
+import {Link} from 'react-router-dom'
+
 const offerServicesSection = () => {
-  
-const changeHrefLink =()=>{
-  window.location.href = "/contact";
-}
+ 
 
   return (
     <>
-      <section className="serve-qulaity-section">
+      <section className="offer-servcies-section">
         <div className="offer-servcies-left-part ">
           <h1 className="heading my-5">
             <span className="heading-first">My Awesome</span>
@@ -20,7 +19,7 @@ const changeHrefLink =()=>{
             industry. Lorem Ipsum has been the 1500s, when an unknown printer
             took..
           </p>
-          <button className="btn" onClick={changeHrefLink}>Contact Me</button>
+          <Link to="/contact" className="btn"  >Contact Me</Link>
         </div>
         <div className="services-carsds-parent">
           <CardComponent

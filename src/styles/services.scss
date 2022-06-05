@@ -285,6 +285,15 @@
   @include flexRow(center, space-between);
   @include elementSize(1800px, 620px);
   left: -60px;
+  animation: MoveElementSerivce 1.4s 1 ease-in-out;
+}
+@keyframes MoveElementSerivce {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 0px;
+  }
 }
 .self-services-image {
   position: absolute;
@@ -300,15 +309,31 @@
   @include flexColumn(space-between, center);
   @include elementSize(auto, 300px);
   position: relative;
-  top: 138px;
+  bottom: 40px;
   left: 217px;
 }
 
 .s-skill-icon {
   width: 90px;
+  position: relative;
+  animation: MoveElementbyPosition 2s infinite ease-in-out;
 }
 .s-react-icon {
   width: 80px;
+}
+
+@keyframes MoveElementbyPosition {
+  0% {
+    top: 0px;
+  }
+
+  50% {
+    top: 20px;
+  }
+
+  100% {
+    top: 0px;
+  }
 }
 
 // -------  Offer Services  --------------------------------
@@ -316,8 +341,10 @@
 .offer-servcies-left-part {
   @include flexColumn(center, start);
 }
-.serve-qulaity-section {
+.offer-servcies-section {
   @include flexRow(space-between, center);
+
+  @include VerticalPadding(80px!important, 80px!important);
 }
 
 .services-carsds-parent {
@@ -445,7 +472,7 @@
 }
 
 .freelancin-btn:hover {
-  background-color: $white-text ;
+  background-color: $white-text;
   color: $theme-green-color;
 }
 .freelancing-heading-one,

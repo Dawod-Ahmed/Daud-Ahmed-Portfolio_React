@@ -1,17 +1,27 @@
-import React from "react";
-import { VideoPosterImage } from "../../../assets/assets";
+import React, { useState } from "react";
+import { VideoPosterImage, VideoPlayBtn } from "../../../assets/assets";
 import { Player, BigPlayButton } from "video-react";
+
 const VideoSection = () => {
+  const [playBtnPosition, setPlayBtnPosition] = useState("");
+  const hidePlaybtn = () => {
+    setPlayBtnPosition("video-secton-play-btn");
+    console.log(setPlayBtnPosition);
+  };
+
   return (
     <>
-      <section className="video-section w-100">
+      <section
+        className={`video-section w-100 ${playBtnPosition}`}
+        onClick={hidePlaybtn}
+      >
         {" "}
         <Player
           playsInline
           poster={VideoPosterImage}
-          src="Abouhttps://media.w3.org/2010/05/sintel/trailer_hd.mp4tSection"
+          src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
         >
-          {/* <BigPlayButton position="center" /> */}
+          <BigPlayButton position="center" />
         </Player>
       </section>
     </>

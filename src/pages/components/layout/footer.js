@@ -27,13 +27,13 @@ const Footer = () => {
         <div className="footer-icon-parent d-flex align-items-center justify-content-between py-4">
           <a
             href="https://github.com/Dawod-Ahmed"
-            className="footer-icon d-flex align-items-center justify-content-center mx-3"
+            className="footer-icon d-flex align-items-center justify-content-center mx-3 github"
           >
             <img src={Github} alt="img" className="footer-icon-img w-50 h-50" />
           </a>
           <a
             href="https://www.facebook.com/profile.php?id=100066460706518"
-            className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3"
+            className="footer-icon d-flex align-items-center justify-content-center mx-3 facebook"
           >
             <img
               src={Facebook}
@@ -41,19 +41,19 @@ const Footer = () => {
               className="footer-icon-img w-50 h-50"
             />
           </a>
-          {/* <a
+          <a
             href="./"
-            className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3"
+            className="footer-icon d-flex align-items-center justify-content-center mx-3 linkdin"
           >
             <img
               src={Linkdin}
               alt="img"
               className="footer-icon-img w-50 h-50"
             />
-          </a> */}
+          </a>
           <a
             href="https://wa.me/+971521996785"
-            className="footer-icon footer-icon d-flex align-items-center justify-content-center mx-3"
+            className="footer-icon d-flex align-items-center justify-content-center mx-3 whatsapp"
           >
             <img
               src={Whatsapp}

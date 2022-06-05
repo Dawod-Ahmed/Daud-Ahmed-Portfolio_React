@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 
 const ShortIntro = () => {
   const changeHrefLink =()=>{
@@ -17,7 +18,7 @@ const ShortIntro = () => {
               Any Type Of Query <br />& Discussion.
             </p>
           </div>
-          <button className="contact-btn btn mb-3" onClick={changeHrefLink}>Faq's & Contact</button>
+          <Link to="./contact" className="contact-btn btn mb-3" onClick={changeHrefLink}>Faq's & Contact</Link>
         </div>
         <div className="h-sec-right-part d-flex flex-column justify-content-between">
           <p className="short-about-para">

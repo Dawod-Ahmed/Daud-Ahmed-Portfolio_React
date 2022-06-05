@@ -6,6 +6,7 @@
 
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
+  box-shadow: 0px 0px 200px 10px #6264b1;
 }
 
 .footer-icon {
@@ -18,4 +19,20 @@
 .footer-slash {
   color: $theme-green-color;
   font-weight: bold;
+}
+
+.footer-icon {
+  transition-duration: 0.5s;
+}
+.github:hover {
+  background-color: #1b1f23;
+}
+.facebook:hover {
+  background-color: #1b74e4;
+}
+.linkdin:hover {
+  background-color: #0077b5;
+}
+.whatsapp:hover {
+  background-color: #35d84b;
 }

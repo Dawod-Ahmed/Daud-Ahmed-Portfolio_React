@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   ServeQuality,
   OfferServices,
@@ -6,6 +6,10 @@ import {
   FreelanicngSection,
 } from "../components/pagesExport";
 const Services = () => {
+  useEffect(() => {
+    document.title = "Services | Dawood Ahmed";
+  }, []);
+
   return (
     <>
       <main className="theme-background-second-layer d-flex-direction">

@@ -20,7 +20,23 @@ const Testimonials = () => {
       rewiewStar: 5,
       rewiewDetail:
         "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex eveniet earum maxime a amet magnam dolor autem id, ea aut aspernatur eius dolorum omnis dicta molestias dolores quae itaque.",
-      personImage: ReviewImage4,
+      personImage: ReviewImage1,
+      personName: "Jhon Smith",
+      personCompany: " Manager of Al Udan Office Services",
+    },
+    {
+      rewiewStar: 5,
+      rewiewDetail:
+        "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex eveniet earum maxime a amet magnam dolor autem id, ea aut aspernatur eius dolorum omnis dicta molestias dolores quae itaque.",
+      personImage: ReviewImage2,
+      personName: "Jhon Smith",
+      personCompany: " Manager of Al Udan Office Services",
+    },
+    {
+      rewiewStar: 5,
+      rewiewDetail:
+        "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex eveniet earum maxime a amet magnam dolor autem id, ea aut aspernatur eius dolorum omnis dicta molestias dolores quae itaque.",
+      personImage: ReviewImage3,
       personName: "Jhon Smith",
       personCompany: " Manager of Al Udan Office Services",
     },
@@ -36,7 +52,7 @@ const Testimonials = () => {
       rewiewStar: 5,
       rewiewDetail:
         "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex eveniet earum maxime a amet magnam dolor autem id, ea aut aspernatur eius dolorum omnis dicta molestias dolores quae itaque.",
-      personImage: ReviewImage4,
+      personImage: ReviewImage5,
       personName: "Jhon Smith",
       personCompany: " Manager of Al Udan Office Services",
     },
@@ -44,23 +60,7 @@ const Testimonials = () => {
       rewiewStar: 5,
       rewiewDetail:
         "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex eveniet earum maxime a amet magnam dolor autem id, ea aut aspernatur eius dolorum omnis dicta molestias dolores quae itaque.",
-      personImage: ReviewImage4,
-      personName: "Jhon Smith",
-      personCompany: " Manager of Al Udan Office Services",
-    },
-    {
-      rewiewStar: 5,
-      rewiewDetail:
-        "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex eveniet earum maxime a amet magnam dolor autem id, ea aut aspernatur eius dolorum omnis dicta molestias dolores quae itaque.",
-      personImage: ReviewImage4,
-      personName: "Jhon Smith",
-      personCompany: " Manager of Al Udan Office Services",
-    },
-    {
-      rewiewStar: 5,
-      rewiewDetail:
-        "  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla ex eveniet earum maxime a amet magnam dolor autem id, ea aut aspernatur eius dolorum omnis dicta molestias dolores quae itaque.",
-      personImage: ReviewImage4,
+      personImage: ReviewImage6,
       personName: "Jhon Smith",
       personCompany: " Manager of Al Udan Office Services",
     },

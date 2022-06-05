@@ -44,7 +44,7 @@ const SkillsSections = () => {
   ]);
   return (
     <>
-      <section className="skill-section ">
+      <section className="skill-section py-5">
         <div className="skills-heading-parent pt-5 ">
           <h1 className="heading text-center">
             <span className="heading-first">My</span>

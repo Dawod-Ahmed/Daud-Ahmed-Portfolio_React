@@ -1,6 +1,10 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { ContactForm, Faqs } from "../components/pagesExport";
 const ContactPage = () => {
+  useEffect(() => {
+    document.title = "Contact | Dawood Ahmed";
+  }, []);
+
   return (
     <>
       <main className="theme-background-second-layer d-flex-direction">

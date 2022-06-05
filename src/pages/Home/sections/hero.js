@@ -1,19 +1,44 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { DaudImg, homeSrcolldownButton } from "../../../assets/assets";
-const hero = () => {
+import { Link } from "react-router-dom";
+import {
+  MouseParallaxChild,
+  MouseParallaxContainer,
+} from "react-parallax-mouse";
 
-  const changeHrefLink =()=>{
-    window.location.href = "/proejcts";
-  }
+const HeroSection = () => {
+  const [hideWelcome, setHideWelcome] = useState("");
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setHideWelcome("d-none");
+    }, 6000);
+    setInterval(() => {
+      clearInterval(interval);
+    }, 6000);
+    // return () => clearInterval(interval);
+  }, []);
+
   return (
-    <section className="hero-section d-flex justify-content-center">
+    <section className="hero-section d-flex justify-content-center pb-5">
       <div className="hero-two-parts-parent w-100 ">
         <div className="left-content-part ">
-          <span className="welcome-txt">welcome</span>
+          <span className={`welcome-txt ${hideWelcome}`}>Welcome</span>
           <h1 className="dev-name">
             <span className="heading-first">I'm Dawood Ahmed,</span>
             <br />
-            <span className="heading-second">Web Developer</span>
+            <span className="heading-second position-relative">
+              A&nbsp;
+              <span class="hero-text hero-text1 heading-second ">
+                Web Developer
+              </span>
+              <span class="hero-text hero-text2 heading-second ">
+                UI/UX Designer
+              </span>
+              <span class="hero-text hero-text3 heading-second ">
+                Freelancer
+              </span>
+            </span>
           </h1>
           <p className="dev-intro-txt general-text  mt-2 mb-5">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -21,18 +46,39 @@ const hero = () => {
             ever since the 1500s, when an unknown printer took.
           </p>
           <div class="btns-group border-0" aria-label="Basic example ">
-            {/* <button type="button" class="btn btn-project " onClick={changeHrefLink}>
+            <Link to="./projects" type="button" class="btn btn-project ">
               Projects
-            </button> */}
-            {/* <button type="button" class="btn btn-play-video mx-4">
+            </Link>
+            <button to="" type="button" class="btn btn-play-video mx-4">
               Play <div className="btn-play-icon "></div>
-            </button> */}
+            </button>
           </div>
         </div>
-
-        <div className="right-img-part img-background">
-          <img src={DaudImg} alt="img" className="dev-img" />
-        </div>
+        <MouseParallaxContainer
+          className="parallax"
+          containerStyles={{
+            width: "100%",
+            overflow: "visible",
+            gridTemplateColumns: "auto auto auto auto auto",
+          }}
+          resetOnLeave
+        >
+          <MouseParallaxChild
+            factorX={0.06}
+            factorY={0.06}
+            updateStyles={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              width: "auto",
+              height: "100%",
+            }}
+          >
+            <div className="right-img-part img-background">
+              <img src={DaudImg} alt="img" className="dev-img" />
+            </div>
+          </MouseParallaxChild>
+        </MouseParallaxContainer>
       </div>
       <div className="scroll-down-element">
         <span className="hero-scroll-first-line">
@@ -42,11 +88,11 @@ const hero = () => {
         <img
           src={homeSrcolldownButton}
           alt=""
-          className="hero-scroll-down-img"
+          className="hero-scroll-down-img scroll-down-arrow-img"
         />
       </div>
     </section>
   );
 };
 
-export default hero;
+export default HeroSection;

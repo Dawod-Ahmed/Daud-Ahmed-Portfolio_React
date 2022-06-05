@@ -239,24 +239,61 @@
 .about-main {
   padding-top: 0px;
 }
+.video-section {
+  @include FlexCenterRow;
+}
 .video-react {
   padding-top: 0 !important;
+  @include elementSize(100%!important, 600px!important);
 }
-.video-react-video {
-  width: 100%;
-}
+
 .video-react-poster {
   background-image: url(../assets/About/AboutBackImg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100% !important;
+  cursor: unset !important;
+}
+.video-section:hover {
+  .video-react .video-react-big-play-button {
+    border-radius: 50px !important;
+    width: 90px !important;
+    height: 90px !important;
+    border: 6px solid #00da5d;
+    background-color: black;
+    background-color: rgba(0, 218, 93, 54%);
+  }
 }
 
-.video-react-button {
-  display: none !important;
+.video-react .video-react-big-play-button {
+  border-radius: 50px !important;
+  width: 90px !important;
+  height: 90px !important;
+  border: 6px solid #00da5d;
+  background-color: rgba(0, 218, 93, 54%) !important;
+  transition-duration: 0.5s;
 }
+.video-react-button:hover {
+  cursor: pointer !important;
+  box-shadow: 0px 0px 100px 10px #00da5dd6;
+  background-color: rgb(5 235 103 / 71%) !important;
+  transition-duration: 0.5s;
+}
+
+button:before {
+  font-size: 53px;
+  top: 16px !important;
+}
+
+.video-secton-play-btn button:before {
+  top: 0px !important;
+}
+
 .about-me-section {
   @include flexRow("between", center);
   overflow: hidden;
+}
+.resume-btn {
+  z-index: 3;
 }
 
 .about-self-img {
@@ -271,6 +308,15 @@
   position: relative;
   top: 80px;
   left: 55px;
+  animation: MoveElementAbout 1.4s 1 ease-in-out;
+}
+@keyframes MoveElementAbout {
+  0% {
+    top: 300px;
+  }
+  100% {
+    top: 80px;
+  }
 }
 
 .about-right-part-part {
@@ -355,10 +401,93 @@
 .skills-img-div {
   @include elementSize(150px, 150px);
   @include FlexCenterRow();
-  border: 4px solid rgb(93, 27, 173);
-  border-radius: 50%;
 }
 .skill-name {
   @include generalMedumSizeText(22px);
   color: $white-text;
+}
+
+.skills-img-div {
+  width: 150px;
+  position: relative;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-img-div::before,
+.skills-img-div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #fb0094,
+    #00f,
+    #0f0,
+    #ff0,
+    #f00,
+    #0f0
+  );
+  background-size: 400%;
+  opacity: 1;
+  border-radius: 50%;
+  transition: 0.5%;
+}
+
+.skills-img-div::after {
+  filter: blur(35px);
+  animation: animate 20s linear infinite;
+}
+.bg-gradient-color-hidder {
+  width: 95%;
+  height: 95%;
+  background: #010139;
+  z-index: 1;
+  border-radius: 50%;
+  margin-right: -1.5px;
+}
+.skills-img-div .skill-img {
+  position: absolute;
+  transition: 0.5s;
+  z-index: 1;
+
+  animation: MoveSKillIcon 2s infinite ease-in-out;
+}
+
+@keyframes MoveSKillIcon {
+  0% {
+    margin-top: -10px;
+  }
+
+  50% {
+    margin-top: 10px;
+  }
+
+  100% {
+    margin-top: -10px;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0 0;
+  }
+
+  50% {
+    background-position: 300% 0;
+  }
+
+  100% {
+    background-position: 0 0;
+  }
 }

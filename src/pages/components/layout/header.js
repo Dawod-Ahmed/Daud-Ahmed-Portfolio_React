@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Logo } from "../../../assets/assets";
 import { NavLink } from "react-router-dom";
-import { HidingHeader } from "hiding-header-react";
 
 const Header = () => {
   const [navExp, setNavExp] = useState(false);
@@ -10,7 +9,7 @@ const Header = () => {
     { li: "Home", path: "home" },
     { li: "About Me", path: "aboutMe" },
     { li: "Services", path: "services" },
-    // { li: "Projects", path: "projects" },
+    { li: "Projects", path: "projects" },
     { li: "Contact", path: "contact" },
   ]);
   const navExpand = () => {
@@ -54,8 +53,6 @@ const Header = () => {
           </div>
         </menu>
       </header>
-
-      {/* </HidingHeader> */}
     </>
   );
 };

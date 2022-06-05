@@ -282,6 +282,7 @@
 }
 .project-img {
   @include elementSize(48%, 450px);
+  border-radius: 20px;
 }
 .projet-detail-parent {
   @include elementSize(48%, 240px);

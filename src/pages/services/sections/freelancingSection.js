@@ -1,12 +1,11 @@
 import React from "react";
 import { FreelancingImage } from "../../../assets/assets";
+import { Link } from "react-router-dom";
+
 const Freelancing = () => {
-  const changeHrefLink = () => {
-    window.location.href = "/contact";
-  };
   return (
     <>
-      <section className="freelancing-section-parent">
+      <section className="freelancing-section-parent mt-5">
         <div className="freelancing-left-content">
           <h1 className="heading  freelancing-heading">
             <span className="heading-first freelancing-heading-one">
@@ -22,9 +21,9 @@ const Freelancing = () => {
             industry. Lorem Ipsum has been the 1500s, when an unknown printer
             took..
           </p>
-          <button className="btn freelancin-btn" onClick={changeHrefLink}>
+          <Link to="/contact" className="btn freelancin-btn">
             Contact Me
-          </button>
+          </Link>
         </div>
         <div className="freelancing-right-img">
           <img src={FreelancingImage} alt="img" className="freelancing-img" />
