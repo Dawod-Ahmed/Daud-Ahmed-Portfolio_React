@@ -236,15 +236,162 @@
 // $cards-hover-color: #00da5d;
 
 // -----------------------------------
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left;
+  transition-duration: 2s;
+}
+
+// .tooltip .top {
+//   min-width:200px;
+//   top:-20px;
+//   left:50%;
+//   transform:translate(-50%, -100%);
+//   padding:10px 20px;
+//   color:#FFFFFF;
+//   background-color:#000066;
+//   font-weight:normal;
+//   font-size:13px;
+//   border-radius:8px;
+//   position:absolute;
+//   z-index:99999999;
+//   box-sizing:border-box;
+//   border:1px solid #00CC00;box-shadow:0 0px 30px #00FF00;
+//   visibility:hidden; opacity:0; transition:opacity 2s;
+// }
+
+// .tooltip:hover .top {
+//   visibility:visible; opacity:1;
+// }
+
+// .tooltip .top i {
+//   position:absolute;
+//   top:100%;
+//   left:50%;
+//   margin-left:-12px;
+//   width:24px;
+//   height:12px;
+//   overflow:hidden;
+// }
+
+// .tooltip .top i::after {
+//   content:'';
+//   position:absolute;
+//   width:12px;
+//   height:12px;
+//   left:50%;
+//   transform:translate(-50%,-50%) rotate(45deg);
+//   background-color:#000066;
+//   border:1px solid #00CC00;box-shadow:0 1px 8px #00FF00;
+// }
+
+.tooltips {
+  padding: 5px 10px;
+  background-color: $cards-background-color;
+  width: fit-content;
+  border-radius: 15px;
+  position: absolute;
+
+  min-width: 300px;
+  max-width: 350px;
+  border: 2px solid $theme-green-color;
+  visibility: hidden;
+  color: $white-text;
+  z-index: 2;
+  bottom: 110%;
+  left: 10px;
+}
+
+.tooltips::before {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background: $cards-background-color;
+  top: 93.5%;
+  left: 44%;
+  transform: rotate(45deg);
+  border-bottom: 2px solid $theme-green-color;
+  border-right: 2px solid $theme-green-color;
+}
+
+.show-tooltip:hover .tooltips {
+  visibility: visible;
+  position: relative;
+}
+
 .about-main {
   padding-top: 0px;
 }
 .video-section {
   @include FlexCenterRow;
 }
+
+body .modal-backdrop {
+  display: none !important;
+}
+
+.modal-dialog {
+  display: flex;
+  height: -webkit-fill-available;
+  width: 85%;
+  max-width: unset;
+}
+
+.modal-content {
+  border: unset;
+  background: transparent;
+}
+
+.modal-header {
+  border: unset;
+  width: fit-content;
+}
+
+.btn-close {
+  padding-left: 55px !important;
+  padding-bottom: 15px !important;
+}
+.video-back-layer {
+  background-color: #04040496;
+  height: 100vh;
+  z-index: 1;
+  left: 0px;
+  top: 0;
+}
+
+.btn-close {
+  width: min-content;
+  background-color: rgba(253, 253, 253, 0.951);
+}
+.video-section {
+  height: 600px;
+  background-image: url(../assets/About/AboutBackImg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100% !important;
+}
+.modal-header {
+  position: absolute;
+  right: -80px;
+  top: 0;
+}
+.modal-dialog {
+  z-index: 320;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  border: 0;
+}
+.video-react-control:before {
+  top: 0 !important;
+}
 .video-react {
   padding-top: 0 !important;
-  @include elementSize(100%!important, 600px!important);
+  @include elementSize(100%!important, 90vh!important);
 }
 
 .video-react-poster {
@@ -253,6 +400,11 @@
   background-size: 100% 100% !important;
   cursor: unset !important;
 }
+
+.video-react:hover .video-react-big-play-button {
+  border: 6px solid #00da5d !important;
+}
+
 .video-section:hover {
   .video-react .video-react-big-play-button {
     border-radius: 50px !important;
@@ -263,8 +415,17 @@
     background-color: rgba(0, 218, 93, 54%);
   }
 }
-
-.video-react .video-react-big-play-button {
+.model-opening-icon {
+  background-image: url(../assets/About/playIcon.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50% !important;
+  background-position: 65% center;
+}
+// .model-opening-icon:hover{
+//   background-color:$cards-hover-color ;
+// }
+.video-react .video-react-big-play-button,
+.model-opening-icon {
   border-radius: 50px !important;
   width: 90px !important;
   height: 90px !important;
@@ -272,20 +433,53 @@
   background-color: rgba(0, 218, 93, 54%) !important;
   transition-duration: 0.5s;
 }
-.video-react-button:hover {
-  cursor: pointer !important;
+
+.video-react-button:hover,
+.model-opening-icon:hover {
   box-shadow: 0px 0px 100px 10px #00da5dd6;
   background-color: rgb(5 235 103 / 71%) !important;
   transition-duration: 0.5s;
+}
+.btn-play-video:hover {
+  background-color: unset;
+  box-shadow: none;
+  text-shadow: 0px 0px 30px rgb(251 251 251);
+}
+
+.video-secton-play-btn button:before {
+  top: 0px !important;
+}
+
+.video-react-button,
+.video-react-big-play-button,
+.video-react-big-play-button-center,
+.video-react-icon-play-arrow:before,
+.video-react .video-react-bezel .video-react-bezel-icon-play:before,
+.video-react .video-react-play-control:before,
+.video-react .video-react-big-play-button:before,
+.accordion-item,
+.accordion-header,
+.accordion-button {
+  cursor: url(../assets/generalIcons/cursor.png), auto;
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled),
+.accordion-item,
+.accordion-header,
+.accordion-button {
+  cursor: url(../assets/generalIcons/cursor.png), auto;
+}
+
+.experience-heading {
+  z-index: 0;
 }
 
 button:before {
   font-size: 53px;
   top: 16px !important;
-}
-
-.video-secton-play-btn button:before {
-  top: 0px !important;
 }
 
 .about-me-section {
@@ -352,6 +546,25 @@ button:before {
   border-left: 4px solid $theme-green-color;
   @include elementSize(550px, 250px);
 }
+.video-react .video-react-big-play-button.video-react-big-play-button-center {
+  transition-duration: 0.5s;
+}
+.experience-card:hover .department-location,
+.experience-card:hover .duration,
+.experience-card:hover .duration-dot,
+.department-title,
+.experience-card:hover .experience-detail {
+  color: $white-text;
+  transition-duration: 0.4s;
+}
+
+.experience-card:hover {
+  background-color: $theme-first-background-color;
+  box-shadow: 0px 0px 50px 10px $cards-hover-color;
+  border-color: $cards-background-color;
+  transition-duration: 0.4s;
+}
+
 .department-location {
   @include generalText(16px);
   color: $theme-green-color;
@@ -449,6 +662,7 @@ button:before {
   animation: animate 20s linear infinite;
 }
 .bg-gradient-color-hidder {
+  position: absolute;
   width: 95%;
   height: 95%;
   background: #010139;

@@ -31,9 +31,16 @@ const App = () => {
   }, []);
 
   return (
- 
     <>
-      { hidePreloader ? <div className="preloader-parent  w-100 ">
+     {/* <div class="btn btn-primary show-tooltip">Hover Me to Preview
+        <div class="tooltips">
+            <h3>Lorem Ipsum</h3>
+            <p>Dolor sit amet, consectetur adipiscing elit.</p>
+            
+            
+        </div>
+    </div> */}
+      {/* { hidePreloader ? <div className="preloader-parent  w-100 ">
         <img src={Logo} alt="img" className="preloader-logo mb-5 pb-4 " />
         <Bars
           type="Bars"
@@ -42,7 +49,7 @@ const App = () => {
           color="#00da5d"
           ariaLabel="Loading"
         />
-      </div> : <>
+      </div> : <> */}
 
       <ThemeFirstLayer />
       {/* </MouseParallaxChild>
@@ -64,7 +71,7 @@ const App = () => {
         </div>
       </Fade>
 
-      </>}
+      {/* </>} */}
     </>
   );
 };

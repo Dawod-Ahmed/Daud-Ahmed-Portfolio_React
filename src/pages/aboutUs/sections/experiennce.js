@@ -10,7 +10,8 @@ const experiennceSection = () => {
           alt="img"
           className="position-absolute aboutme-background-text mx-auto"
         />
-        <h1 className="heading my-5">
+      
+        <h1 className="heading experience-heading  my-5">
           <span className="heading-first">Experiance &</span>
           <br />
           <span className="heading-second">Education</span>

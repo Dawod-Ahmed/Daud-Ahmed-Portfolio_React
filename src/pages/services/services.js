@@ -12,7 +12,7 @@ const Services = () => {
 
   return (
     <>
-      <main className="theme-background-second-layer d-flex-direction">
+      <main className="theme-background-second-layer d-flex-direction pb-0">
         <ServeQuality />
         <OfferServices />
         <WorkMethod />

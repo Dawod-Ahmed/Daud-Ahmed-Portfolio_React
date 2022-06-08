@@ -316,6 +316,12 @@
 .main-form-parent {
   @include flexColumn(center, end);
 }
+.open-for-porject:hover {
+    transform: rotate(0deg);
+    transition-duration: .2s;
+}
+ 
+
 .floatinglbl {
   color: $general-normalSize-text-color;
 }
@@ -363,6 +369,22 @@
   transform: rotate(-23deg);
   bottom: 75px;
   right: 30px;
+}
+.contact-form-right-icon {
+  animation: animateContactArrow 1.5s infinite ease-in-out;
+}
+@keyframes animateContactArrow {
+  0% {
+    margin-left: 0px;
+  }
+
+  50% {
+    margin-left: 15px;
+  }
+
+  100% {
+    margin-left: 0px;
+  }
 }
 
 .contact-right-form {

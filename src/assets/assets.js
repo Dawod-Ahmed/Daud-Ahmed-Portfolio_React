@@ -16,6 +16,7 @@ export { default as Linkdin } from "./generalIcons/socialIcons/linkdin.svg";
 export { default as Facebook } from "./generalIcons/socialIcons/facebook.svg";
 export { default as Whatsapp } from "./generalIcons/socialIcons/whatsapp.svg";
 export { default as ScrollToTop } from "./generalIcons/scrollTop.svg";
+export { default as ScrollTopArrow } from "./generalIcons/ScrollTopArrow.svg";
 
 // ------  Home Page  -------
 

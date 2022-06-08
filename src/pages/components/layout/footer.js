@@ -6,6 +6,7 @@ import {
   Linkdin,
   Whatsapp,
   ScrollToTop,
+  ScrollTopArrow,
 } from "../../../assets/assets";
 const Footer = () => {
   const scrolltotop = () => {
@@ -65,12 +66,19 @@ const Footer = () => {
         <p className="copyrights-text general-text">
           &copy; {new Date().getFullYear().toString()} All Rights Reserved
         </p>
-        <img
-          src={ScrollToTop}
-          alt="img"
-          className="scrollBar-Top position-fixed d-none "
+        <div></div>
+        <div
+          className="scrollBar-Top position-fixed d-none justify-content-center align-items-center"
           onClick={scrolltotop}
-        />
+        >
+          {" "}
+          <img
+            src={ScrollTopArrow}
+            alt="img"
+            className="scrollTop-Arrow"
+            onClick={scrolltotop}
+          />
+        </div>
       </footer>
     </>
   );

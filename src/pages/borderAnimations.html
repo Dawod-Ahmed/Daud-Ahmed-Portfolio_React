@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
         /* * {
@@ -160,14 +164,133 @@
         } */
 
  /* -------------------------- */
- .box{
+ /* .box{
     cursor:url(cursor.gif),col-resize;
     cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
     width: 100%;
     height: 100vh;
     background-color: black;
 
+} */
+
+.btn-play-video:hover {
+    background-color: unset;
+    box-shadow: none;
+    text-shadow: 0px 0px 30px rgb(251 251 251);
 }
+
+
+.modal-dialog {
+    display: flex;
+    height: -webkit-fill-available;
+    width: 80%;
+     max-width: unset;
+
+}
+
+.modal-content {
+    border: unset;
+    background: transparent;
+
+}
+
+.modal-header {
+    border: unset;
+    width: fit-content;
+
+}
+
+.btn-close{
+    padding-left: 55px!important;
+    padding-bottom: 15px!important;
+  
+
+}
+
+
+/* 
+.tooltips {
+  display:inline-block;
+  position:relative;
+  border-bottom:1px dotted #666;
+  text-align:left;
+transition-duration:2s;
+}
+
+.tooltips .top {
+  min-width:200px; 
+  top:-20px;
+  left:50%;
+  transform:translate(-50%, -100%);
+  padding:10px 20px;
+  color:#FFFFFF;
+  background-color:#000066;
+  font-weight:normal;
+  font-size:13px;
+  border-radius:8px;
+  position:absolute;
+  z-index:99999999;
+  box-sizing:border-box;
+  border:1px solid #00CC00;box-shadow:0 0px 30px #00FF00;
+  visibility:hidden; opacity:0; transition:opacity 2s;
+}
+
+.tooltips:hover .top {
+  visibility:visible; opacity:1;
+}
+
+.tooltips .top i {
+  position:absolute;
+  top:100%;
+  left:50%;
+  margin-left:-12px;
+  width:24px;
+  height:12px;
+  overflow:hidden;
+}
+
+.tooltips .top i::after {
+  content:'';
+  position:absolute;
+  width:12px;
+  height:12px;
+  left:50%;
+  transform:translate(-50%,-50%) rotate(45deg);
+  background-color:#000066;
+  border:1px solid #00CC00;box-shadow:0 1px 8px #00FF00;
+} */
+
+
+/* .tooltips{
+padding: 5px 10px;
+    background-color: $cards-background-color;
+    width: fit-content;
+    border-radius: 15px;
+    position: absolute;
+    max-width: 350px;
+    border: 5px solid $theme-green-color;
+visibility:hidden;
+
+}
+
+.tooltips::before{
+   position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    background: $cards-background-color;
+    top: 93%;
+    left: 44%;
+    transform: rotate(45deg);
+    border-bottom: 5px solid  $theme-green-color;
+    border-right: 5px solid  $theme-green-color;
+}
+
+.show-tooltip:hover  .tooltips{
+visibility:visible;
+}
+  */
+
     </style>
 
 </head>
@@ -175,8 +298,27 @@
 <body>
     
     <!-- <a href="#"><span>Button</span></a> -->
-    <div class="box"></div>
-    
+    <!-- <div class="box"></div> -->
+    <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Open modal for @mdo</button>
+  
+   
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header mx-auto">
+            
+            <button type="button" class="btn-close   fw-bold mx-auto" data-bs-dismiss="modal" aria-label="Close"> Close</button>
+          </div>
+          <div class="modal-body">
+            <iframe  src="https://www.youtube.com/embed/PP0Os0UvMCs" title="YouTube video player" frameborder="0"  class="w-100 h-100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div> -->
+   
+   
 </body>
 
 </html>
