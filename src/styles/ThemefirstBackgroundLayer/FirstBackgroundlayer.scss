@@ -1,0 +1,162 @@
+@import "../general/variables.scss";
+@import "../general/mixins.scss";
+
+// $font-weight: (
+
+//     "extraLight":200,
+//     "light":300,
+//     "regular":400,
+//     "medium":500,
+//     "bold":700,
+//     "extrabold":800
+// );
+
+// $heading-text-color-first:#ffffff;
+// $heading-text-color-second:#00DA5D;
+
+// $theme-first-background-color:#00DA5D;
+// $skills-cards-hover-color:#00DA5D;
+// $button-hover-color:#00DA5D;
+// $second-text-color:#00DA5D;
+
+// $menu-links-color:#ffffff;
+// $menu-links-hover-color:#00DA5D;
+// $work-method-hover-color:#00DA5D;
+
+// $social-icons-hover:#0B5FBA;
+
+// $general-normalSize-text-color:#C0C0C0;
+// $general-mediumSize-text-color:#C0C0C0;
+
+// $white-text:#ffffff;
+
+// $main-background-color: #000024;
+
+// $skills-cards-hover-color:#020243;
+// $home-third-sec-:#000033;
+// $accordion-color:#020243;
+// $theme-seconds-background-color:#020243;
+// $education-cards-color:#020243;
+
+// // ------ END  VARIABLES  --------
+
+// // ------  MIXINS  --------
+
+//     @font-face {
+//         font-family: 'Ethnocentric';
+//         src:  url(../../fonts/Ethnocentric/ethnocentric.otf);
+//     }
+
+//     @font-face {
+//         font-family: 'Poppins';
+//         src:  url(../../fonts/Poppins/Poppins.ttf);
+//     }
+
+// @function weight($weight-name){
+//     @return map-get($font-weight,$weight-name )
+//   };
+
+//     @mixin  generalHeading {
+//         font-size: 55px;
+//         color:$heading-text-color-first ;
+//         font-weight: weight(bold);
+//         font-family: 'Ethnocentric' , sans-serif;
+
+//     }
+
+//     @mixin  generalHeadingOne {
+//         font-size: 50px;
+//         color:$heading-text-color-second ;
+//         font-weight: weight(bold);
+//         font-family: 'Ethnocentric' , sans-serif;
+//     }
+
+//     @mixin  menuLinks {
+//         font-size:27px;
+//         color:$menu-links-color;
+//         font-weight: weight(medium);
+//         font-family: 'Poppins' , sans-serif;
+
+//     }
+
+//     @mixin  generalText {
+//         font-size:22px;
+//         color:$general-normalSize-text-color;
+//         font-weight: weight(light);
+//         font-family: 'Poppins' , sans-serif;
+
+//     }
+
+//     @mixin  generalMedumSizeText {
+//         font-size:27px;
+//         color:$general-normalSize-text-color;
+//         font-weight: weight(medium);
+//         font-family: 'Poppins' , sans-serif;
+
+//     }
+
+//     @mixin  generalText {
+//         font-size:22px;
+//         color:$general-normalSize-text-color;
+//         font-weight: weight(light);
+//         font-family: 'Poppins' , sans-serif;
+
+//     }
+
+//     @mixin  FlexCenter {
+//        display:flex;
+//        justify-content: center;
+//        align-items:center;
+//     }
+
+//     @mixin  FlexCenterRow {
+//        display:flex;
+//        justify-content: center;
+//        align-items:center;
+//     }
+
+//     @mixin  FlexCenterRow {
+//        display:flex;
+//        justify-content: center;
+//        align-items:center;
+//     }
+
+// // ------------  End  MIXINS  ---------------
+
+.theme-background-first-layer {
+  @include elementSize(100%, 100vh);
+
+  background-color: #00da5d;
+  overflow: hidden;
+}
+
+.shape-TopRight {
+  @include elementSize(400px, 400px);
+  right: -145px;
+  top: -170px;
+}
+.shape-TopLeft {
+  @include elementSize(220px, 220px);
+  left: -60px;
+  top: -35px;
+}
+.shape-MidLeft {
+  @include elementSize(280px, 280px);
+  left: -20px;
+  top: 60%;
+}
+.shape-MidRight {
+  @include elementSize(360px, 360px);
+  right: -110px;
+  top: 30%;
+}
+.shape-BottomLeft {
+  @include elementSize(360px, 360px);
+  left: -145px;
+  bottom: -6%;
+}
+.shape-BottomRight {
+  @include elementSize(430px, 430px);
+  right: -100px;
+  bottom: -125px;
+}

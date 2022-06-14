@@ -14,7 +14,7 @@ import {
 } from "./pages/components/pagesExport";
 
 import { Route, Switch, Redirect } from "react-router-dom";
-// import { Fade } from "react-reveal";
+import { Fade } from "react-reveal";
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import { Bars } from "react-loader-spinner";
 const App = () => {
@@ -54,7 +54,7 @@ const App = () => {
       <ThemeFirstLayer />
       {/* </MouseParallaxChild>
       </MouseParallaxContainer> */}
-      {/* <Fade duration={4000} opposite collapse> */}
+      <Fade duration={4000} opposite collapse>
         <div className="pages-parent">
           <Header />
 
@@ -69,7 +69,7 @@ const App = () => {
 
           <Footer />
         </div>
-      {/* </Fade> */}
+      </Fade>
 
       {/* </>} */}
     </>
