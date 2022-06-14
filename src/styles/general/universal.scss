@@ -19,9 +19,9 @@
 
 // /* Handle on hover */
 
-* {
-  cursor: url(../../assets/generalIcons/cursor.png), auto;
-}
+// * {
+//   cursor: url(../../assets/generalIcons/cursor.png), auto;
+// }
 .preloader-parent {
   position: fixed;
 
@@ -87,7 +87,7 @@ html {
 }
 
 body {
-  cursor: url(../../assets/generalIcons/cursor.png), auto;
+  // cursor: url(../../assets/generalIcons/cursor.png), auto;
   overflow: unset !important;
   padding: 0 !important;
 }
@@ -107,7 +107,7 @@ div .carousel-control-btn:hover,
 div .carosalBtn:hover,
 .btn:hover,
 a:hover {
-  cursor: url(../../assets/generalIcons/cursor.png), auto;
+  // cursor: url(../../assets/generalIcons/cursor.png), auto;
 }
 
 section:not(.video-section, .portfolio-section),

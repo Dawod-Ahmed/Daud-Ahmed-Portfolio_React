@@ -5,10 +5,10 @@ import {
   FaqsMobileView,
   SelfHireImage,
 } from "../../../assets/assets";
-import {
-  MouseParallaxChild,
-  MouseParallaxContainer,
-} from "react-parallax-mouse";
+// import {
+//   MouseParallaxChild,
+//   MouseParallaxContainer,
+// } from "react-parallax-mouse";
 
 import { Accordion } from "../../components/pagesExport";
 const Faqs = () => {
@@ -29,7 +29,7 @@ const Faqs = () => {
         </div>
 
         <div className="faq-accordion-image-parent w-100">
-          <MouseParallaxContainer
+          {/* <MouseParallaxContainer
             className="parallax"
             containerStyles={{
               width: "auto",
@@ -47,20 +47,20 @@ const Faqs = () => {
                 justifyContent: "center",
                 width: "auto",
                 height: "100%",
-              }}
-            >
-              <img
-                src={FaqsDesktopView}
-                alt="img"
-                className="faqs-desktopView-img faqs-img d-none d-lg-block "
-              />
-              <img
-                src={FaqsMobileView}
-                alt="img"
-                className="faqs-mobileview-img faqs-img d-lg-none"
-              />
-            </MouseParallaxChild>
-          </MouseParallaxContainer>
+              }} 
+            >*/}
+          <img
+            src={FaqsDesktopView}
+            alt="img"
+            className="faqs-desktopView-img faqs-img d-none d-lg-block "
+          />
+          <img
+            src={FaqsMobileView}
+            alt="img"
+            className="faqs-mobileview-img faqs-img d-lg-none"
+          />
+          {/* </MouseParallaxChild>
+          </MouseParallaxContainer> */}
           <div
             className="accordion-parent accordion"
             id="accordionPanelsStayOpenExample"

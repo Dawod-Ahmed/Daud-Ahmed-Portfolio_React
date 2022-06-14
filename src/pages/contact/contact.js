@@ -8,7 +8,7 @@ const ContactPage = () => {
   return (
     <>
       <main className="theme-background-second-layer d-flex-direction">
-        <ContactForm />
+        {/* <ContactForm /> */}
         <Faqs />
         {/* <h1>Hweewe</h1> */}
       </main>

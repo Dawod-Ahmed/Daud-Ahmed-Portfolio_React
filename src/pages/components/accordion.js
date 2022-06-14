@@ -5,15 +5,14 @@ const Accordion = ({ heading, para1, para2, number }) => {
   console.log(isActive);
   return (
     <>
-      
       <div className="accordion-item w-100 mb-3">
         <h2 className="accordion-header" id={`heading${number}`}>
           <button
-            className="accordion-button collapsed"
+            className={`accordion-button ${isActive ? "" : "collapsed"}`}
             type="button"
             data-bs-toggle="collapse"
             data-bs-target={`#collapse${number}`}
-            aria-expanded="false"
+            aria-expanded={`${isActive ? "true" : "false"}`}
             aria-controls={`collapse${number}`}
             onClick={() => setisActive(!isActive)}
           >
@@ -30,7 +29,9 @@ const Accordion = ({ heading, para1, para2, number }) => {
         </h2>
         <div
           id={`collapse${number}`}
-          className="accordion-collapse collapse"
+          className={` accordion-collapse collapse ${
+            isActive ? "show" : "hide"
+          }`}
           aria-labelledby={`heading${number}`}
           data-bs-parent="#accordionExample"
         >
@@ -41,7 +42,6 @@ const Accordion = ({ heading, para1, para2, number }) => {
           </div>
         </div>
       </div>
-     
     </>
   );
 };
