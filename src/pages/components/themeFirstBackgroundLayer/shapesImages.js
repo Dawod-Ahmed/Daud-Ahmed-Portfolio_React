@@ -1,7 +1,7 @@
 import React from "react";
 
 const backgroundShapes = (props) => {
-  const { image, className } = props;
+  const {  className } = props;
   return (
     <>
       <img src={props.image} alt="img" className={className}/>

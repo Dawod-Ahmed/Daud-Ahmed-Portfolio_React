@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./styles/general/main.scss";
-import { Logo } from "./assets/assets";
 import {
   Home,
   ThemeFirstLayer,
@@ -8,27 +7,26 @@ import {
   Portfolio,
   Services,
   ContactPage,
-  Layout,
+  // Layout,
   Header,
   Footer,
 } from "./pages/components/pagesExport";
 
 import { Route, Switch, Redirect } from "react-router-dom";
-import { Fade } from "react-reveal";
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import { Bars } from "react-loader-spinner";
+// import { Bars } from "react-loader-spinner";
 const App = () => {
-  const [hidePreloader, setHidePreloader] = useState(true);
+  // const [hidePreloader, setHidePreloader] = useState(true);
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setHidePreloader(false);
-    }, 4000);
-    setInterval(() => {
-      clearInterval(interval);
-    }, 4000);
-    // return () => clearInterval(interval);
-  }, []);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setHidePreloader(false);
+  //   }, 4000);
+  //   setInterval(() => {
+  //     clearInterval(interval);
+  //   }, 4000);
+  //   // return () => clearInterval(interval);
+  // }, []);
 
   return (
     <>
@@ -54,7 +52,7 @@ const App = () => {
       <ThemeFirstLayer />
       {/* </MouseParallaxChild>
       </MouseParallaxContainer> */}
-      <Fade duration={4000} opposite collapse>
+      {/* <Fade duration={4000} opposite collapse> */}
         <div className="pages-parent">
           <Header />
 
@@ -69,7 +67,7 @@ const App = () => {
 
           <Footer />
         </div>
-      </Fade>
+      {/* </Fade> */}
 
       {/* </>} */}
     </>

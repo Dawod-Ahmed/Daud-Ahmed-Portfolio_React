@@ -8,14 +8,14 @@ import {
   ReviewImage6,
   FullFillStar,
   HalfFillStar70,
-  PreIcon,
-  NextIcon,
+  // PreIcon,
+  // NextIcon,
   CommaTop,
   CommaDown,
 } from "../../../assets/assets";
 import { TestimonialComp } from "../../components/pagesExport";
 const Testimonials = () => {
-  const [testimonialData, setTestimonialData] = useState([
+  const [testimonialData] = useState([
     {
       rewiewStar: 5,
       rewiewDetail:
@@ -71,15 +71,17 @@ const Testimonials = () => {
       <section className="testimonials-section">
         <div
           id="carouselExampleCaptions"
-          class="carousel slide"
+          className="carousel slide"
           data-bs-ride="carousel"
         >
-          <div class="carousel-inner ">
+          <div className="carousel-inner ">
             {testimonialData.map((value, index) => {
               return (
-                <>
+                <div
+                  className={`carousel-item ${index === 0 ? "active" : ""} `}
+                  key={index}
+                >
                   <TestimonialComp
-                    index={index}
                     personImage={value.personImage}
                     commaTop={CommaTop}
                     fullStar={FullFillStar}
@@ -90,44 +92,44 @@ const Testimonials = () => {
                     personCompany={value.personCompany}
                     commaBottom={CommaDown}
                   />
-                </>
+                </div>
               );
             })}
           </div>
           <div className="scroll-events-parent">
             <div className="d-flex justify-content-between w-100">
               <button
-                class="carousel-control-prev  h-auto carousel-control-btn position-static"
+                className="carousel-control-prev  h-auto carousel-control-btn position-static"
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="prev"
               >
                 <span
-                  class="carousel-control-prev-icon "
+                  className="carousel-control-prev-icon "
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Previous</span>
+                <span className="visually-hidden">Previous</span>
               </button>
               <button
-                class="carousel-control-next  h-auto carousel-control-btn position-static"
+                className="carousel-control-next  h-auto carousel-control-btn position-static"
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide="next"
               >
                 <span
-                  class="carousel-control-next-icon "
+                  className="carousel-control-next-icon "
                   aria-hidden="true"
                 ></span>
-                <span class="visually-hidden">Next</span>
+                <span className="visually-hidden">Next</span>
               </button>
             </div>
-            <div class="carousel-indicators mt-3">
+            <div className="carousel-indicators mt-3">
               <button
                 className="carosalBtn active"
                 type="button"
                 data-bs-target="#carouselExampleCaptions"
                 data-bs-slide-to="0"
-                // class="active"
+                // className="active"
                 aria-current="true"
                 aria-label="Slide 1"
               ></button>

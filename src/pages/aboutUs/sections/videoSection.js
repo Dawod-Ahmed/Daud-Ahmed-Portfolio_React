@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { VideoPosterImage, VideoPlayBtn } from "../../../assets/assets";
+import { VideoPosterImage } from "../../../assets/assets";
 import { Player, BigPlayButton } from "video-react";
 const VideoSection = () => {
   // const [playBtnPosition, setPlayBtnPosition] = useState("");
@@ -11,7 +11,7 @@ const VideoSection = () => {
   // };
   const closeVideo = () => {
     setmuteVideo(!muteVideo);
-    console.log(muteVideo);
+    // console.log(muteVideo);
     setVideoBackLayer(!videoBackLayer);
   };
 
@@ -20,14 +20,12 @@ const VideoSection = () => {
       <section className={`video-section w-100 `}>
         <button
           type="button"
-          class="model-opening-icon"
+          className="model-opening-icon"
           data-bs-toggle="modal"
           data-bs-target="#exampleModal"
           data-bs-whatever="@mdo"
           onClick={closeVideo}
-        >
-        
-        </button>
+        ></button>
       </section>
       <div
         className={`${
@@ -36,25 +34,23 @@ const VideoSection = () => {
         onClick={closeVideo}
       ></div>
       <div
-        class={`modal-dialog ${videoBackLayer ? "d-block" : "d-none"}`}
+        className={`modal-dialog ${videoBackLayer ? "d-block" : "d-none"}`}
         id="exampleModal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-content">
-          <div class="modal-header">
+        <div className="modal-content">
+          <div className="modal-header">
             <button
               type="button"
-              class="btn-close   fw-bold "
+              className="btn-close   fw-bold "
               data-bs-dismiss="modal"
               aria-label="Close"
               onClick={closeVideo}
-            >
-              
-            </button>
+            ></button>
           </div>
-          <div class="modal-body p-0 d-flex justify-content-center align-items-center">
+          <div className="modal-body p-0 d-flex justify-content-center align-items-center">
             <Player
               playsInline
               poster={VideoPosterImage}
@@ -73,7 +69,7 @@ const VideoSection = () => {
         <BigPlayButton position="center" />
       </Player> */}
       {/* <div
-        class={`modal fade ${videoBackLayer ? "d-block" : "d-none"}`}
+        className={`modal fade ${videoBackLayer ? "d-block" : "d-none"}`}
         id="exampleModal"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"

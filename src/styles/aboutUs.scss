@@ -143,7 +143,7 @@
 // @mixin cardParent($width, $height) {
 //   min-width: $width;
 //   height: $height;
-//   @include flexColumn(center, start);
+//   @include flexColumn(center, flex-start);
 //   border-radius: 30px;
 //   background-color: $cards-background-color;
 //   transition-duration: 0.2s;
@@ -496,7 +496,7 @@ button:before {
 }
 
 .about-left-img-part {
-  @include flexColumn(end, center);
+  @include flexColumn(flex-end, center);
   transform: rotateY(180deg);
   margin-left: -210px;
   position: relative;
@@ -514,7 +514,7 @@ button:before {
 }
 
 .about-right-part-part {
-  @include flexColumn(null, start);
+  @include flexColumn(null, flex-start);
   margin-left: -60px;
 }
 

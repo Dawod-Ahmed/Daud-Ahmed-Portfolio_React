@@ -33,7 +33,7 @@
 }
 
 .left-content-part {
-  @include flexColumn(center, start);
+  @include flexColumn(center, flex-start);
   max-width: 790px;
   position: relative;
 }
@@ -343,7 +343,7 @@
   );
 }
 
-.front-end-design-img {
+.front-flex-end-design-img {
   @include backgroundCardImage(
     "../../assets/Services/Icons/cardsIcons/frontEnd.svg",
     "../../assets/Services/Icons/cardsIcons/frontEndHover.svg"
@@ -415,7 +415,7 @@
   top: -20px;
   display: flex !important;
   flex-direction: column !important;
-  text-align: start !important;
+  text-align: flex-start !important;
 }
 
 .carousel-heading {

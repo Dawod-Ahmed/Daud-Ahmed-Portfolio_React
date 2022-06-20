@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  portfolioBackground,
-  portfolioDownArrow,
-  project1,
-  project2,
-  project3,
-  project4,
-} from "../../../assets/assets";
+import { portfolioDownArrow } from "../../../assets/assets";
 const PortfolioHeadinSection = () => {
   return (
     <>

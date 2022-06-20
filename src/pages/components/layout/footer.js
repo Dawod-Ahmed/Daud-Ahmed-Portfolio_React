@@ -1,11 +1,10 @@
 import React from "react";
-import { date } from "yup";
+// import { date } from "yup";
 import {
   Github,
   Facebook,
   Linkdin,
   Whatsapp,
-  ScrollToTop,
   ScrollTopArrow,
 } from "../../../assets/assets";
 const Footer = () => {

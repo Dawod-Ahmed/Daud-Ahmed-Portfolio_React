@@ -1,5 +1,5 @@
 import React from "react";
-import { AboutDaud, AboutImageShadow,AboutBackImg } from "../../../assets/assets";
+import { AboutDaud, AboutImageShadow } from "../../../assets/assets";
 import {Link} from 'react-router-dom'
 import {
   MouseParallaxChild,

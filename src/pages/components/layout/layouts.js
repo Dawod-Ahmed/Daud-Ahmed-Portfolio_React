@@ -1,4 +1,4 @@
-import { Footer, Header,ThemeFirstLayer } from "../pagesExport";
+import { Footer, Header } from "../pagesExport";
   
 import React from "react";
 

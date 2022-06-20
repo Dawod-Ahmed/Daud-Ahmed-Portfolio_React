@@ -154,7 +154,7 @@
 // @mixin cardParent($width, $height) {
 //   min-width: $width;
 //   height: $height;
-//   @include flexColumn(center, start);
+//   @include flexColumn(center, flex-start);
 //   border-radius: 30px;
 //   background-color: $cards-background-color;
 //   transition-duration: 0.2s;
@@ -264,7 +264,7 @@
 }
 
 .heading-parent-child {
-  @include flexColumn(flex-start, center);
+  @include flexColumn(flex-flex-start, center);
 }
 .portfolio-heading-parent {
   @include flexCenterColumn();
@@ -286,7 +286,7 @@
 }
 .projet-detail-parent {
   @include elementSize(48%, 240px);
-  @include flexColumn(center, start);
+  @include flexColumn(center, flex-start);
 }
 .project-name-first {
   @include generalHeading(35px);

@@ -1,26 +1,36 @@
-import React, { useEffect } from "react";
-import { FormField } from "../../components/pagesExport";
-import { Formik, Form, Field } from "formik";
-import * as Yup from "yup";
+import React from "react";
+// import { FormField } from "../../components/pagesExport";
+// import { Formik, Form, Field } from "formik";
+// import * as Yup from "yup";
 import {
   ContactRightArrow,
   SelfHireImage,
-  Upworklogo,
+  // Upworklogo,
 } from "../../../assets/assets";
+// import axios from "axios";
+// import { useForm } from "@formspree/react";
 
 import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
 
-const SignupSchema = Yup.object().shape({
-  name: Yup.string().required("Name is required"),
-  email: Yup.string().email("Email is Invalid").required("Email is required"),
-  subject: Yup.string().required("Subject is required"),
-  detail: Yup.string().required("Detail is required"),
-});
+// const SignupSchema = Yup.object().shape({
+//   name: Yup.string().required("Name is required"),
+//   email: Yup.string().email("Email is Invalid").required("Email is required"),
+//   subject: Yup.string().required("Subject is required"),
+//   detail: Yup.string().required("Detail is required"),
+// });
 
 const ContactForm = () => {
+  // const [state, handleSubmit] = useForm("mayvzygj");
+
+  const UpworkProfileCTA = () => {
+    // location.hre
+    window.location.href =
+      "https://www.upwork.com/freelancers/~01b5302c92f0a61e20";
+  };
+
   return (
     <>
       <section className="contact-section-parent py-5 mb-5">
@@ -48,7 +58,7 @@ const ContactForm = () => {
           <div className="background-text">Inquires</div>
         </div>
 
-        <div class="card contact-right-form">
+        <div className="card contact-right-form">
           <MouseParallaxContainer
             className="parallax"
             containerStyles={{
@@ -67,24 +77,25 @@ const ContactForm = () => {
                 justifyContent: "center",
                 width: "auto",
                 height: "100%",
-                    
               }}
             >
-              <img src={SelfHireImage} class="card-img-top" alt="img" />
+              <img src={SelfHireImage} className="card-img-top" alt="img" />
             </MouseParallaxChild>
           </MouseParallaxContainer>
-          <div class="card-body">
-            <h5 class="card-title general-text">Upwork</h5>
-            <p class="card-text general-text">
+          <div className="card-body">
+            <h5 className="card-title general-text">Upwork</h5>
+            <p className="card-text general-text">
               The world best freelancing marketplace to hire professional
               freelancers.
             </p>
             <div className="hireme-cta-parent d-flex align-items-center justify-content-around">
               <p className="hireMe-text general-text mb-0">Hire me on</p>
-              <a
-                href="https://www.upwork.com/freelancers/~01b5302c92f0a61e20"
-                class="btn btn-primary hireme-cta"
-              ></a>
+              <div
+                className="btn btn-primary hireme-cta"
+                onClick={UpworkProfileCTA}
+              >
+                {" "}
+              </div>
             </div>
           </div>
         </div>
@@ -99,14 +110,28 @@ const ContactForm = () => {
               detail: "",
             }}
             validationSchema={SignupSchema}
+            // onSubmit={handleForm}
             onSubmit={(values) => {
-              // same shape as initial values
-
-              console.log(values);
+              axios
+                .post("https://formcarry.com/s/smYVGwkdJ3v", values, {
+                  headers: { Accept: "application/json" },
+                })
+                .then(function (response) {
+                  if (response.status === 200) {
+                    alert("Your form is submmitted,We will get back to you soon,Thanks");
+                  }
+                })
+                .catch(function (error) {
+                  console.log(error);
+                  alert(error);
+                });
             }}
           >
             {({ errors, touched, getFieldMeta }) => (
-              <Form className=" form-floating  mb-3 row g-3 d-flex  justify-content-end form main-form-parent">
+              <Form
+                className=" form-floating  mb-3 row g-3 d-flex  justify-content-end form main-form-parent"
+                // onSubmit={handleSubmit}
+              >
                 <FormField
                   type="text"
                   className={`name-input ${
@@ -117,7 +142,6 @@ const ContactForm = () => {
                   placeholder="Name"
                 />
 
-             
                 <FormField
                   type="email"
                   className={`email-input ${
@@ -127,7 +151,7 @@ const ContactForm = () => {
                   id="floatingEmailInput"
                   placeholder="Email address"
                 />
-  
+
                 <FormField
                   type="text"
                   className={`number-input ${
@@ -156,10 +180,6 @@ const ContactForm = () => {
                   id="floatingtextareaInput"
                   placeholder="Please write details here"
                 />
-
-
-
- 
 
                 <button type="submit" className="btn form-btn mx-2">
                   Send

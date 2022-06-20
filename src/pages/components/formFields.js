@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
-import { Field, ErrorMessage, useField } from "formik";
+import React from "react";
+import { Field, ErrorMessage } from "formik";
 
 const FormFields = (props) => {
   const { type, className, name, id, placeholder } = props;

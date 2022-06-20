@@ -18,7 +18,7 @@ import {
 } from "../../../assets/assets.js";
 import { SkillsComponent } from "../../components/pagesExport";
 const SkillsSections = () => {
-  const [skillsData, setSkillsData] = useState([
+  const [skillsData, ] = useState([
     { image: reactJs, className: "reactJs", imageName: "React.Js" },
     { image: gatsbyjs, className: "gatsbyjs", imageName: "Gatsby.Js" },
     { image: next, className: "next", imageName: "Next.JS" },
@@ -60,11 +60,15 @@ const SkillsSections = () => {
           {skillsData.map((value, index) => {
             return (
               <>
+
                 <SkillsComponent
+                KeyIndex={index}
                   className={value.className}
                   image={value.image}
                   skillName={value.imageName}
                 />
+
+                
               </>
             );
           })}

@@ -164,7 +164,7 @@
 // @mixin cardParent($width, $height) {
 //   min-width: $width;
 //   height: $height;
-//   @include flexColumn(center, start);
+//   @include flexColumn(center, flex-start);
 //   border-radius: 30px;
 //   background-color: $cards-background-color;
 //   transition-duration: 0.2s;
@@ -276,7 +276,7 @@
   overflow: hidden;
 }
 .serve-quality-part-parent {
-  @include flexColumn(center, start);
+  @include flexColumn(center, flex-start);
   padding-left: 60px;
 }
 
@@ -339,7 +339,7 @@
 // -------  Offer Services  --------------------------------
 
 .offer-servcies-left-part {
-  @include flexColumn(center, start);
+  @include flexColumn(center, flex-start);
 }
 .offer-servcies-section {
   @include flexRow(space-between, center);
@@ -348,7 +348,7 @@
 }
 
 .services-carsds-parent {
-  @include flexRow(end, null);
+  @include flexRow(flex-end, null);
   flex-wrap: wrap;
 }
 
@@ -388,7 +388,7 @@
   @include HorizontalPadding(150px, 150px);
 }
 .project-cycle-container {
-  @include flexRow(space-between, start);
+  @include flexRow(space-between, flex-start);
   flex-wrap: wrap;
   width: 100%;
   padding-top: 30px;
@@ -457,7 +457,7 @@
 // ------------  Freelanicng Section ---------------
 
 .freelancing-left-content {
-  @include flexColumn(center, start);
+  @include flexColumn(center, flex-start);
   background-color: $theme-green-color;
   width: 48%;
 }

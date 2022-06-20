@@ -5,7 +5,7 @@ const ProjectComponents = (props) => {
     props;
   return (
     <>
-      {console.log(leftImage)}
+      {/* {console.log(leftImage)} */}
       {leftImage ? (
         <>
           {" "}
@@ -22,8 +22,8 @@ const ProjectComponents = (props) => {
               </h2>
               <p className="project-details mt-2">{projectDetails}</p>
               <div className="btn-parent mt-3">
-                <a href="" className="btn btn-explore">Expolore</a>
-                <a href="" className="btn  btn-github mx-4">Github code</a>
+                <a href="www.github.com" className="btn btn-explore">Expolore</a>
+                <a href="www.github.com" className="btn  btn-github mx-4">Github code</a>
               </div>
             </div>
           </div>
@@ -43,8 +43,8 @@ const ProjectComponents = (props) => {
               </h2>
               <p className="project-details mt-2">{projectDetails}</p>
               <div className="btn-parent mt-3">
-                <a href="" className="btn btn-explore">Expolore</a>
-                <a href="" className="btn  btn-github mx-4">Github code</a>
+                <a href="www.github.com" className="btn btn-explore">Expolore</a>
+                <a href="www.github.com" className="btn  btn-github mx-4">Github code</a>
               </div>
             </div>
             <img src={image} alt="" className="project-img" />

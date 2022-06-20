@@ -5,7 +5,6 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
-import { BigPlayButton } from "video-react";
 const HeroSection = () => {
   const [hideWelcome, setHideWelcome] = useState("");
 
@@ -21,7 +20,6 @@ const HeroSection = () => {
 
   return (
     <>
-       
       <section className="hero-section d-flex justify-content-center pb-5">
         <div className="hero-two-parts-parent w-100 ">
           <div className="left-content-part ">
@@ -31,13 +29,13 @@ const HeroSection = () => {
               <br />
               <span className="heading-second position-relative">
                 A&nbsp;
-                <span class="hero-text hero-text1 heading-second ">
+                <span className="hero-text hero-text1 heading-second ">
                   Web Developer
                 </span>
-                <span class="hero-text hero-text2 heading-second ">
+                <span className="hero-text hero-text2 heading-second ">
                   UI/UX Designer
                 </span>
-                <span class="hero-text hero-text3 heading-second ">
+                <span className="hero-text hero-text3 heading-second ">
                   Freelancer
                 </span>
               </span>
@@ -47,15 +45,13 @@ const HeroSection = () => {
               industry. Lorem Ipsum has been the industry's standard dummy text
               ever since the 1500s, when an unknown printer took.
             </p>
-            <div class="btns-group border-0" aria-label="Basic example ">
-              <Link to="./projects" type="button" class="btn btn-project ">
+            <div className="btns-group border-0" aria-label="Basic example ">
+              <Link to="./projects" type="button" className="btn btn-project ">
                 Projects
               </Link>
-              {/* <button to="" type="button" class="btn btn-play-video mx-4">
+              {/* <button to="" type="button" className="btn btn-play-video mx-4">
               Play <div className="btn-play-icon "></div>
             </button> */}
-            
-          
             </div>
           </div>
           <MouseParallaxContainer

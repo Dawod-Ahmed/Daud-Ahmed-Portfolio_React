@@ -4,16 +4,19 @@
 @font-face {
   font-family: "Ethnocentric";
   src: url(../../fonts/Ethnocentric/ethnocentric.otf);
+  font-display: block;
 }
 
 @font-face {
   font-family: "Poppins";
   src: url(../../fonts/Poppins/Poppins.ttf);
+  font-display: block;
 }
 
 @font-face {
   font-family: "Hei_Reina";
   src: url(../../fonts/hei-reina-cufonfonts/HeiReinaRegular-PKXem.ttf);
+  font-display: block;
 }
 
 @function weight($weight-name) {
@@ -106,7 +109,7 @@
   margin-top: $marginTop;
   background-color: $theme-seconds-background-color;
 }
- 
+
 @mixin button {
   width: max-content;
   display: flex;
@@ -126,8 +129,7 @@
     background-color: $button-hover-color;
     color: $white-text;
     box-shadow: 0px 5px 100px 5px #00da5dd6;
-    transition-duration: .4s;
-  
+    transition-duration: 0.4s;
   }
 }
 
@@ -182,7 +184,7 @@
 @mixin cardParent($width, $height) {
   min-width: $width;
   height: $height;
-  @include flexColumn(center, start);
+  @include flexColumn(center, flex-start);
   border-radius: 30px;
   background-color: $cards-background-color;
   transition-duration: 0.2s;
@@ -387,7 +389,7 @@
 // @mixin cardParent($width, $height) {
 //   min-width: $width;
 //   height: $height;
-//   @include flexColumn(center, start);
+//   @include flexColumn(center, flex-start);
 //   border-radius: 30px;
 //   background-color: $cards-background-color;
 //   transition-duration: 0.2s;

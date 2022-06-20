@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const Accordion = ({ heading, para1, para2, number }) => {
+const Accordion = ({ heading, para1, para2, number,KeyIndex }) => {
   const [isActive, setisActive] = useState(false);
-  console.log(isActive);
+  // console.log(isActive);
   return (
     <>
-      <div className="accordion-item w-100 mb-3">
+      <div className="accordion-item w-100 mb-3" key={KeyIndex}>
         <h2 className="accordion-header" id={`heading${number}`}>
           <button
             className="accordion-button collapsed"

@@ -3,7 +3,7 @@ import AccordionData from "./data";
 import {
   FaqsDesktopView,
   FaqsMobileView,
-  SelfHireImage,
+  
 } from "../../../assets/assets";
 import {
   MouseParallaxChild,
@@ -69,6 +69,7 @@ const Faqs = () => {
               return (
                 <>
                   <Accordion
+                 KeyIndex={index}
                     heading={value.heading}
                     para1={value.para1}
                     para2={value.para2}

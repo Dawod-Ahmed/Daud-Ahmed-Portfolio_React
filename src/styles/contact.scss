@@ -176,7 +176,7 @@
 // @mixin cardParent($width, $height) {
 //   min-width: $width;
 //   height: $height;
-//   @include flexColumn(center, start);
+//   @include flexColumn(center, flex-start);
 //   border-radius: 30px;
 //   background-color: $cards-background-color;
 //   transition-duration: 0.2s;
@@ -289,7 +289,7 @@
   height: 750px;
 }
 .contact-left-content {
-  @include flexColumn(start, start);
+  @include flexColumn(flex-start, flex-start);
   background-color: $theme-third-background-color;
   @include elementSize(48%, 100%);
   height: 100%;
@@ -314,19 +314,18 @@
 }
 
 .main-form-parent {
-  @include flexColumn(center, end);
+  @include flexColumn(center, flex-end);
 }
 .open-for-porject:hover {
-    transform: rotate(0deg);
-    transition-duration: .2s;
+  transform: rotate(0deg);
+  transition-duration: 0.2s;
 }
- 
 
 .floatinglbl {
   color: $general-normalSize-text-color;
 }
 .form-btn {
-  align-self: flex-start;
+  align-self: flex-flex-start;
 }
 
 .contact-right-form {
@@ -458,8 +457,8 @@
 }
 
 .accordion-parent {
-  @include flexColumn(flex-start, unset);
-  // align-self: flex-start;
+  @include flexColumn(flex-flex-start, unset);
+  // align-self: flex-flex-start;
   width: 63%;
 }
 .accordion-item {
@@ -533,7 +532,7 @@
   @include HorizontalPadding(130px, 130px);
 }
 .faq-accordion-image-parent {
-  @include flexRow(space-between, start);
+  @include flexRow(space-between, flex-start);
 }
 
 .faqs-img {

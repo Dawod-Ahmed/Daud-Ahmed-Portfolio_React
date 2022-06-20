@@ -11,7 +11,7 @@ import {
 import { ProjectComponent } from "../../components/pagesExport";
 
 const ProjectsSection = () => {
-  const [projectData, setPorjectData] = useState([
+  const [projectData,] = useState([
     {
       image: project1,
       title1: "BroadBand ",
@@ -76,7 +76,7 @@ const ProjectsSection = () => {
                 projectTitle1={value.title1}
                 projectTitle2={value.title2}
                 projectDetails={value.projectDetails}
-                leftImage={index % 2 == 0 ? true : false}
+                leftImage={index % 2 === 0 ? true : false}
               />
             </>
           );

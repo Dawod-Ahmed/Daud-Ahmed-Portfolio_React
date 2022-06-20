@@ -2,11 +2,11 @@ import React from "react";
 
 const TestimonialComp = (props) => {
   const {
-    index,
+    
     personImage,
     commaTop,
     fullStar,
-    halfStart70,
+    // halfStart70,
     rewiewStarValue,
     rewiewDetail,
     personName,
@@ -14,13 +14,14 @@ const TestimonialComp = (props) => {
     commaBottom,
   } = props;
   return (
-    <div class={`carousel-item ${index === 0 ? "active" : ""} `}>
+    < >
+    
       <img
         src={personImage}
-        class="testimonial-image d-block w-100 "
-        alt="..."
+        className="testimonial-image d-block w-100 "
+        alt="img"
       />
-      <div class="carousel-caption d-none d-md-block ">
+      <div className="carousel-caption d-none d-md-block ">
         <img src={commaTop} alt="img" className="commaUp comma" />
         <div className="star-parent d-flex py-3">
           <img src={fullStar} alt="img" className="star pr-2" />
@@ -36,10 +37,14 @@ const TestimonialComp = (props) => {
         </p>
         <p className="carousel-paragraph">
           {personCompany}
-          <img src={commaBottom} alt="img" className="mx-3 mt-3 commaDown comma" />
+          <img
+            src={commaBottom}
+            alt="img"
+            className="mx-3 mt-3 commaDown comma"
+          />
         </p>
       </div>
-    </div>
+    </>
   );
 };
 
