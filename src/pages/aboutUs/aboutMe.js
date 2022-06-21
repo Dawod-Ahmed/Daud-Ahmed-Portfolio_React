@@ -15,7 +15,7 @@ const AboutUs = () => {
   return (
     <>
       <Fade duration={4000} opposite collapse></Fade>
-      <main className="theme-background-second-layer d-flex-direction about-main pt-0">
+      <main className="w-100 d-flex-direction about-main pt-0">
         <AboutvideoSec />
         <AboutSection />
         <ExperienceSection />

@@ -471,13 +471,16 @@
 .accordion-button {
   @include generalText(22px);
   @include flexRow(space-between, center);
-  @include HorizontalPadding(0, "");
-  @include VerticalPadding(0, 0);
+  @include HorizontalPadding(0!important, 20px!important);
+  @include VerticalPadding(0!important, 0!important);
   color: $white-text !important;
   background-color: $theme-seconds-background-color;
   border-radius: 10px;
 }
 
+.accordion-header .collapsed .expander-parent {
+  border-bottom-right-radius: 10px;
+}
 .accordion-button::after {
   display: none !important;
 }

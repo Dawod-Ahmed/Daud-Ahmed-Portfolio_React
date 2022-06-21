@@ -97,7 +97,7 @@ const Testimonials = () => {
             })}
           </div>
           <div className="scroll-events-parent">
-            <div className="d-flex justify-content-between w-100">
+            <div className="d-flex justify-content-around w-100">
               <button
                 className="carousel-control-prev  h-auto carousel-control-btn position-static"
                 type="button"

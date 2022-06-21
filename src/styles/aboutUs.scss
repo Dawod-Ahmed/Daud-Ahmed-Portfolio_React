@@ -485,6 +485,7 @@ button:before {
 .about-me-section {
   @include flexRow("between", center);
   overflow: hidden;
+   background-color: $theme-seconds-background-color;
 }
 .resume-btn {
   z-index: 3;

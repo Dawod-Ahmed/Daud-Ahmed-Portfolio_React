@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <>
       {/* <Fade> */}
-        <main className="theme-background-second-layer d-flex-direction  ">
+        <main className="w-100 d-flex-direction  ">
           <HeroSection />
           <ShortIntroSection />
           <HomeCardsSec />

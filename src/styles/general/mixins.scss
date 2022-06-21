@@ -227,9 +227,9 @@
   padding-bottom: $bottom;
 }
 
-@mixin HorizontalPadding($top, $bottom) {
-  padding-right: $top;
-  padding-left: $bottom;
+@mixin HorizontalPadding($right, $left) {
+  padding-right: $right;
+  padding-left: $left;
 }
 
 @mixin VerticalMargin($top, $bottom) {
@@ -237,9 +237,9 @@
   margin-bottom: $bottom;
 }
 
-@mixin HorizontalMargin($top, $bottom) {
-  margin-right: $top;
-  margin-left: $bottom;
+@mixin HorizontalMargin($right, $left) {
+  margin-right: $right;
+  margin-left: $left;
 }
 
 @mixin elementSize($width, $height) {

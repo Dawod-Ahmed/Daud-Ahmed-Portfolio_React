@@ -19,7 +19,7 @@ const Header = () => {
     <>
       {/* <HidingHeader> */}
 
-      <header className="header theme-background-second-layer d-flex   ">
+      <header className="header w-100 d-flex   ">
         <img src={Logo} alt="img" className="logo nav-logo pt-3" />
         <menu className="menu pt-3">
           <ul className="navbar-ul list-unstyled m d-flex justify-content-between fw-bold  h-100 mb-0 align-items-center">

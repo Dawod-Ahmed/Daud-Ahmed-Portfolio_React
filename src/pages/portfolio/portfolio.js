@@ -11,7 +11,7 @@ const Portfolio = () => {
 
   return (
     <>
-      <main className="theme-background-second-layer d-flex-direction pd-0 pt-0 ">
+      <main className="w-100 d-flex-direction pd-0 pt-0 ">
         <PortfolioHeading />
         <ProjectSection />
       </main>

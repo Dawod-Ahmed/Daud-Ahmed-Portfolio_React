@@ -1,6 +1,10 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
+
+// after 1540px h-second-sec justify-content-around
+// project-img-text text-center fw-bold text-white position-relative
+
 // body {
 //   overflow: scroll; /* Show scrollbars */
 // }
@@ -21,7 +25,7 @@
 
 * {
   cursor: url(../../assets/generalIcons/cursor.png), auto;
-  box-sizing: border-box!important;
+  box-sizing: border-box !important;
 }
 .preloader-parent {
   position: fixed;
@@ -116,6 +120,12 @@ section:not(.video-section, .portfolio-section),
 .footer {
   @include HorizontalPadding(50px, 50px);
 }
+
+.header,
+.footer {
+  position: relative;
+  z-index: 100;
+}
 .freelancing-section-parent {
   padding-right: 0px !important;
 }
@@ -129,10 +139,6 @@ section:not(.video-section, .portfolio-section),
   background-color: $theme-first-background-color !important;
 }
 
-header {
-  z-index: 2;
-}
-
 main,
 header {
   margin: 0 50px !important;
@@ -141,6 +147,7 @@ main {
   padding-top: 100px !important;
   padding-bottom: 100px !important;
   animation: FadePage 1.5s 1 ease-in-out;
+  background-color: $theme-seconds-background-color;
 }
 @keyframes FadePage {
   0% {
@@ -153,10 +160,13 @@ main {
 }
 .pages-parent {
   @include flexCenterColumn;
+  @include VerticalPadding(70px, 70px);
+  max-width: 1500;
 }
 
-.theme-background-second-layer {
-  @include themeSecondLayerView(1600px, 55px);
+.pages-parent {
+  background-color: unset;
+  @include themeSecondLayerView(1600px, unset);
 
   @include desktopSecondBpMixin() {
     width: 1500px;
@@ -207,9 +217,6 @@ main {
   overflow: hidden;
 }
 
-.pages-parent {
-  @include VerticalPadding(70px, 70px);
-}
 .shape-TopRight {
   @include elementSize(350px, 350px);
   right: -180px;
@@ -288,7 +295,8 @@ div .active-scrollToTop {
 // }
 
 .cards-parent:hover {
-  box-shadow: 0px 5px 130px 5px $cards-hover-color;
+  // box-shadow: 0px 5px 130px 5px $cards-hover-color;
+  box-shadow: 0px 0px 70px 10px  $cards-hover-color;
   transition-duration: 0.5s;
 }
 

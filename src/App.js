@@ -30,7 +30,7 @@ const App = () => {
 
   return (
     <>
-     {/* <div class="btn btn-primary show-tooltip">Hover Me to Preview
+      {/* <div class="btn btn-primary show-tooltip">Hover Me to Preview
         <div class="tooltips">
             <h3>Lorem Ipsum</h3>
             <p>Dolor sit amet, consectetur adipiscing elit.</p>
@@ -53,20 +53,20 @@ const App = () => {
       {/* </MouseParallaxChild>
       </MouseParallaxContainer> */}
       {/* <Fade duration={4000} opposite collapse> */}
-        <div className="pages-parent">
-          <Header />
+      <div className="pages-parent mx-auto bg-transparent">
+        <Header />
 
-          <Switch>
-            <Route exact path="/home" component={Home} />
-            <Route exact path="/aboutme" component={AboutMe} />
-            <Route exact path="/services" component={Services} />
-            <Route exact path="/projects" component={Portfolio} />
-            <Route exact path="/contact" component={ContactPage} />
-            <Redirect exact to="/home" />
-          </Switch>
+        <Switch>
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/aboutme" component={AboutMe} />
+          <Route exact path="/services" component={Services} />
+          <Route exact path="/projects" component={Portfolio} />
+          <Route exact path="/contact" component={ContactPage} />
+          <Redirect exact to="/home" />
+        </Switch>
 
-          <Footer />
-        </div>
+        <Footer />
+      </div>
       {/* </Fade> */}
 
       {/* </>} */}

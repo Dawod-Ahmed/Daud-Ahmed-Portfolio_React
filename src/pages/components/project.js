@@ -10,7 +10,15 @@ const ProjectComponents = (props) => {
         <>
           {" "}
           <div className="project-parent py-5">
-            <img src={image} alt="" className="project-img" />
+            <a href="" className="project-img-parent">
+              <img src={image} alt="" className="project-img img-fluid" />
+
+              <h1 className="project-img-text text-center fw-bold text-white position-relative ">
+                {projectTitle1}&nbsp;{projectTitle2}
+                <br />
+                <h3 clasName="fw-bold"> Preview Live</h3>
+              </h1>
+            </a>
             <div className="projet-detail-parent">
               <h2 className="project-name">
                 <span className="heading-first project-name-first">
@@ -22,8 +30,12 @@ const ProjectComponents = (props) => {
               </h2>
               <p className="project-details mt-2">{projectDetails}</p>
               <div className="btn-parent mt-3">
-                <a href="www.github.com" className="btn btn-explore">Expolore</a>
-                <a href="www.github.com" className="btn  btn-github mx-4">Github code</a>
+                <a href="www.github.com" className="btn btn-explore">
+                  Expolore
+                </a>
+                <a href="www.github.com" className="btn  btn-github mx-4">
+                  Github code
+                </a>
               </div>
             </div>
           </div>
@@ -43,11 +55,24 @@ const ProjectComponents = (props) => {
               </h2>
               <p className="project-details mt-2">{projectDetails}</p>
               <div className="btn-parent mt-3">
-                <a href="www.github.com" className="btn btn-explore">Expolore</a>
-                <a href="www.github.com" className="btn  btn-github mx-4">Github code</a>
+                <a href="www.github.com" className="btn btn-explore">
+                  Expolore
+                </a>
+                <a href="www.github.com" className="btn  btn-github mx-4">
+                  Github code
+                </a>
               </div>
             </div>
-            <img src={image} alt="" className="project-img" />
+            <a href="" className="project-img-parent text-decoration-none">
+              <img src={image} alt="" className="project-img img-fluid" />
+
+              <h1 className="project-img-text text-center fw-bold text-white position-relative">
+                {projectTitle1}&nbsp;{projectTitle2}
+                <br />
+                <h3 clasName="fw-bold"> Preview Live</h3>
+
+              </h1>
+            </a>
           </div>
         </>
       )}

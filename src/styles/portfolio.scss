@@ -280,10 +280,50 @@
 .project-parent {
   @include flexRow(space-between, center);
 }
-.project-img {
+
+.project-img-parent {
   @include elementSize(48%, 450px);
+  position: relative;
+  transition-duration: 0.5s;
+  overflow: hidden;
+}
+
+.project-img {
+  @include elementSize(100%, 100%);
   border-radius: 20px;
 }
+
+.project-img-text {
+  display: none;
+  transition-duration: 0.5s;
+  transition-property: margin-top;
+}
+
+
+.project-img-parent:hover {
+  background-color: black;
+  opacity: 0.5;
+
+  transition-duration: 0.5s;
+}
+
+.project-img-parent:hover:hover .project-img {
+  transform: scale(1.2);
+  transition-duration: 2.5s;
+}
+
+.project-img-parent:hover .project-img-text {
+  display: block;
+  bottom: 60%;
+  transition-duration: 0.5s;
+  transition-property: top;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+
+}
+
+
+
 .projet-detail-parent {
   @include elementSize(48%, 240px);
   @include flexColumn(center, flex-start);

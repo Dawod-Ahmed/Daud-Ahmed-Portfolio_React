@@ -18,7 +18,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="d-flex flex-column  align-items-center justify-content-center footer theme-background-second-layer mx-auto mt-0 py-5 ">
+      <footer className="d-flex flex-column  align-items-center justify-content-center footer w-100 mx-auto mt-0 py-5 ">
         <span className="created-text mb-1">Designed and developed by</span>
         <h1 className="website-creator text-white">
           Dawood<span className="footer-slash mx-1">/</span>A

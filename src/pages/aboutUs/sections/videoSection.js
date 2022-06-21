@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { VideoPosterImage } from "../../../assets/assets";
 import { Player, BigPlayButton } from "video-react";
+import "video-react/dist/video-react"
 const VideoSection = () => {
   // const [playBtnPosition, setPlayBtnPosition] = useState("");
   const [muteVideo, setmuteVideo] = useState(true);
@@ -41,10 +42,10 @@ const VideoSection = () => {
         aria-hidden="true"
       >
         <div className="modal-content">
-          <div className="modal-header">
+          <div className="modal-header pt-0">
             <button
               type="button"
-              className="btn-close   fw-bold "
+              className="btn-close   fw-bold mt-0 py-4"
               data-bs-dismiss="modal"
               aria-label="Close"
               onClick={closeVideo}
