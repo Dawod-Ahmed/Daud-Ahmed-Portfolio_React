@@ -10,8 +10,8 @@ const ProjectComponents = (props) => {
         <>
           {" "}
           <div className="project-parent py-5">
-            <a href="" className="project-img-parent">
-              <img src={image} alt="" className="project-img img-fluid" />
+            <a href="" className="project-img-parent text-decoration-none">
+              <img src={image} alt="img" className="project-img img-fluid" />
 
               <h1 className="project-img-text text-center fw-bold text-white position-relative ">
                 {projectTitle1}&nbsp;{projectTitle2}
@@ -64,7 +64,7 @@ const ProjectComponents = (props) => {
               </div>
             </div>
             <a href="" className="project-img-parent text-decoration-none">
-              <img src={image} alt="" className="project-img img-fluid" />
+              <img src={image} alt="img" className="project-img img-fluid" />
 
               <h1 className="project-img-text text-center fw-bold text-white position-relative">
                 {projectTitle1}&nbsp;{projectTitle2}

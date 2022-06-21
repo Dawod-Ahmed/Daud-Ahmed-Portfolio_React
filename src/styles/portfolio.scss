@@ -286,6 +286,7 @@
   position: relative;
   transition-duration: 0.5s;
   overflow: hidden;
+  border-radius: 20px;
 }
 
 .project-img {
@@ -298,7 +299,6 @@
   transition-duration: 0.5s;
   transition-property: margin-top;
 }
-
 
 .project-img-parent:hover {
   background-color: black;
@@ -319,10 +319,7 @@
   transition-property: top;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-
 }
-
-
 
 .projet-detail-parent {
   @include elementSize(48%, 240px);
