@@ -1,380 +1,681 @@
 @import "./general/variables.scss";
 @import "./general/mixins.scss";
 
-// ------------  Mixins ---------------
-
-// @font-face {
-//   font-family: "Ethnocentric";
-//   src: url(../fonts/Ethnocentric/ethnocentric.otf);
-// }
-
-// @font-face {
-//   font-family: "Poppins";
-//   src: url(../fonts/Poppins/Poppins.ttf);
-// }
-
-// @function weight($weight-name) {
-//   @return map-get($font-weight, $weight-name);
-// }
-
-// @mixin desktopSecondBpMixin {
-//   @media (max-width: $desktopSecondBp) {
-//     @content;
-//   }
-// }
-// @mixin desktopThridBpMixin {
-//   @media (max-width: $desktopthirdBp) {
-//     @content;
-//   }
-// }
-
-// @mixin generalHeading($fontSize) {
-//   font-size: $fontSize;
-//   color: $heading-text-color-first;
-//   font-weight: weight(bold);
-//   font-family: "Ethnocentric", sans-serif;
-// }
-// // 27
-// @mixin generalHeadingOne($fontSize) {
-//   font-size: $fontSize;
-//   color: $heading-text-color-second;
-//   font-weight: weight(bold);
-//   font-family: "Ethnocentric", sans-serif;
-// }
-
-// @mixin menuLinks {
-//   font-size: $fontSize;
-//   color: $menu-links-color;
-//   font-weight: weight(medium);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin generalText($fontSize) {
-//   font-size: $fontSize;
-//   color: $general-normalSize-text-color;
-//   font-weight: weight(light);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin generalMedumSizeText($fontSize) {
-//   font-size: $fontSize;
-//   color: $general-normalSize-text-color;
-//   font-weight: weight(medium);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin FlexCenterRow {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// @mixin flexCenterColumn {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// @mixin flexRow($xAxis, $yAxis) {
-//   display: flex;
-//   justify-content: $xAxis;
-//   align-items: $yAxis;
-// }
-
-// @mixin flexColumn($xAxis, $yAxis) {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: $xAxis;
-//   align-items: $yAxis;
-// }
-
-// @mixin themeSecondLayerView($width, $marginTop) {
-//   position: relative;
-//   width: $width;
-//   margin-top: $marginTop;
-//   background-color: $theme-seconds-background-color;
-// }
-
-// @mixin button {
-//   width: max-content;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: transparent;
-//   width: 230px;
-//   height: 70px;
-//   font-size: 27px;
-//   font-weight: map-get($font-weight, medium);
-//   border: 2px solid $theme-green-color;
-//   border-radius: 50px;
-//   color: $theme-green-color;
-//   transition-duration: 0.2s;
-//   padding-bottom: 10px;
-//   &:hover {
-//     background-color: $button-hover-color;
-//     color: $white-text;
-//   }
-// }
-
-// @mixin backgroundImage($Img, $imgHover, $backPosition) {
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: 35px 35px;
-//   padding-bottom: 5px;
-//   background-position: $backPosition center;
-//   &:hover {
-//     background-image: url($imgHover);
-//   }
-// }
-
-// @mixin GeneralbackgroundImage($Img, $imgHover, $Size, $backPosition) {
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: $Size;
-//   background-position: $backPosition;
-//   center &:hover {
-//     background-image: url($imgHover);
-//   }
-// }
-
-// @mixin BackgroundImageServciesWorkMethod($Img, $imgHover, $Size) {
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: $Size;
-//   background-position: center center;
-//   transition-duration: 0.2s;
-//   &:hover {
-//     background-image: url($imgHover);
-//   }
-// }
-
-// @mixin font($fontSize, $weight, $color, $hoverColor) {
-//   font-size: $fontSize;
-//   font-weight: weight($weight);
-//   color: $color;
-//   font-family: "Poppins", sans-serif;
-//   &:hover {
-//     color: $hoverColor;
-//   }
-// }
-
-// // --------------Cards Mixins---------
-
-// @mixin cardParent($width, $height) {
-//   min-width: $width;
-//   height: $height;
-//   @include flexColumn(center, flex-start);
-//   border-radius: 30px;
-//   background-color: $cards-background-color;
-//   transition-duration: 0.2s;
-//   &:hover {
-//     background-color: $cards-hover-color;
-//   }
-// }
-
-// @mixin backgroundCardImage($Img, $imgHover) {
-//   width: 110px;
-//   min-height: 100px;
-//   border-radius: 8px;
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: 68%;
-
-//   background-position: center center;
-//   transition-duration: 0.2s;
-//   // &:hover {
-//   // background-color: $white-text;
-//   // background-image: url($imgHover);
-//   // }
-// }
-
-// @mixin card {
-//   width: 350px;
-//   height: 440px;
-//   background-color: $cards-background-color;
-//   transition-duration: 0.2s;
-//   &:hover {
-//     background-color: $cards-hover-color;
-//     color: $white-text;
-//   }
-// }
-
-// @mixin VerticalPadding($top, $bottom) {
-//   padding-top: $top;
-//   padding-bottom: $bottom;
-// }
-
-// @mixin HorizontalPadding($top, $bottom) {
-//   padding-right: $top;
-//   padding-left: $bottom;
-// }
-
-// @mixin VerticalMargin($top, $bottom) {
-//   margin-top: $top;
-//   margin-bottom: $bottom;
-// }
-
-// @mixin HorizontalMargin($top, $bottom) {
-//   margin-right: $top;
-//   margin-left: $bottom;
-// }
-
-// @mixin elementSize($width, $height) {
-//   width: $width;
-//   height: $height;
-// }
-
-// //  -------------End Mixins-------------------
-
-// $font-weight: (
-//   "extraLight": 200,
-//   "light": 300,
-//   "regular": 400,
-//   "medium": 500,
-//   "bold": 700,
-//   "extrabold": 800,
-// );
-
-// $desktopSecondBp: 1650px;
-// $desktopthirdBp: 1540px;
-
-// $heading-text-color-first: #ffffff;
-// $heading-text-color-second: #00da5d;
-
-// $theme-first-background-color: #00da5d;
-// $button-hover-color: #00da5d;
-// $second-text-color: #00da5d;
-// $theme-green-color: #00da5d;
-
-// $menu-links-color: #ffffff;
-// $menu-links-hover-color: #00da5d;
-// $work-method-hover-color: #00da5d;
-
-// $social-icons-hover: #0b5fba;
-
-// $general-normalSize-text-color: #c0c0c0;
-// $general-mediumSize-text-color: #c0c0c0;
-
-// $white-text: #ffffff;
-
-// $main-background-color: #000024;
-
-// $skills-cards-hover-color: #020243;
-// $home-third-sec-: #000033;
-// $accordion-color: #020243;
-// $theme-seconds-background-color: #020243;
-// $cards-background-color: #010139;
-// $cards-hover-color: #00da5d;
-
-// -----------------------------------
-
-// --------------- Serve Quality Section--------------------
 
 .serve-qulaity-section {
-  @include flexRow(space-between, center);
-  overflow: hidden;
+    @include flexRow(space-between, center);
+    overflow: hidden;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .serve-quality-part-parent {
-  @include flexColumn(center, flex-start);
-  padding-left: 60px;
+    @include flexColumn(center, flex-start);
+    padding-left: 60px;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {
+
+        padding-left: 10px;
+
+    }
+
+
+    @include tablet() { width: 80%;
+    padding-left: 0px
+    }
+
+    @include largeWidthSizeMobiles() {
+         width: 90%       
+
+    }
+
+    @include mobile() {
+                width: 100%
+
+    }
+
+    @include customSmallBp() {}
+
+
 }
 
 .serve-quality-left-part {
-  position: relative;
-  @include flexRow(center, space-between);
-  @include elementSize(1800px, 620px);
-  left: -60px;
-  animation: MoveElementSerivce 1.4s 1 ease-in-out;
+    position: relative;
+    @include flexRow(center, space-between);
+    @include elementSize(1800px, 620px);
+    left: -60px;
+    animation: MoveElementSerivce 1.4s 1 ease-in-out;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {
+            padding-top: 30px;
+
+        width: unset;
+        left: -20px;
+        height: auto;
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {
+        height: unset;
+        padding-top: 60px;
+    }
+
+    @include customSmallBp() {}
+
+
 }
+
 @keyframes MoveElementSerivce {
-  0% {
-    top: 300px;
-  }
-  100% {
-    top: 0px;
-  }
+    0% {
+        top: 300px;
+
+
+
+
+    }
+
+    100% {
+        top: 0px;
+
+
+        @include desktop() {}
+
+
+
+
+
+    }
+
+
+
+
 }
+
+
+
+div .parallax {
+
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        overflow-x: visible !important;
+    }
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
+
+}
+
+
+
+
+
+
 .self-services-image {
-  position: absolute;
-  bottom: -20px;
+    position: absolute;
+    bottom: -20px;
+    width: auto;
+
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {
+        width: 750px;
+
+        bottom: 0px;
+        left: -150px;
+
+    }
+
+
+    @include tablet() {
+        width: 740px;
+        position: relative;
+
+        left: unset;
+        bottom: 0px;
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {
+        width: 580px;
+
+        left: 15px;
+
+        position: relative;
+
+    }
+
+    @include customSmallBp() {
+            width: 450px;
+
+    }
+
+
+
 }
 
 .s-down-arrow {
-  position: relative;
-  align-self: center;
-  top: 50px;
+    position: relative;
+    align-self: center;
+    top: 50px;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .serve-quality-icons-parent {
-  @include flexColumn(space-between, center);
-  @include elementSize(auto, 300px);
-  position: relative;
-  bottom: 40px;
-  left: 217px;
+    @include flexColumn(space-between, center);
+    @include elementSize(auto, 300px);
+    position: relative;
+    bottom: 40px;
+    left: 217px;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {
+
+        height: 250px;
+
+        bottom: 16px;
+        left: 201px;
+        ;
+
+    }
+
+
+    @include tablet() {
+        position: absolute;
+        bottom: unset;
+        left: unset;
+        top: 60px;
+        right: 144px;
+        height: 250px;
+    }
+
+    @include largeWidthSizeMobiles() {
+
+        bottom: unset;
+    top: 47px;
+    right: 144px;
+    height: 260px;
+    }
+
+    @include mobile() {
+
+        right: 97px;
+    height: 200px;
+    top: 35px;
+    }
+
+    @include customSmallBp() {
+
+         top: 26px;
+    right: 70px;
+    height: 155px;
+    }
+
+
 }
+
 
 .s-skill-icon {
-  width: 90px;
-  position: relative;
-  animation: MoveElementbyPosition 2s infinite ease-in-out;
+    width: 90px;
+    position: relative;
+    animation: MoveElementbyPosition 2s infinite ease-in-out;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+           
+
+    }
+
+    @include mobile() {
+         
+    }
+
+    @include customSmallBp() {
+         
+    }
+
+
 }
+
 .s-react-icon {
-  width: 80px;
+    width: 80px;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
+
+.s-skill-icon,
+.s-react-icon {
+
+    @include desktop() {}
+
+
+
+    @include laptop() {
+        width: 70px;
+
+
+    }
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        width: 60px;
+
+    }
+
+    @include mobile() {
+
+        width: 50px;
+
+    }
+
+    @include customSmallBp() {
+                width: 45px;
+
+    }
+}
+
 
 @keyframes MoveElementbyPosition {
-  0% {
-    top: 0px;
-  }
+    0% {
+        top: 0px;
 
-  50% {
-    top: 20px;
-  }
 
-  100% {
-    top: 0px;
-  }
+        @include desktop() {}
+
+
+
+        @include laptop() {}
+
+
+        @include tablet() {}
+
+        @include largeWidthSizeMobiles() {}
+
+        @include mobile() {}
+
+        @include customSmallBp() {}
+
+
+    }
+
+    50% {
+        top: 20px;
+
+
+        @include desktop() {}
+
+
+
+        @include laptop() {}
+
+
+        @include tablet() {}
+
+        @include largeWidthSizeMobiles() {}
+
+        @include mobile() {}
+
+        @include customSmallBp() {}
+
+
+    }
+
+    100% {
+        top: 0px;
+
+
+        @include desktop() {}
+
+
+
+        @include laptop() {}
+
+
+        @include tablet() {}
+
+        @include largeWidthSizeMobiles() {}
+
+        @include mobile() {}
+
+        @include customSmallBp() {}
+
+
+    }
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
 
 // -------  Offer Services  --------------------------------
 
 .offer-servcies-left-part {
-  @include flexColumn(center, flex-start);
-}
-.offer-servcies-section {
-  @include flexRow(space-between, center);
+    @include flexColumn(center, flex-start);
+    width: 80%;
 
-  @include VerticalPadding(80px!important, 80px!important);
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+            width: 90%;
+
+    }
+
+    @include mobile() {
+            width: 100%;
+
+    }
+
+    @include customSmallBp() {}
+
+
+}
+
+.offer-servcies-section {
+    @include flexRow(space-between, center);
+
+    @include VerticalPadding(80px !important, 80px !important);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
 
 .services-carsds-parent {
-  @include flexRow(flex-end, null);
-  flex-wrap: wrap;
-}
+    @include flexRow(flex-end, null);
+    flex-wrap: wrap;
 
-.offer-servcies-left-part {
-  width: 80%;
-}
 
+    @include desktop() {
+        justify-content: space-around;
+    }
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
+}
+ 
 .cards-parent {
-  width: 300px;
+    width: 300px;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
+
+
 
 .services-card:nth-child(2),
 .services-card:nth-child(4) {
-  @include HorizontalMargin(0!important, 0!important);
+    @include HorizontalMargin(0 !important, 0 !important);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+   
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {
+        margin-right: 0rem!important;
+    margin-left: 0rem!important;
+    }
+
+    @include customSmallBp() {}
+
+
 }
 
-.services-card {
-  @include HorizontalPadding(18px, 18px);
-  min-width: unset;
+.services-card:nth-child(1),.services-card:nth-child(2),.services-card:nth-child(3),.services-card:nth-child(4),{
+     @include tablet() {
+        margin-right: 0rem!important;
+    margin-left: 0rem!important;
+        
+    }
+    
+}
+
+body div .services-card {
+    width: 330px!important;
+    padding: 35px 25px;
+    margin-bottom: 45px !important;
+    height: auto;
+    min-width: unset;
+
+
+    @include desktop() {
+        width: 300px!important;
+     margin-bottom: 30px !important;
+        
+    }
+
+
+
+    @include laptop() {width: 400px!important}
+
+
+    @include tablet() {    width: 310px!important
+}
+
+    @include largeWidthSizeMobiles() {    width: 480px !important;
+}
+
+    @include mobile() {
+        width: auto !important;
+    }
+
+    @include customSmallBp() {}
+
+
 }
 
 .services-card .completed-projects {
-  display: none;
+    display: none;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .services-card .cards-para {
-  margin-bottom: 0px !important;
+    margin-bottom: 0px !important;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
 
 // -------  Offer Services  --------------------------------
@@ -382,109 +683,624 @@
 .work-method-section,
 .project-cycle-heading-parent,
 .project-cycle-parent {
-  @include flexCenterColumn();
+    @include flexCenterColumn();
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .project-cycle-heading-parent {
-  @include HorizontalPadding(150px, 150px);
+    @include HorizontalPadding(150px, 150px);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {
+        padding-right: 100px;
+        padding-left: 100px;
+
+    }
+
+
+    @include tablet() {
+        padding-right: 40px;
+        padding-left: 40px;
+    }
+
+    @include largeWidthSizeMobiles() {
+        @include HorizontalPadding(0px, 0px);
+    }
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .project-cycle-container {
-  @include flexRow(space-between, flex-start);
-  flex-wrap: wrap;
-  width: 100%;
-  padding-top: 30px;
+    @include flexRow(space-between, flex-start);
+    flex-wrap: wrap;
+    width: 100%;
+    padding-top: 30px;
+
+
+    @include desktop() {
+         flex-wrap: nowrap;
+
+    }
+
+
+
+    @include laptop() {
+         flex-wrap: wrap;
+
+    }
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {
+        display: flex;
+        justify-content: center;
+        
+        flex-direction: column;
+    align-items: center;
+
+    }
+
+    @include customSmallBp() {}
+
+
 }
+
 .project-cycle-parent {
-  position: relative;
-  @include elementSize(300px, auto);
-  @include VerticalMargin(20px, 20px);
-  @include HorizontalPadding(20px, 20px);
+    position: relative;
+    @include elementSize(300px, auto);
+    @include VerticalMargin(20px, 20px);
+    @include HorizontalPadding(20px, 20px);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {
+        padding-right: 0px;
+        padding-left: 0px;
+            width: 400px;
+
+
+
+    }
+
+
+    @include tablet() {
+        width: 340px;
+
+    }
+
+    @include largeWidthSizeMobiles() {
+            width: 250px;
+
+    }
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .project-cycle-arrow {
-  position: absolute;
-  top: 67px;
-  right: -7%;
-}
-.project-cycle-img {
-  @include elementSize(150px, 150px);
-  border: 3px solid $theme-green-color;
-  border-radius: 50%;
-  transition-duration: 0.2s;
-  @include VerticalMargin(0, 25px);
-  &:hover {
-    background-color: $theme-green-color;
+    position: absolute;
+    top: 67px;
+    right: -65px;
+
+
+   
+ @include desktopSecondBpMixin() {
+ right: -65px;
+
+  } 
+
+  @include desktopThridBpMixin() {
+          right: -43px;
+
+  } 
+
+
+  @include desktop() {
+          right: -20px;
+
   }
+
+
+    @include laptop() {
+                 right: -54px;
+
+    }
+
+
+    @include tablet() {
+            right: -24px;
+
+
+    }
+
+    @include largeWidthSizeMobiles() {
+        right: -12%;
+
+    }
+
+    @include mobile() {
+top: 0;
+        right: 0;
+        position: relative;
+        transform: rotate(90deg);
+        margin: 37px 0 10px 0;
+    }
+
+    @include customSmallBp() {}
+
+
+}
+
+.project-cycle-img {
+    @include elementSize(150px, 150px);
+    border: 3px solid $theme-green-color;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    @include VerticalMargin(0, 25px);
+
+    &:hover {
+        background-color: $theme-green-color;
+
+
+
+
+
+    }
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+
+
+
+
+        @include elementSize(120px, 120px);
+
+    }
+
+    @include mobile() {
+
+        right: 0;
+        top: 0;
+    }
+
+    @include customSmallBp() {}
+
+
+
+
+
 }
 
 .requirements {
-  @include BackgroundImageServciesWorkMethod(
-    "../../assets/Services/Icons/workMethod/toDo.svg",
-    "../../assets/Services/Icons/workMethod/toDoHover.svg",
-    47%
-  );
+    @include BackgroundImageServciesWorkMethod("../../assets/Services/Icons/workMethod/toDo.svg",
+        "../../assets/Services/Icons/workMethod/toDoHover.svg",
+        47%);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .development {
-  @include BackgroundImageServciesWorkMethod(
-    "../../assets/Services/Icons/workMethod/devUpdates.svg",
-    "../../assets/Services/Icons/workMethod/devUpdatesHover.svg",
-    55%
-  );
+    @include BackgroundImageServciesWorkMethod("../../assets/Services/Icons/workMethod/devUpdates.svg",
+        "../../assets/Services/Icons/workMethod/devUpdatesHover.svg",
+        55%);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .testing {
-  @include BackgroundImageServciesWorkMethod(
-    "../../assets/Services/Icons/workMethod/testing.svg",
-    "../../assets/Services/Icons/workMethod/testingHover.svg",
-    55%
-  );
+    @include BackgroundImageServciesWorkMethod("../../assets/Services/Icons/workMethod/testing.svg",
+        "../../assets/Services/Icons/workMethod/testingHover.svg",
+        55%);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .deliver {
-  @include BackgroundImageServciesWorkMethod(
-    "../../assets/Services/Icons/workMethod/deliver.svg",
-    "../../assets/Services/Icons/workMethod/deliverHover.svg",
-    75%
-  );
+    @include BackgroundImageServciesWorkMethod("../../assets/Services/Icons/workMethod/deliver.svg",
+        "../../assets/Services/Icons/workMethod/deliverHover.svg",
+        75%);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .project-cycle-heading {
-  @include generalMedumSizeText(25px);
-  color: $white-text;
+    @include generalMedumSizeText(25px);
+    color: $white-text;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .project-cycle-para {
-  @include generalText(22px);
+    @include generalText(22px);
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+     @include mobile() {   
+}
+
+    @include customSmallBp() {}
+
+
+}
+
+.project-cycle-parent:nth-child(2) .project-cycle-arrow {
+     @include laptop() {
+          display: none!important;
+   
+    }
+      @include mobile() {     display: block!important; 
+}
+    
 }
 .project-cycle-parent:nth-child(4) .project-cycle-arrow {
-  display: none;
+    display: none!important;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {     
+}
+
+    @include customSmallBp() {}
+
+
 }
 
 // ------------  Freelanicng Section ---------------
 
 .freelancing-left-content {
-  @include flexColumn(center, flex-start);
-  background-color: $theme-green-color;
-  width: 48%;
+    @include flexColumn(center, flex-start);
+    background-color: $theme-green-color;
+    width: 48%;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {
+        width: 80%;
+
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {
+        width: 70%;
+
+
+    }
+
+    @include customSmallBp() {}
+
+
 }
+
 .freelancing-section-parent {
-  @include flexRow(space-between, center);
-  background-color: $theme-green-color;
-  padding-right: 0;
+    @include flexRow(space-between, center);
+    background-color: $theme-green-color;
+    padding-right: 0;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {
+        margin-left: -50px;
+        flex-direction: column-reverse;
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {
+        padding: 0;
+        margin-left: -20px;
+
+    }
+
+    @include customSmallBp() {}
+
+
 }
 
 .freelancin-btn {
-  background-color: $theme-seconds-background-color;
+    background-color: $theme-seconds-background-color;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
 
 .freelancin-btn:hover {
-  background-color: $white-text;
-  color: $theme-green-color;
+    background-color: $white-text;
+    color: $theme-green-color;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
+.freelancing-heading span {
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        font-size: 2.4rem;
+
+    }
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
+}
+
 .freelancing-heading-one,
 .freelancing-heading-two,
 .freelancing-para,
 .freelancin-btn {
-  color: $white-text;
+    color: $white-text;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .freelancing-right-img {
-  width: 50%;
+    width: 50%;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {
+            width: 100%;
+
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
 }
+
 .freelancing-img {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
+
+
+    @include desktop() {}
+
+
+
+    @include laptop() {}
+
+
+    @include tablet() {
+        //       
+        height: 520px;
+
+    }
+
+    @include largeWidthSizeMobiles() {
+        height: 420px;
+
+    }
+
+    @include mobile() {
+        height: 300px;
+
+
+    }
+
+    @include customSmallBp() {}
+
+
 }

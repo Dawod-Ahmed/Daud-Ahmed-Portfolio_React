@@ -4,7 +4,7 @@ const SkillsIcnos = (props) => {
   const { image, className, skillName,KeyIndex } = props;
   return (
     <>
-      <div className="skill-img-parent  p-5 col-md-4 col-xl-3" key={KeyIndex}>
+      <div className="skill-img-parent  p-2 p-sm-3 p-md-4  p-xl-5 col-4   col-md-3" key={KeyIndex}>
 
         <div className="skills-img-div show-tooltip" >
           <div className="bg-gradient-color-hidder "></div>

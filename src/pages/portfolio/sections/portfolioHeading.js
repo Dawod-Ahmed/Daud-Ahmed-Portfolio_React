@@ -8,7 +8,7 @@ const PortfolioHeadinSection = () => {
         <div className="heading-parent">
           <div className="portfolio-heading-parent">
             <div className="heading-parent-child">
-              <h1 className="heading">
+              <h1 className="heading px-3 px-sm-0">
                 <span className="heading-first">My</span>
                 <span className="heading-second"> Portfolio</span>
               </h1>

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import { Logo } from "../../../assets/assets";
+import { Logo, Toggle, CrossToggle } from "../../../assets/assets";
 import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [navExp, setNavExp] = useState(false);
 
-  const [navli, ] = useState([
+  const [navli] = useState([
     { li: "Home", path: "home" },
-    { li: "About Me", path: "aboutMe" },
+    { li: "About", path: "aboutMe" },
     { li: "Services", path: "services" },
     { li: "Projects", path: "projects" },
     { li: "Contact", path: "contact" },
@@ -15,34 +15,63 @@ const Header = () => {
   const navExpand = () => {
     setNavExp(!navExp);
   };
+
   return (
     <>
       {/* <HidingHeader> */}
 
-      <header className="header w-100 d-flex   ">
-        <img src={Logo} alt="img" className="logo nav-logo pt-3" />
-        <menu className="menu pt-3">
-          <ul className="navbar-ul list-unstyled m d-flex justify-content-between fw-bold  h-100 mb-0 align-items-center">
+      <header
+        className={`header w-100 d-flex ${navExp ? "sticky-header" : ""} `}
+      >
+        <NavLink to={"/"}>
+          <img
+            src={Logo}
+            alt="img"
+            className="logo nav-logo pt-0 pt-lg-3 "
+            onClick={() => {
+              setNavExp(false);
+            }}
+          />
+        </NavLink>
+        {navExp ? (
+          <img
+            src={CrossToggle}
+            alt="img"
+            className=" d-lg-none crossToggle-img"
+            onClick={navExpand}
+          />
+        ) : (
+          <img
+            src={Toggle}
+            alt="img"
+            className=" d-lg-none toggle-img"
+            onClick={navExpand}
+          />
+        )}
+        <menu
+          className={`menu pt-3  d-lg-block  ${navExp ? "active-menu" : ""}`}
+        >
+          <ul
+            className={`navbar-ul list-unstyled m d-flex justify-content-between fw-bold  h-100 mb-0 align-items-center `}
+          >
             {navli.map((value, index) => {
               return (
-                
-                  <NavLink
+                <NavLink
                   key={index}
-                    to={value.path}
-                    className={`nav-li-link text-decoration-none `}
-                    activeClassName="active-link"
-                  >
-                    <li className="navbar-li align-self-center general-text">
-                      {value.li}
-                      <div className="link-underline d-none  rounded-pill"></div>
-                    </li>
-                  </NavLink>
-                
+                  to={value.path}
+                  className={`nav-li-link text-decoration-none `}
+                  activeClassName="active-link"
+                  onClick={navExpand}
+                >
+                  <li className="navbar-li align-self-center general-text">
+                    {value.li}
+                    <div className="link-underline d-none  rounded-pill"></div>
+                  </li>
+                </NavLink>
               );
             })}
           </ul>
-
-          <div
+          {/* <div
             className="t-parent-link   d-flex justify-content-end align-items-center d-lg-none"
             onClick={navExpand}
           >
@@ -51,9 +80,16 @@ const Header = () => {
               <div className="t-lines t-midddle  rounded-pill w-75"></div>
               <div className="t-lines  t-bottom  rounded-pill w-75"></div>
             </div>
-          </div>
+          </div> */}
         </menu>
       </header>
+
+      <style jsx>{`
+        div div .scrollBar-Top,
+        .bh-widget-page-wrapper {
+          display: ${navExp ? "none!important" : ""};
+        }
+      `}</style>
     </>
   );
 };

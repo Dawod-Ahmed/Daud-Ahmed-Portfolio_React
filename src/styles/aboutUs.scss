@@ -1,241 +1,6 @@
 @import "./general/variables.scss";
 @import "./general/mixins.scss";
-
-// ------------  Mixins ---------------
-
-// @font-face {
-//   font-family: "Ethnocentric";
-//   src: url(../fonts/Ethnocentric/ethnocentric.otf);
-// }
-
-// @font-face {
-//   font-family: "Poppins";
-//   src: url(../fonts/Poppins/Poppins.ttf);
-// }
-
-// @function weight($weight-name) {
-//   @return map-get($font-weight, $weight-name);
-// }
-
-// @mixin desktopSecondBpMixin {
-//   @media (max-width: $desktopSecondBp) {
-//     @content;
-//   }
-// }
-// @mixin desktopThridBpMixin {
-//   @media (max-width: $desktopthirdBp) {
-//     @content;
-//   }
-// }
-
-// @mixin generalHeading($fontSize) {
-//   font-size: $fontSize;
-//   color: $heading-text-color-first;
-//   font-weight: weight(bold);
-//   font-family: "Ethnocentric", sans-serif;
-// }
-// // 27
-// @mixin generalHeadingOne($fontSize) {
-//   font-size: $fontSize;
-//   color: $heading-text-color-second;
-//   font-weight: weight(bold);
-//   font-family: "Ethnocentric", sans-serif;
-// }
-
-// @mixin menuLinks {
-//   font-size: $fontSize;
-//   color: $menu-links-color;
-//   font-weight: weight(medium);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin generalText($fontSize) {
-//   font-size: $fontSize;
-//   color: $general-normalSize-text-color;
-//   font-weight: weight(light);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin generalMedumSizeText($fontSize) {
-//   font-size: $fontSize;
-//   color: $general-normalSize-text-color;
-//   font-weight: weight(medium);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin FlexCenterRow {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// @mixin flexCenterColumn {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// @mixin flexRow($xAxis, $yAxis) {
-//   display: flex;
-//   justify-content: $xAxis;
-//   align-items: $yAxis;
-// }
-
-// @mixin flexColumn($xAxis, $yAxis) {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: $xAxis;
-//   align-items: $yAxis;
-// }
-
-// @mixin themeSecondLayerView($width, $marginTop) {
-//   position: relative;
-//   width: $width;
-//   margin-top: $marginTop;
-//   background-color: $theme-seconds-background-color;
-// }
-
-// @mixin button {
-//   width: max-content;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: transparent;
-//   width: 230px;
-//   height: 70px;
-//   font-size: 27px;
-//   font-weight: map-get($font-weight, medium);
-//   border: 2px solid $theme-green-color;
-//   border-radius: 50px;
-//   color: $theme-green-color;
-//   transition-duration: 0.2s;
-//   padding-bottom: 10px;
-//   &:hover {
-//     background-color: $button-hover-color;
-//     color: $white-text;
-//   }
-// }
-
-// @mixin backgroundImage($Img, $imgHover, $backPosition) {
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: 35px 35px;
-//   padding-bottom: 5px;
-//   background-position: $backPosition center;
-//   &:hover {
-//     background-image: url($imgHover);
-//   }
-// }
-
-// @mixin font($fontSize, $weight, $color, $hoverColor) {
-//   font-size: $fontSize;
-//   font-weight: weight($weight);
-//   color: $color;
-//   font-family: "Poppins", sans-serif;
-//   &:hover {
-//     color: $hoverColor;
-//   }
-// }
-
-// // --------------Cards Mixins---------
-
-// @mixin cardParent($width, $height) {
-//   min-width: $width;
-//   height: $height;
-//   @include flexColumn(center, flex-start);
-//   border-radius: 30px;
-//   background-color: $cards-background-color;
-//   transition-duration: 0.2s;
-//   &:hover {
-//     background-color: $cards-hover-color;
-//   }
-// }
-
-// @mixin backgroundCardImage($Img, $imgHover) {
-//   width: 110px;
-//   min-height: 100px;
-//   border-radius: 8px;
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: 68%;
-
-//   background-position: center center;
-//   transition-duration: 0.2s;
-//   // &:hover {
-//   // background-color: $white-text;
-//   // background-image: url($imgHover);
-//   // }
-// }
-
-// @mixin card {
-//   width: 350px;
-//   height: 440px;
-//   background-color: $cards-background-color;
-//   transition-duration: 0.2s;
-//   &:hover {
-//     background-color: $cards-hover-color;
-//     color: $white-text;
-//   }
-// }
-
-// @mixin VerticalPadding($top, $bottom) {
-//   padding-top: $top;
-//   padding-bottom: $bottom;
-// }
-
-// @mixin sectionHorizontalPadding($top, $bottom) {
-//   padding-right: $top;
-//   padding-left: $bottom;
-// }
-// @mixin elementSize($width, $height) {
-//   width: $width;
-//   height: $height;
-// }
-
-// //  -------------End Mixins-------------------
-
-// $font-weight: (
-//   "extraLight": 200,
-//   "light": 300,
-//   "regular": 400,
-//   "medium": 500,
-//   "bold": 700,
-//   "extrabold": 800,
-// );
-
-// $desktopSecondBp: 1650px;
-// $desktopthirdBp: 1540px;
-
-// $heading-text-color-first: #ffffff;
-// $heading-text-color-second: #00da5d;
-
-// $theme-first-background-color: #00da5d;
-// $button-hover-color: #00da5d;
-// $second-text-color: #00da5d;
-// $theme-green-color: #00da5d;
-
-// $menu-links-color: #ffffff;
-// $menu-links-hover-color: #00da5d;
-// $work-method-hover-color: #00da5d;
-
-// $social-icons-hover: #0b5fba;
-
-// $general-normalSize-text-color: #c0c0c0;
-// $general-mediumSize-text-color: #c0c0c0;
-
-// $white-text: #ffffff;
-
-// $main-background-color: #000024;
-
-// $skills-cards-hover-color: #020243;
-// $home-third-sec-: #000033;
-// $accordion-color: #020243;
-// $theme-seconds-background-color: #020243;
-// $cards-background-color: #010139;
-// $cards-hover-color: #00da5d;
-
-// -----------------------------------
+@import "../../node_modules/react-modal-video/scss/modal-video.scss";
 
 .tooltip {
   display: inline-block;
@@ -243,50 +8,22 @@
   border-bottom: 1px dotted #666;
   text-align: left;
   transition-duration: 2s;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
-
-// .tooltip .top {
-//   min-width:200px;
-//   top:-20px;
-//   left:50%;
-//   transform:translate(-50%, -100%);
-//   padding:10px 20px;
-//   color:#FFFFFF;
-//   background-color:#000066;
-//   font-weight:normal;
-//   font-size:13px;
-//   border-radius:8px;
-//   position:absolute;
-//   z-index:99999999;
-//   box-sizing:border-box;
-//   border:1px solid #00CC00;box-shadow:0 0px 30px #00FF00;
-//   visibility:hidden; opacity:0; transition:opacity 2s;
-// }
-
-// .tooltip:hover .top {
-//   visibility:visible; opacity:1;
-// }
-
-// .tooltip .top i {
-//   position:absolute;
-//   top:100%;
-//   left:50%;
-//   margin-left:-12px;
-//   width:24px;
-//   height:12px;
-//   overflow:hidden;
-// }
-
-// .tooltip .top i::after {
-//   content:'';
-//   position:absolute;
-//   width:12px;
-//   height:12px;
-//   left:50%;
-//   transform:translate(-50%,-50%) rotate(45deg);
-//   background-color:#000066;
-//   border:1px solid #00CC00;box-shadow:0 1px 8px #00FF00;
-// }
 
 .tooltips {
   padding: 5px 10px;
@@ -303,6 +40,24 @@
   z-index: 2;
   bottom: 110%;
   left: 10px;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+    min-width: 250px;
+    max-width: 350px;
+  }
+
+  @include tablet() {
+    display: none;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .tooltips::before {
@@ -311,27 +66,142 @@
   width: 20px;
   height: 20px;
   background: $cards-background-color;
-  top: 93.5%;
+  top: 85.5%;
+
   left: 44%;
   transform: rotate(45deg);
   border-bottom: 2px solid $theme-green-color;
   border-right: 2px solid $theme-green-color;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .show-tooltip:hover .tooltips {
   visibility: visible;
   position: relative;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .about-main {
   padding-top: 0px;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
-.video-section {
-  @include FlexCenterRow;
+
+.modal-video-body {
+  max-width: 1600px !important;
+  @include desktopSecondBpMixin() {
+    max-width: 1450px !important;
+  }
+
+  @include desktopThridBpMixin() {
+    max-width: 1300px !important;
+  }
+  @include desktop() {
+    max-width: 1135px !important;
+  }
+
+  @include laptop() {
+    max-width: 930px !important;
+  }
+
+  @include tablet() {
+    max-width: 100% !important;
+  }
+}
+
+.modal-video-body {
+  max-width: 1600px !important;
+  @include desktopSecondBpMixin() {
+    max-width: 1450px !important;
+  }
+
+  @include desktopThridBpMixin() {
+    max-width: 1300px !important;
+  }
+  @include desktop() {
+    max-width: 1135px !important;
+  }
+
+  @include laptop() {
+    max-width: 930px !important;
+  }
+
+  @include tablet() {
+    max-width: 100% !important;
+  }
+}
+
+.modal-video-inner,
+.modal-video-body {
+  @include desktop() {
+    padding: 0 !important;
+  }
+}
+.modal-video-close-btn {
+  @include desktop() {
+    top: -45px !important;
+    right: 15px !important;
+  }
 }
 
 body .modal-backdrop {
   display: none !important;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .modal-dialog {
@@ -339,21 +209,85 @@ body .modal-backdrop {
   height: -webkit-fill-available;
   width: 85%;
   max-width: unset;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    top: 19%;
+  }
 }
 
 .modal-content {
   border: unset;
   background: transparent;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .modal-header {
   border: unset;
   width: fit-content;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    position: static !important;
+
+    margin: 0 auto;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .btn-close {
   padding-left: 55px !important;
   padding-bottom: 15px !important;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .video-back-layer {
   background-color: #04040496;
@@ -361,22 +295,91 @@ body .modal-backdrop {
   z-index: 1;
   left: 0px;
   top: 0;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .btn-close {
   width: min-content;
   background-color: rgba(253, 253, 253, 0.951);
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .video-section {
-  height: 600px;
+  @include FlexCenterRow;
+  height: 700px;
   background-image: url(../assets/About/AboutBackImg.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100% !important;
+
+  @include desktop() {
+    height: 560px;
+  }
+
+  @include laptop() {
+    height: 510px;
+  }
+
+  @include tablet() {
+    height: 480px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    height: 420px;
+  }
+
+  @include mobile() {
+    height: 390px;
+  }
+  @include customSmallBp() {
+    height: 330px;
+  }
 }
 .modal-header {
   position: absolute;
   right: -80px;
   top: 0;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .modal-dialog {
   z-index: 320;
@@ -385,13 +388,80 @@ body .modal-backdrop {
   left: 0;
   right: 0;
   border: 0;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+    padding: 0 20px 0 20px !important;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  @include mobile() {
+  }
+}
+.video-react-control {
+  @include desktop() {
+  }
+
+  @include laptop() {
+    height: 95vh !important;
+  }
+
+  @include tablet() {
+    height: 88vh !important;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .video-react-control:before {
   top: 0 !important;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .video-react {
   padding-top: 0 !important;
   @include elementSize(100%!important, 90vh!important);
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    height: 55vh !important;
+  }
 }
 
 .video-react-poster {
@@ -399,10 +469,40 @@ body .modal-backdrop {
   background-repeat: no-repeat;
   background-size: 100% 100% !important;
   cursor: unset !important;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .video-react:hover .video-react-big-play-button {
   border: 6px solid #00da5d !important;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .video-section:hover {
@@ -413,17 +513,65 @@ body .modal-backdrop {
     border: 6px solid #00da5d;
     background-color: black;
     background-color: rgba(0, 218, 93, 54%);
+
+    @include desktop() {
+    }
+
+    @include laptop() {
+      //      height: 510px;
+    }
+
+    @include tablet() {
+      //      height: 480px;
+    }
+
+    @include largeWidthSizeMobiles() {
+    }
+
+    @include mobile() {
+    }
+  }
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
   }
 }
+
 .model-opening-icon {
   background-image: url(../assets/About/playIcon.svg);
   background-repeat: no-repeat;
   background-size: 50% 50% !important;
   background-position: 65% center;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+    background-size: 35% 35% !important;
+    background-position: 58% center;
+  }
+
+  @include mobile() {
+  }
 }
-// .model-opening-icon:hover{
-//   background-color:$cards-hover-color ;
-// }
+
 .video-react .video-react-big-play-button,
 .model-opening-icon {
   border-radius: 50px !important;
@@ -432,6 +580,24 @@ body .modal-backdrop {
   border: 6px solid #00da5d;
   background-color: rgba(0, 218, 93, 54%) !important;
   transition-duration: 0.5s;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+    width: 65px !important;
+    height: 65px !important;
+    border: 4px solid #00da5d;
+  }
+
+  @include mobile() {
+  }
 }
 
 .video-react-button:hover,
@@ -439,71 +605,280 @@ body .modal-backdrop {
   box-shadow: 0px 0px 100px 10px #00da5dd6;
   background-color: rgb(5 235 103 / 71%) !important;
   transition-duration: 0.5s;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .btn-play-video:hover {
   background-color: unset;
   box-shadow: none;
   text-shadow: 0px 0px 30px rgb(251 251 251);
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .video-secton-play-btn button:before {
   top: 0px !important;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
-// .video-react-button,
-// .video-react-big-play-button,
-// .video-react-big-play-button-center,
-// .video-react-icon-play-arrow:before,
-// .video-react .video-react-bezel .video-react-bezel-icon-play:before,
-// .video-react .video-react-play-control:before,
-// .video-react .video-react-big-play-button:before,
-// .accordion-item,
-// .accordion-header,
-// .accordion-button {
-//   cursor: url(../assets/generalIcons/cursor.png), auto;
-// }
+.video-react-button,
+.video-react-big-play-button,
+.video-react-big-play-button-center,
+.video-react-icon-play-arrow:before,
+.video-react .video-react-bezel .video-react-bezel-icon-play:before,
+.video-react .video-react-play-control:before,
+.video-react .video-react-big-play-button:before,
+.accordion-item,
+.accordion-header,
+.accordion-button,
+div div .video-react-control {
+  cursor: url(../assets/generalIcons/pointerCursor.png), auto;
 
-// [type="button"]:not(:disabled),
-// [type="reset"]:not(:disabled),
-// [type="submit"]:not(:disabled),
-// button:not(:disabled),
-// .accordion-item,
-// .accordion-header,
-// .accordion-button {
-//   cursor: url(../assets/generalIcons/cursor.png), auto;
-// }
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled),
+.accordion-item,
+.accordion-header,
+.accordion-button,
+div div .video-react-control {
+  cursor: url(../assets/generalIcons/pointerCursor.png), auto;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
 
 .experience-heading {
   z-index: 0;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 button:before {
   font-size: 53px;
   top: 16px !important;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
+
+.resume-btn {
+  z-index: 3;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+}
+
+//    .modal-video-close-btn {
+//
+// border-radius: 8px!important;
+//    opacity: .8!important;
+//    border: 8px solid gray!important;
+//    background-color: gray!important;
+//right: 2px !important!important;
+// width: 90px!important;
+//    height: 40px!important;
+//
+//}
+//
+//.modal-video-close-btn:before, .modal-video-close-btn:after {
+//    margin-top: -1px!important;
+//
+//}
+//
+
+//button:before {
+//
+//      top: 0px !important;
+//}
 
 .about-me-section {
   @include flexRow("between", center);
   overflow: hidden;
-   background-color: $theme-seconds-background-color;
-}
-.resume-btn {
-  z-index: 3;
+  background-color: $theme-seconds-background-color;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .about-self-img {
   @include elementSize(370px, 500px);
-  margin-left: 75px;
+  margin-left: 55px;
+
+  @include desktop() {
+    @include elementSize(360px, 470px);
+    margin-left: 65px;
+  }
+
+  @include laptop() {
+    @include elementSize(330px, 440px);
+  }
+
+  @include tablet() {
+    margin-left: 80px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    margin-left: 50px;
+  }
+
+  @include mobile() {
+    @include elementSize(290px, 380px);
+  }
+  @include customSmallBp() {
+    @include elementSize(240px, 330px);
+
+    margin-left: 65px;
+  }
 }
 
 .about-left-img-part {
   @include flexColumn(flex-end, center);
   transform: rotateY(180deg);
-  margin-left: -210px;
+  margin-left: -180px;
   position: relative;
-  top: 80px;
+  padding-top: 80px;
   left: 55px;
   animation: MoveElementAbout 1.4s 1 ease-in-out;
+
+  @include desktop() {
+    margin-left: -220px;
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    margin-left: -100px;
+  }
+
+  @include largeWidthSizeMobiles() {
+    margin-left: -65px;
+  }
+
+  @include mobile() {
+    margin-left: -55px;
+  }
+  @include customSmallBp() {
+    margin-left: -40px;
+  }
 }
 @keyframes MoveElementAbout {
   0% {
@@ -514,21 +889,101 @@ button:before {
   }
 }
 
-.about-right-part-part {
+.about-right-part {
   @include flexColumn(null, flex-start);
   margin-left: -60px;
+  position: relative;
+  z-index: 0;
+  margin-top: -80px;
+  @include desktop() {
+    margin-left: -130px;
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    margin-left: 0;
+  }
+
+  @include largeWidthSizeMobiles() {
+    position: static;
+    margin-left: 0;
+  }
+
+  @include mobile() {
+  }
 }
 
 .about-shadow-image {
   @include elementSize(790px, 260px);
   position: relative;
-  bottom: 171px;
+  bottom: 182px;
+
   transform: rotate(3deg);
+
+  @include desktop() {
+    @include elementSize(770px, 240px);
+    bottom: 170px;
+  }
+
+  @include laptop() {
+    @include elementSize(740px, 230px);
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+
+  @include customSmallBp() {
+    @include elementSize(680px, 200px);
+
+    bottom: 136px;
+  }
 }
 
+ 
 .aboutme-background-text {
-  top: -18%;
+  top: 57%;
   width: 92%;
+
+     @include desktopSecondBpMixin() {
+          
+    top: 62%;
+
+      
+  }
+
+    
+    
+  @include desktop() {
+          top: 8%;
+
+
+  }
+
+  @include laptop() {
+              top: 73%;
+
+
+  }
+
+  @include tablet() {
+      top: 42%;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+          top: 41%;
+
+  }
 }
 
 // -------------Experiennce  Section -----------
@@ -536,19 +991,89 @@ button:before {
 .experience-section {
   @include flexCenterColumn();
   background-color: $main-background-color;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .experience-cards-parent {
-  @include FlexCenterRow();
+  justify-content: space-around;
+
   flex-wrap: wrap;
+  @include desktopThridBpMixin() {
+    justify-content: space-between;
+  }
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    justify-content: center;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .experience-card {
   position: relative;
+
   background-color: $cards-background-color;
   border-left: 4px solid $theme-green-color;
-  @include elementSize(550px, 250px);
+  @include elementSize(550px, 320px);
+
+  @include desktop() {
+    @include elementSize(490px, 320px);
+  }
+
+  @include laptop() {
+    @include elementSize(410px, 360px);
+  }
+
+  @include tablet() {
+    @include elementSize(540px, 300px);
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    @include elementSize(auto, auto);
+  }
 }
 .video-react .video-react-big-play-button.video-react-big-play-button-center {
   transition-duration: 0.5s;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .experience-card:hover .department-location,
 .experience-card:hover .duration,
@@ -557,6 +1082,21 @@ button:before {
 .experience-card:hover .experience-detail {
   color: $white-text;
   transition-duration: 0.4s;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .experience-card:hover {
@@ -564,70 +1104,273 @@ button:before {
   box-shadow: 0px 0px 50px 10px $cards-hover-color;
   border-color: $cards-background-color;
   transition-duration: 0.4s;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .department-location {
-  @include generalText(16px);
+  @include smallText();
   color: $theme-green-color;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .duration-dot {
   color: $theme-green-color;
   font-size: 20px;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .duration {
-  position: absolute;
-  right: 20px;
-  top: 20px;
-  @include generalText(16px);
+  position: static;
+
+  @include smallText();
   color: $white-text;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .department-title {
-  @include generalText(22px);
+  @include generalMedumSizeText(1.6rem);
   color: $white-text;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .experience-detail {
   @include generalText(20px);
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 // ------------ Skills Section----
 
 .heading-detail {
   @include generalText(22px);
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .skill-section {
   @include flexCenterColumn();
   background-color: $main-background-color;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .skills-parent {
   @include flexRow(space-around, space-around);
   flex-wrap: wrap;
   // flex-grow: 5;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
-.skill-img-parent {
+div .skill-img-parent {
   @include flexColumn(center, center);
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
+
+  @include bpskillsIcons() {
+    margin: 0 20px !important;
+  }
 }
 
 .skill-img {
   width: 65%;
-}
-.skills-img-div {
-  @include elementSize(150px, 150px);
-  @include FlexCenterRow();
-}
-.skill-name {
-  @include generalMedumSizeText(22px);
-  color: $white-text;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .skills-img-div {
-  width: 150px;
   position: relative;
-  height: 150px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+  @include elementSize(150px, 150px);
+  @include FlexCenterRow();
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+    @include elementSize(125px, 125px);
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+    @include elementSize(90px, 90px);
+  }
+
+  @include mobile() {
+    @include elementSize(80px, 80px);
+  }
+  @include customSmallBp() {
+    @include elementSize(70px, 70px);
+  }
+}
+.skill-name {
+  @include generalMedumSizeText(2.5rem);
+  color: $white-text;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+    font-size: 2rem;
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+    font-size: 1.7rem;
+  }
+
+  @include mobile() {
+  }
+  @include customSmallBp() {
+    font-size: 1.5rem;
+  }
 }
 
 .skills-img-div::before,
@@ -656,11 +1399,41 @@ button:before {
   opacity: 1;
   border-radius: 50%;
   transition: 0.5%;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 .skills-img-div::after {
   filter: blur(35px);
   animation: animate 20s linear infinite;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .bg-gradient-color-hidder {
   position: absolute;
@@ -670,6 +1443,21 @@ button:before {
   z-index: 1;
   border-radius: 50%;
   margin-right: -1.5px;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 .skills-img-div .skill-img {
   position: absolute;
@@ -677,6 +1465,21 @@ button:before {
   z-index: 1;
 
   animation: MoveSKillIcon 2s infinite ease-in-out;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+  }
 }
 
 @keyframes MoveSKillIcon {

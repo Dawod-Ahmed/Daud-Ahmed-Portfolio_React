@@ -20,14 +20,14 @@ const HeroSection = () => {
 
   return (
     <>
-      <section className="hero-section d-flex justify-content-center pb-5">
+      <section className="hero-section d-flex justify-content-center ">
         <div className="hero-two-parts-parent w-100 ">
           <div className="left-content-part ">
             <span className={`welcome-txt ${hideWelcome}`}>Welcome</span>
             <h1 className="dev-name">
               <span className="heading-first">I'm Dawood Ahmed,</span>
               <br />
-              <span className="heading-second position-relative">
+              <span className="heading-second position-relative hero-text-parent">
                 A&nbsp;
                 <span className="hero-text hero-text1 heading-second ">
                   Web Developer
@@ -41,9 +41,8 @@ const HeroSection = () => {
               </span>
             </h1>
             <p className="dev-intro-txt general-text  mt-2 mb-5">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took.
+             I am a passionate full-stack web developer and web designer.
+Please Take a look at my unique and recent projects!
             </p>
             <div className="btns-group border-0" aria-label="Basic example ">
               <Link to="./projects" type="button" className="btn btn-project ">
@@ -75,7 +74,7 @@ const HeroSection = () => {
               }}
             >
               <div className="right-img-part img-background">
-                <img src={DaudImg} alt="img" className="dev-img" />
+                <img src={DaudImg} alt="img" className="dev-img w-100 h-100" />
               </div>
             </MouseParallaxChild>
           </MouseParallaxContainer>
@@ -87,7 +86,7 @@ const HeroSection = () => {
           <span className="hero-scroll-second-line">Scroll Down</span>
           <img
             src={homeSrcolldownButton}
-            alt=""
+            alt="img"
             className="hero-scroll-down-img scroll-down-arrow-img"
           />
         </div>

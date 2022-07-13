@@ -65,10 +65,7 @@ const ServeQuality = () => {
             <span className="heading-second">Education</span>
           </h1>
           <p className="general-text serve-quality-para">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. At iusto,
-            ratione tempore blanditiis optio rem quae quam earum commodi, ipsam
-            velit, maxime illum voluptate? Nisi, doloribus? At placeat culpa
-            suscipit.
+           I complete the project with client satisfaction and always try my best to fulfill the client requirement priorities and provide excellent services of mine to my client.
           </p>
           <img
             src={portfolioDownArrow}

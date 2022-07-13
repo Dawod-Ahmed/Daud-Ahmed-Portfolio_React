@@ -1,255 +1,39 @@
 @import "./general/variables.scss";
 @import "./general/mixins.scss";
 
-// ------------  Mixins -----------------
-
-// @font-face {
-//   font-family: "Ethnocentric";
-//   src: url(../fonts/Ethnocentric/ethnocentric.otf);
-// }
-
-// @font-face {
-//   font-family: "Poppins";
-//   src: url(../fonts/Poppins/Poppins.ttf);
-// }
-
-// @function weight($weight-name) {
-//   @return map-get($font-weight, $weight-name);
-// }
-
-// @mixin desktopSecondBpMixin {
-//   @media (max-width: $desktopSecondBp) {
-//     @content;
-//   }
-// }
-// @mixin desktopThridBpMixin {
-//   @media (max-width: $desktopthirdBp) {
-//     @content;
-//   }
-// }
-
-// @mixin generalHeading($fontSize) {
-//   font-size: $fontSize;
-//   color: $heading-text-color-first;
-//   font-weight: weight(bold);
-//   font-family: "Ethnocentric", sans-serif;
-// }
-// // 27
-// @mixin generalHeadingOne($fontSize) {
-//   font-size: $fontSize;
-//   color: $heading-text-color-second;
-//   font-weight: weight(bold);
-//   font-family: "Ethnocentric", sans-serif;
-
-// }
-
-// @mixin menuLinks {
-//   font-size: $fontSize;
-//   color: $menu-links-color;
-//   font-weight: weight(medium);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin generalText($fontSize) {
-//   font-size: $fontSize;
-//   color: $general-normalSize-text-color;
-//   font-weight: weight(light);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin generalMedumSizeText($fontSize) {
-//   font-size: $fontSize;
-//   color: $general-normalSize-text-color;
-//   font-weight: weight(medium);
-//   font-family: "Poppins", sans-serif;
-// }
-
-// @mixin FlexCenterRow {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// @mixin flexCenterColumn {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-// }
-
-// @mixin flexRow($xAxis, $yAxis) {
-//   display: flex;
-//   justify-content: $xAxis;
-//   align-items: $yAxis;
-// }
-
-// @mixin flexColumn($xAxis, $yAxis) {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: $xAxis;
-//   align-items: $yAxis;
-// }
-
-// @mixin themeSecondLayerView($width, $marginTop) {
-//   position: relative;
-//   width: $width;
-//   margin-top: $marginTop;
-//   background-color: $theme-seconds-background-color;
-// }
-
-// @mixin button {
-//   width: max-content;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   background-color: transparent;
-//   width: 230px;
-//   height: 70px;
-//   font-size: 27px;
-//   font-weight: map-get($font-weight, medium);
-//   border: 2px solid $theme-green-color;
-//   border-radius: 50px;
-//   color: $theme-green-color;
-//   transition-duration: 0.2s;
-//   padding-bottom: 10px;
-//   &:hover {
-//     background-color: $button-hover-color;
-//     color: $white-text;
-//   }
-// }
-
-// @mixin backgroundImage($Img, $imgHover, $backPosition) {
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: 35px 35px;
-//   padding-bottom: 5px;
-//   background-position: $backPosition center;
-//   &:hover {
-//     background-image: url($imgHover);
-//   }
-// }
-
-// @mixin GeneralbackgroundImage($Img, $imgHover, $Size, $backPosition) {
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: $Size;
-//   background-position: $backPosition;
-//   center &:hover {
-//     background-image: url($imgHover);
-//   }
-// }
-
-// @mixin font($fontSize, $weight, $color, $hoverColor) {
-//   font-size: $fontSize;
-//   font-weight: weight($weight);
-//   color: $color;
-//   font-family: "Poppins", sans-serif;
-//   &:hover {
-//     color: $hoverColor;
-//   }
-// }
-
-// // --------------Cards Mixins---------
-
-// @mixin cardParent($width, $height) {
-//   min-width: $width;
-//   height: $height;
-//   @include flexColumn(center, flex-start);
-//   border-radius: 30px;
-//   background-color: $cards-background-color;
-//   transition-duration: 0.2s;
-//   &:hover {
-//     background-color: $cards-hover-color;
-//   }
-// }
-
-// @mixin backgroundCardImage($Img, $imgHover) {
-//   width: 110px;
-//   min-height: 100px;
-//   border-radius: 8px;
-//   background-image: url($Img);
-//   background-repeat: no-repeat;
-//   background-size: 68%;
-
-//   background-position: center center;
-//   transition-duration: 0.2s;
-//   // &:hover {
-//   // background-color: $white-text;
-//   // background-image: url($imgHover);
-//   // }
-// }
-
-// @mixin card {
-//   width: 350px;
-//   height: 440px;
-//   background-color: $cards-background-color;
-//   transition-duration: 0.2s;
-//   &:hover {
-//     background-color: $cards-hover-color;
-//     color: $white-text;
-//   }
-// }
-
-// @mixin VerticalPadding($top, $bottom) {
-//   padding-top: $top;
-//   padding-bottom: $bottom;
-// }
-
-// @mixin sectionHorizontalPadding($top, $bottom) {
-//   padding-right: $top;
-//   padding-left: $bottom;
-// }
-// @mixin elementSize($width, $height) {
-//   width: $width;
-//   height: $height;
-// }
-
-// //  -------------End Mixins-------------------
-
-// $font-weight: (
-//   "extraLight": 200,
-//   "light": 300,
-//   "regular": 400,
-//   "medium": 500,
-//   "bold": 700,
-//   "extrabold": 800,
-// );
-
-// $desktopSecondBp: 1650px;
-// $desktopthirdBp: 1540px;
-
-// $heading-text-color-first: #ffffff;
-// $heading-text-color-second: #00da5d;
-
-// $theme-first-background-color: #00da5d;
-// $button-hover-color: #00da5d;
-// $second-text-color: #00da5d;
-// $theme-green-color: #00da5d;
-
-// $menu-links-color: #ffffff;
-// $menu-links-hover-color: #00da5d;
-// $work-method-hover-color: #00da5d;
-
-// $social-icons-hover: #0b5fba;
-
-// $general-normalSize-text-color: #c0c0c0;
-// $general-mediumSize-text-color: #c0c0c0;
-
-// $white-text: #ffffff;
-
-// $main-background-color: #000024;
-
-// $skills-cards-hover-color: #020243;
-// $home-third-sec-: #000033;
-// $accordion-color: #020243;
-// $theme-seconds-background-color: #020243;
-// $cards-background-color: #010139;
-// $cards-hover-color: #00da5d;
-
-// -----------------------------------
 
 .portfolio-section {
   z-index: 99;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .heading-parent {
   @include FlexCenterRow();
@@ -261,43 +45,341 @@
   );
   // background-image: url(../assets/Portfolio/PortfolioBackground.png)
   @include elementSize(100%, 400px);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 
 .heading-parent-child {
   @include flexColumn(flex-flex-start, center);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .portfolio-heading-parent {
   @include flexCenterColumn();
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .portfolio-heading-detail {
-  @include generalMedumSizeText(22px);
+  @include generalText(2.2rem);
   @include elementSize(950px, auto);
   text-align: center;
+
+
+  @include desktop() {
+          width: 850px;
+
+  }
+
+
+
+  @include laptop() {
+          width: 720px;
+
+      
+      
+  }
+
+
+  @include tablet() {
+          width: 520px;
+
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+
+      
+  }
+
+  @include mobile() {
+                width: auto;
+
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .projects-section {
   background-color: $main-background-color;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .project-parent {
   @include flexRow(space-between, center);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+          flex-wrap: wrap;
+justify-content: center;
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 
+.second-opposite-element{
+    @include tablet() {
+            flex-wrap: wrap-reverse;
+
+
+      
+  }
+}
+
+
+
 .project-img-parent {
-  @include elementSize(48%, 450px);
+  @include elementSize(48%, auto);
   position: relative;
   transition-duration: 0.5s;
   overflow: hidden;
   border-radius: 20px;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      @include elementSize(unset!important, unset!important);
+
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 
 .project-img {
   @include elementSize(100%, 100%);
   border-radius: 20px;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+       width: 600px;
+    height: auto;
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+          width: 500px;
+
+  }
+
+  @include mobile() {
+          width: auto;
+
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 
 .project-img-text {
   display: none;
   transition-duration: 0.5s;
   transition-property: margin-top;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 
 .project-img-parent:hover {
@@ -305,11 +387,71 @@
   opacity: 0.5;
 
   transition-duration: 0.5s;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 
 .project-img-parent:hover:hover .project-img {
   transform: scale(1.2);
   transition-duration: 2.5s;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 
 .project-img-parent:hover .project-img-text {
@@ -319,21 +461,204 @@
   transition-property: top;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 
 .projet-detail-parent {
   @include elementSize(48%, 240px);
   @include flexColumn(center, flex-start);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      width: 600px;
+    height: auto;
+  }
+
+  @include largeWidthSizeMobiles() {
+          width: 500px;
+
+  }
+
+  @include mobile() {
+          width: auto;
+
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .project-name-first {
   @include generalHeading(35px);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      font-size: 2.6rem;
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .project-name-second {
   @include generalHeadingOne(35px);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      font-size: 2.6rem
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .project-details {
   @include generalText(22px);
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }
 .btn-parent {
   @include FlexCenterRow();
+
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
 }

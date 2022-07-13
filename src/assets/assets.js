@@ -17,6 +17,8 @@ export { default as Facebook } from "./generalIcons/socialIcons/facebook.svg";
 export { default as Whatsapp } from "./generalIcons/socialIcons/whatsapp.svg";
 export { default as ScrollToTop } from "./generalIcons/scrollTop.svg";
 export { default as ScrollTopArrow } from "./generalIcons/ScrollTopArrow.svg";
+export { default as CrossToggle } from "./generalIcons/CrossToggle.svg";
+export { default as Toggle } from "./generalIcons/Toggle.svg";
 
 // ------  Home Page  -------
 

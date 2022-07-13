@@ -24,479 +24,1209 @@
 // -------------  Home Section   --------------------
 
 .hero-section {
-  @include flexCenterColumn();
-  overflow: hidden;
+    @include flexCenterColumn();
+    overflow: hidden;
+    padding-bottom: 4rem !important;
+
+    @include desktop() {
+        padding-bottom: 4rem !important;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .hero-two-parts-parent {
-  @include flexRow(space-between, null);
+    @include flexRow(space-between, null);
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .left-content-part {
-  @include flexColumn(center, flex-start);
-  max-width: 790px;
-  position: relative;
+    @include flexColumn(center, flex-start);
+    max-width: 790px;
+    position: relative;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {
+        @include VerticalPadding(80px, 60px);
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .welcome-txt {
-  @include generalMedumSizeText(27px);
-  animation: FadeElement 1.2s 11;
-  position: absolute;
-  top: 55px;
+    @include generalMedumSizeText(27px);
+    font-size: 2.7rem;
+
+    animation: FadeElement 1.2s 11;
+    position: absolute;
+    top: 55px;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
+
 @keyframes FadeElement {
-  0% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
 
-  50% {
-    opacity: 1;
-  }
+    50% {
+        opacity: 1;
+    }
 
-  100% {
-    opacity: 0;
-  }
+    100% {
+        opacity: 0;
+    }
 }
 
 .dev-name {
-  width: max-content;
-  line-height: 1.4;
+    width: max-content;
+    line-height: 1.4;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {
+        width: auto;
+    }
 }
 
 .hero-text {
-  opacity: 0;
-  position: absolute;
-  width: max-content;
+    opacity: 0;
+    position: absolute;
+    width: max-content;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+
+    @include customSmallBp() {
+        font-size: 2.3rem;
+
+    }
+
+
 }
+
+.hero-text-parent {
+
+    @include customSmallBp() {
+        font-size: 2.3rem;
+
+    }
+}
+
+
+
 .hero-text1 {
-  animation: hero-text1 17s infinite ease-in-out;
+    animation: hero-text1 17s infinite ease-in-out;
 }
+
 .hero-text2 {
-  animation: hero-text2 17s infinite ease-in-out;
+    animation: hero-text2 17s infinite ease-in-out;
 }
+
 .hero-text3 {
-  animation: hero-text3 17s infinite ease-in-out;
+    animation: hero-text3 17s infinite ease-in-out;
 }
 
 @keyframes hero-text1 {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 1;
-  }
-  20% {
-    opacity: 1;
-  }
-  30% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 @keyframes hero-text2 {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 1;
-  }
-  60% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-  80% {
-    opacity: 0;
-  }
-  90% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 0;
+    }
+
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
+
 @keyframes hero-text3 {
-  0% {
-    opacity: 0;
-  }
-  10% {
-    opacity: 0;
-  }
-  20% {
-    opacity: 0;
-  }
-  30% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0;
-  }
-  60% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 1;
-  }
-  80% {
-    opacity: 1;
-  }
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .btns-group {
-  @include FlexCenterRow();
+    @include FlexCenterRow();
 }
+
 .btn-play-video {
-  @include backgroundImage(
-    "../../assets/Home/Icons/homePlaybtn.svg",
-    "../../assets/Home/Icons/HomePlayBtnHover.svg",
-    140px
-  );
-  padding-right: 30px;
+    @include backgroundImage("../../assets/Home/Icons/homePlaybtn.svg",
+        "../../assets/Home/Icons/HomePlayBtnHover.svg",
+        140px);
+    padding-right: 30px;
 }
 
 .right-img-part {
-  width: 600px;
-  height: 600px;
-  // margin-right: -55px;
 
-  @include FlexCenterRow();
+
+    @include desktopThridBpMixin() {
+
+        position: relative;
+        right: 130px;
+
+
+    }
+
+    @include elementSize(880px, 600px);
+    // margin-right: -55px;
+
+    @include FlexCenterRow();
+
+    @include desktop() {
+        @include elementSize(780px, 530px);
+
+        position: relative;
+        right: 75px;
+    }
+
+    @include laptop() {
+        @include elementSize(710px, 480px);
+
+        padding-right: 40px;
+        right: 145px;
+    }
+
+    @include tablet() {
+        min-width: 850px;
+        height: 610px;
+        right: 0;
+        padding-right: 0px;
+    }
+
+    @include largeWidthSizeMobiles() {
+        min-width: 700px;
+        height: 495px;
+    }
+
+    @include mobile() {
+        min-width: 600px;
+        height: 430px;
+    }
+}
+
+@include mobile() {
+    div .parallax {
+        overflow-x: hidden !important;
+    }
 }
 
 .dev-img {
-  @include desktopThridBpMixin() {
-    // margin-right: 130px;
-  }
-  min-width: 880px;
-  height: 600px;
-  animation: MoveElementbyMargin 1.4s 1 ease-in-out;
+    @include desktopThridBpMixin() {
+        // margin-right: 130px;
+    }
+
+    animation: MoveElementbyMargin 1.4s 1 ease-in-out;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .scroll-down-element {
-  @include flexCenterColumn();
+    @include flexCenterColumn();
 }
 
 @keyframes mymove {
-  0% {
-    top: 0px;
-  }
-  50% {
-    top: 40px;
-  }
-  100% {
-    top: 0px;
-  }
+    0% {
+        top: 0px;
+    }
+
+    50% {
+        top: 40px;
+    }
+
+    100% {
+        top: 0px;
+    }
 }
+
 .scroll-down-arrow-img {
-  animation: mymove 1.5s infinite;
-  position: relative;
+    animation: mymove 1.5s infinite;
+    position: relative;
 }
 
 .hero-scroll-first-line {
-  font-size: 20px;
-  color: $white-text;
-  font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color: $white-text;
+    font-family: "Poppins", sans-serif;
+
+    @include desktop() {
+        font-size: 1.85rem;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .hero-scroll-second-line {
-  font-size: 20px;
-  color: $theme-green-color;
-  font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+
+    color: $theme-green-color;
+    font-family: "Poppins", sans-serif;
+
+    @include desktop() {
+        font-size: 1.85rem;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 // -------------   Home Page Second Section ------------------
 
 .h-second-sec {
-  @include VerticalPadding(60px, 130px);
+    @include VerticalPadding(60px, 130px);
+    overflow: hidden;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .contact-btn {
-  @include backgroundImage(
-    "../../assets/Home/Icons/HomecontactBtn.svg",
-    "../../assets/Home/Icons/HomecontactBtnHover.svg",
-    15px
-  );
+    @include backgroundImage("../../assets/Home/Icons/HomecontactBtn.svg",
+        "../../assets/Home/Icons/HomecontactBtnHover.svg",
+        15px);
 
-  width: max-content;
-  padding: 30px 20px 35px 67px;
-  background-size: 27px 27px;
+    width: max-content;
+    // padding: 30px 20px 35px 67px;
+    padding: 10px 25px 12px 55px;
+    background-size: 27px 27px;
 
-  &:hover {
-    background-size: 43px 43px;
-  }
+    &:hover {
+        background-size: 43px 43px;
+    }
+
+    @include desktop() {
+        padding: 8px 20px 10px 65px;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
-.problem-solver-txt,
+
+.short-about-para {
+    @include laptop() {
+        margin-top: 3.8rem;
+    }
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
+}
+
 .query-type-text,
 .short-about-para {
-  @include generalMedumSizeText(32px);
-  color: $white-text;
+    margin: 4.5rem 0rem;
+
+    @include generalMedumSizeText(3.2rem);
+    font-size: 3.2rem;
+
+    color: $white-text;
+
+    @include laptop() {
+        font-size: 2.9rem;
+    }
+
+    @include desktop() {
+        font-size: 3rem;
+        margin-top: 0px;
+
+    }
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        font-size: 2.6rem;
+    }
+
+    @include mobile() {}
 }
+
 .problem-solver-txt {
-  @include generalMedumSizeText(22px);
-  color: $white-text;
+    @include generalMedumSizeText(2.2rem);
+    color: $white-text;
+
+    @include desktop() {
+        width: fit-content;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .home-background-text {
-  top: 22%;
-  left: 0%;
-}
+    top: 22%;
+    left: 0%;
+transform: rotate(330deg);
+    @include desktop() {}
 
-// -------Universal Media Queries-------
+    @include laptop() {}
+
+    @include tablet() {
+        top: 41%;
+    left: 6%;
+    }
+
+    @include largeWidthSizeMobiles() {
+        height: min-content;
+        font-size: 18rem !important;
+            left: 0%;
+
+    }
+
+    @include mobile() {
+        font-size: 12rem !important;
+            top: 46%;
+
+    }
+}
 
 .problem-solver-txt,
 .query-type-text {
-  width: max-content;
+    width: max-content;
+
+    @include desktop() {
+        width: fit-content;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
+
 .h-sec-right-part,
 .h-sec-left-part {
-  z-index: 1;
+    z-index: 1;
 }
+
 .h-sec-right-part {
-  width: 750px;
+    width: 750px;
+
+    @include desktop() {
+        width: 680px;
+    }
+
+    @include laptop() {
+        width: 520px;
+    }
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {
+        width: auto;
+    }
 }
 
 .exp-txt {
-  @include generalText(22px);
-  color: $white-text;
-  padding-left: 10px;
+    @include generalText(2.2rem);
+    color: $white-text;
+    padding-left: 10px;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        .exp-txt {
+            font-size: 1.7rem;
+        }
+    }
+
+    @include mobile() {}
 }
+
 .exp-digit {
-  @include generalHeadingOne(70px);
+    @include generalHeadingOne(7rem);
+
+    @include desktop() {
+        font-size: 4.5rem;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        font-size: 4.2rem;
+    }
 }
 
 .query-txt-parent,
 .short-about-para {
-  margin: 4.5rem 0rem;
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 // ---------- Home  Cards Section-------------------
 
 .cards-section {
-  background: linear-gradient(180deg, rgba(0, 0, 36, 1) 50%, rgb(2 2 67) 50%);
-  @include VerticalPadding(80px, 80px);
+    background: linear-gradient(180deg, rgba(0, 0, 36, 1) 50%, rgb(2 2 67) 50%);
+    @include VerticalPadding(80px, 80px);
+
+    @include laptop() {
+        padding-top: 0;
+
+    }
+
 }
 
-.cards-parent {
-  @include cardParent(360px, auto);
-  padding: 35px 35px 35px 35px;
-  &:hover .cards-para {
-    color: $white-text;
-  }
-  &:hover .completed-projects {
-    color: $white-text;
-  }
+.main-cards-parent {
+    @include tablet() {}
 
-  &:hover .card-img-underline {
-    background-color: $white-text;
-  }
+    @include desktop() {
+        flex-wrap: nowrap;
+    }
 
-  &:hover .card-img {
-    background-color: $white-text;
-  }
+
+
+    @include laptop() {
+        flex-wrap: wrap;
+
+
+    }
+
+
+
 }
+
+div .cards-parent {
+    @include cardParent(370px, 570px);
+    padding: 35px 35px 35px 35px;
+    position: relative;
+    min-width: auto !important;
+
+
+    &:hover .cards-para {
+        color: $white-text;
+    }
+
+    &:hover .completed-projects {
+        color: $white-text;
+    }
+
+    &:hover .card-img-underline {
+        background-color: $white-text;
+    }
+
+    &:hover .card-img {
+        background-color: $white-text;
+    }
+
+    @include desktop() {
+        @include cardParent(320px, 530px);
+
+
+        padding: 35px 25px 35px 25px;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {
+        padding: 35px 15px 35px 15px;
+        flex-wrap: wrap !important;
+    }
+
+    @include largeWidthSizeMobiles() {
+        padding: 35px 25px 35px 25px;
+        width: auto !important;
+
+
+    }
+
+    @include mobile() {
+        //                 width: 400px!important;
+
+    }
+
+    @include customSmallBp() {
+
+        width: auto !important;
+
+    }
+}
+
+.home-cards-parent {
+    width: 410px !important;
+
+
+
+    @include desktop() {
+        width: 340px !important;
+
+
+    }
+
+
+
+    @include laptop() {
+
+        width: 370px !important;
+
+
+    }
+
+
+    @include tablet() {
+
+
+        width: 315px !important;
+
+
+    }
+
+    @include largeWidthSizeMobiles() {
+        width: auto !important;
+    }
+
+    @include mobile() {}
+
+    @include customSmallBp() {}
+
+
+
+}
+
 .ui-ux-design-img {
-  @include backgroundCardImage(
-    "../../assets/Services/Icons/cardsIcons/UIUXDesign.svg",
-    "../../assets/Services/Icons/cardsIcons/UIUXDesignHover.svg"
-  );
+    @include backgroundCardImage("../../assets/Services/Icons/cardsIcons/UIUXDesign.svg",
+        "../../assets/Services/Icons/cardsIcons/UIUXDesignHover.svg"
+    );
 }
 
 .front-end-design-img {
-  @include backgroundCardImage(
-    "../../assets/Services/Icons/cardsIcons/frontEnd.svg",
-    "../../assets/Services/Icons/cardsIcons/frontEndHover.svg"
-  );
+    @include backgroundCardImage("../../assets/Services/Icons/cardsIcons/frontEnd.svg",
+        "../../assets/Services/Icons/cardsIcons/frontEndHover.svg"
+    );
 }
 
 .full-stack-design-img {
-  @include backgroundCardImage(
-    "../../assets/Services/Icons/cardsIcons/fullStack.svg",
-    "../../assets/Services/Icons/cardsIcons/fullStackHover.svg"
-  );
+    @include backgroundCardImage("../../assets/Services/Icons/cardsIcons/fullStack.svg",
+        "../../assets/Services/Icons/cardsIcons/fullStackHover.svg"
+    );
 }
+
 .bugs-fixer-img {
-  @include backgroundCardImage(
-    "../../assets/Services/Icons/cardsIcons/bugsFix.svg",
-    "../../assets/Services/Icons/cardsIcons/bugsFixHover.svg"
-  );
+    @include backgroundCardImage("../../assets/Services/Icons/cardsIcons/bugsFix.svg",
+        "../../assets/Services/Icons/cardsIcons/bugsFixHover.svg"
+    );
 }
 
 .cards-title {
-  @include font(30, bold, #ffffff, #ffffff);
+    @include font(3rem, bold, #ffffff, #ffffff);
+
+    @include desktop() {
+        font-size: 2.6rem;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        font-size: 2.6rem;
+    }
+
+    @include mobile() {}
 }
+
 .cards-para {
-  @include font(20, "regular", $general-normalSize-text-color, #ffffff);
+    @include font(2rem, "regular", $general-normalSize-text-color, #ffffff);
+
+    @include desktop() {
+        font-size: 1.9rem;
+    }
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        .cards-para {
+            font-size: 1.7rem;
+        }
+    }
+
+    @include mobile() {}
 }
 
 .card-img-underline {
-  width: 19px;
-  height: 2px;
+    width: 19px;
+    height: 2px;
 
-  border-radius: 30px;
-  background-color: $theme-green-color;
+    border-radius: 30px;
+    background-color: $theme-green-color;
 }
+
 .completed-projects {
-  @include font(22, "regular", $theme-green-color, #ffffff);
+    @include font(2rem, "regular", $theme-green-color, #ffffff);
+    position: absolute;
+    bottom: 5%;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 // -------------  Testinmonials section ----------------------
 
 .testimonials-section {
-  padding-bottom: 170px;
+    padding-bottom: 170px;
+
+    @include desktop() {}
+
+    @include laptop() {
+        padding-top: 100px;
+        padding-bottom: 80px;
+    }
+
+    @include tablet() {
+        padding-bottom: 170px;
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .carousel {
-  height: 500px;
-  display: flex;
-  align-items: center;
-  padding-top: 100px;
-  @include flexColumn(center, center);
+    height: 500px;
+    display: flex;
+    align-items: center;
+    padding-top: 100px;
+    @include flexColumn(center, center);
+
+    @include desktop() {}
+
+    @include laptop() {
+        height: auto;
+        padding-top: 0px;
+    }
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .carousel-inner {
-  position: relative !important;
+    position: relative;
+    width: 100%;
+    overflow: visible;
 }
 
 .carousel-indicators {
-  top: 550px;
-  left: 53px !important;
+    top: 550px;
+    left: 53px !important;
 }
 
 .carousel-item {
-  left: 11%;
+    left: 11%;
+    width: 90% !important;
+
+    @include desktop() {
+        left: 5%;
+    }
+
+    @include laptop() {
+        left: 0%;
+    }
+
+    @include tablet() {
+        left: 7%;
+
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .carousel-caption {
-  width: 800px;
-  left: 300px;
-  padding: 50px 80px 20px 30px !important;
-  top: -20px;
-  display: flex !important;
-  flex-direction: column !important;
-  text-align: flex-start !important;
-  text-align: justify!important;
+    width: 800px;
+    left: 300px;
+    top: -20px;
+    padding: 50px 80px 20px 30px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    text-align: flex-start !important;
+    text-align: justify !important;
+
+    @include desktop() {
+        width: 700px;
+    }
+
+    @include laptop() {
+        top: 0;
+        width: 610px;
+        left: 230px;
+        padding: 0px 80px 20px 30px !important;
+    }
+
+    @include tablet() {
+        width: 570px;
+        position: absolute;
+        left: 170px;
+        top: -16px;
+    }
+
+    @include largeWidthSizeMobiles() {
+        width: auto;
+        position: static;
+        padding: 0px 30px 20px 30px !important;
+    }
+
+    @include mobile() {
+        padding: 20px 25px 0 0px !important;
+    }
+
+    @include customSmallBp() {
+        width: 334px;
+        padding: 20px 50px 0 0px !important;
+        margin-left: -14px !important;
+        padding: 20px 0px 0 0px !important;
+    }
 }
 
 .carousel-heading {
-  font-family: "Poppins" !important;
-  font-size: 22px !important;
-  font-weight: 500 !important;
+    font-family: "Poppins" !important;
+    font-size: 2.2rem !important;
+    font-weight: 500 !important;
+
+    @include desktop() {}
+
+    @include laptop() {
+        font-size: 2rem !important;
+    }
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        font-size: 1.7rem !important;
+        width: auto;
+        position: static;
+        padding: 20px 13px 0 0px !important;
+    }
+
+    @include mobile() {
+        width: auto;
+        padding-right: 0 !important;
+    }
+
 }
+
 .carousel-paragraph {
-  font-family: "Poppins" !important;
-  font-size: 18px !important;
-  font-weight: lighter !important;
-  color: $general-normalSize-text-color;
+    font-family: "Poppins" !important;
+    font-size: 1.8rem !important;
+    font-weight: lighter !important;
+    color: $general-normalSize-text-color;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        font-size: 1.5rem !important;
+    }
+
+    @include mobile() {}
 }
 
 .testimonial-image {
-  position: relative !important;
-  width: 300px !important;
-  height: 350px !important;
+    position: relative !important;
+    width: 300px !important;
+    height: 350px !important;
+
+    @include desktop() {}
+
+    @include laptop() {
+        position: relative !important;
+        width: 280px !important;
+        height: 280px !important;
+        margin-left: -30px !important
+    }
+
+    @include tablet() {
+        margin-left: -70px !important;
+    }
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .carosalBtn {
-  border: 0!important;
-  border-radius: 50% !important;
-  width: 15px !important;
-  height: 15px !important;
-  opacity: 1 !important;
-  background-color: white !important;
+    border: 0 !important;
+    border-radius: 50% !important;
+    width: 15px !important;
+    height: 15px !important;
+    opacity: 1 !important;
+    background-color: white !important;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        width: 13px !important;
+        height: 13px !important;
+    }
+
+    @include mobile() {}
 }
 
 .carousel-indicators .active {
-  background-color: $theme-green-color !important;
+    background-color: $theme-green-color !important;
 }
+
 .carousel-control-prev {
-  width: auto !important;
+    width: auto !important;
 }
 
 .carousel-control-btn {
-  width: min-content !important;
-  left: 570px !important;
+    width: min-content !important;
+    left: 570px !important;
 
-  position: absolute !important;
-  top: 500px !important;
+    position: absolute !important;
+    top: 500px !important;
 
-  height: fit-content !important;
+    height: fit-content !important;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 div .carousel-control-btn,
 div .carousel-indicators {
-  position: static !important;
+    position: static !important;
 }
 
 .scroll-events-parent {
-  position: absolute;
-  bottom: -110px;
-  @include flexColumn(unset, center);
+    position: absolute;
+    bottom: -110px;
+    @include flexColumn(unset, center);
+
+    @include desktop() {}
+
+    @include laptop() {
+        bottom: -70px;
+    }
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 .carousel-control-prev-icon {
-  background-image: url(../assets/Home/Icons/preIcon.svg) !important;
+    background-image: url(../assets/Home/Icons/preIcon.svg) !important;
 }
+
 .carousel-control-next-icon {
-  background-image: url(../assets/Home/Icons/nexticon.svg) !important;
+    background-image: url(../assets/Home/Icons/nexticon.svg) !important;
 }
+
 .comma {
-  width: 32px;
+    width: 32px;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        width: 26px;
+    }
+
+    @include mobile() {}
+}
+
+commaUp {
+    margin-top: 6px;
 }
 
 .star {
-  padding-right: 5px;
+    padding-right: 5px;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        width: 23px;
+    }
+
+    @include mobile() {}
 }
 
 .testimonial-personName {
-  color: #ffffff !important;
-  font-size: 24px !important;
-  font-weight: bold !important;
+    color: #ffffff !important;
+    font-size: 2.4rem !important;
+    font-weight: bold !important;
+    font-family: "Poppins", sans-serif;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {
+        font-size: 2.2rem !important;
+    }
+
+    @include mobile() {}
 }
+
 .reviewStars {
-  font-size: 20px;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
+    @include largeWidthSizeMobiles();
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+
+    @include desktop() {}
+
+    @include laptop() {}
+
+    @include tablet() {}
+
+    @include largeWidthSizeMobiles() {}
+
+    @include mobile() {}
 }
 
 // ::-webkit-scrollbar-track {

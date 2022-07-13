@@ -8,6 +8,69 @@
   border-bottom-right-radius: 50px;
   border-bottom-left-radius: 50px;
   box-shadow: 0px -20px 200px 0px #6264b1;
+     @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+          border-radius: 0!important;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+}
+.website-creator{
+   
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+          font-size: 2.6rem;
+
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+    
 }
 
 .footer-icon {
@@ -15,15 +78,86 @@
   border-radius: 50px;
   width: 60px;
   height: 60px;
+      transition-duration: 0.5s;
+  @include mobile() {
+      
+          margin: 20px 15px;
+
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
 }
 .created-text,
 .footer-slash {
   color: $theme-green-color;
   font-weight: bold;
+    
+    @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+           font-size: 1.8rem;
+
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+       font-size: 1.5rem;
+   
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+    
+}
+
+.footer-icon-parent{
+      @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+       width: 200px;
+    flex-wrap: wrap;
+   
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+
+    
 }
 
 .footer-icon {
-  transition-duration: 0.5s;
 }
 .github:hover {
   background-color: #1b1f23;

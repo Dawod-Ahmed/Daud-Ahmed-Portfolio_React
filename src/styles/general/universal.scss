@@ -1,7 +1,6 @@
 @import "./variables.scss";
 @import "./mixins.scss";
 
-
 // after 1540px h-second-sec justify-content-around
 // project-img-text text-center fw-bold text-white position-relative
 
@@ -24,9 +23,10 @@
 // /* Handle on hover */
 
 * {
-  cursor: url(../../assets/generalIcons/cursor.png), auto;
+  // cursor: url(../../assets/generalIcons/cursor.png), auto;
   box-sizing: border-box !important;
 }
+
 .preloader-parent {
   position: fixed;
 
@@ -35,6 +35,7 @@
   @include flexCenterColumn;
   z-index: 10;
 }
+
 .preloader-logo {
   width: 400px;
   animation: FadeElement 1.5s infinite;
@@ -58,18 +59,20 @@
   0% {
     margin-top: 300px;
   }
+
   100% {
     margin-top: 0px;
   }
 }
 
-// body,
-// div .carousel-control-btn,
-// div .carosalBtn,
-// button,
-// a {
-//   cursor: url(../../assets/generalIcons/cursor.png) !important;
-// }
+body,
+div .carousel-control-btn,
+div .carosalBtn,
+button,
+a,
+.logo {
+  cursor: url(../../assets/generalIcons/pointerCursor.png) !important;
+}
 
 // div .carousel-control-btn,
 // div .carosalBtn,
@@ -78,8 +81,10 @@
 //   cursor: url(../../assets/generalIcons/cursor.png) !important;
 // }
 html {
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
+
 ::-moz-selection {
   /* Code for Firefox */
   background-color: #eeeeee;
@@ -97,6 +102,15 @@ body {
   padding: 0 !important;
 }
 
+div .carousel-control-btn:hover,
+div .carosalBtn:hover,
+.btn:hover,
+a:hover,
+.scrollBar-Top:hover,
+.scrollTop-Arrow:hover {
+  cursor: url(../../assets/generalIcons/pointerCursor.png), auto;
+}
+
 // .modal {
 //   background-color: #04040496;
 
@@ -108,27 +122,72 @@ body {
 //   height: 70vh !important;
 // }
 
-div .carousel-control-btn:hover,
-div .carosalBtn:hover,
-.btn:hover,
-a:hover {
-  cursor: url(../../assets/generalIcons/cursor.png), auto;
+// div .carousel-control-btn:hover,
+// div .carosalBtn:hover,
+// div .carousel-control-btn,
+// div .carosalBtn,
+// button,
+// .btn:hover,
+// a:hover,
+// div a {
+//   cursor: url(../../assets/generalIcons/pointerCursor.png) !important;
+// }
+
+@include desktop() {
+}
+
+@include laptop() {
+}
+
+@include tablet() {
+}
+
+@include largeWidthSizeMobiles() {
+}
+
+@include mobile() {
 }
 
 section:not(.video-section, .portfolio-section),
 .header,
 .footer {
+  overflow: hidden;
   @include HorizontalPadding(50px, 50px);
+
+  @include desktop() {
+    @include HorizontalPadding(40px, 40px);
+  }
+
+  @include laptop() {
+    @include HorizontalPadding(40px, 30px);
+  }
+
+  @include tablet() {
+    @include HorizontalPadding(35px, 35px);
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
+    @include HorizontalPadding(13px, 13px);
+  }
 }
 
+// section:nth-child(1) {
+//   position: relative;
+//   z-index: 9;
+// }
 .header,
 .footer {
   position: relative;
   z-index: 100;
 }
+
 .freelancing-section-parent {
   padding-right: 0px !important;
 }
+
 .contact-section-parent {
   padding-left: 0px !important;
 }
@@ -143,12 +202,31 @@ main,
 header {
   margin: 0 50px !important;
 }
+
 main {
-  padding-top: 100px !important;
-  padding-bottom: 100px !important;
+  @include VerticalPadding(100px !important, 100px !important);
   animation: FadePage 1.5s 1 ease-in-out;
   background-color: $theme-seconds-background-color;
+
+  @include desktop() {
+  }
+
+  @include laptop() {
+  }
+
+  @include tablet() {
+    @include VerticalPadding(70px !important, 70px !important);
+  }
+
+  @include largeWidthSizeMobiles() {
+    @include VerticalPadding(60px !important, 50px !important);
+  }
+
+  @include mobile() {
+    @include VerticalPadding(50px !important, 40px !important);
+  }
 }
+
 @keyframes FadePage {
   0% {
     opacity: 0;
@@ -158,46 +236,72 @@ main {
     opacity: 1;
   }
 }
+
 .pages-parent {
   @include flexCenterColumn;
   @include VerticalPadding(70px, 70px);
-  max-width: 1500;
-}
-
-.pages-parent {
+  position: relative;
+  z-index: 0;
   background-color: unset;
-  @include themeSecondLayerView(1600px, unset);
+  margin-top: unset;
+  max-width: 1600px;
 
   @include desktopSecondBpMixin() {
-    width: 1500px;
+    max-width: 1450px;
+
     .carousel-item {
       left: 11%;
     }
+
     .carousel-control-prev {
       left: 670px !important;
     }
+
     .carousel-control-next {
       left: 747px !important;
     }
   }
 
   @include desktopThridBpMixin() {
-    width: 1300px;
+    max-width: 1300px;
+
     .carousel-item {
       left: 7%;
     }
+
     .carousel-control-prev {
       left: 570px !important;
     }
+
     .carousel-control-next {
       left: 644px !important;
     }
+  }
+
+  @include desktop() {
+    max-width: 1135px;
+  }
+
+  @include laptop() {
+    max-width: 930px;
+  }
+
+  @include tablet() {
+    max-width: 100%;
+    padding: 0 !important;
+  }
+
+  @include largeWidthSizeMobiles() {
+  }
+
+  @include mobile() {
   }
 }
 
 .heading-first {
   @include generalHeading(50px);
 }
+
 .heading-second {
   @include generalHeadingOne(45px);
 }
@@ -222,26 +326,31 @@ main {
   right: -180px;
   top: -150px;
 }
+
 .shape-TopLeft {
   @include elementSize(220px, 220px);
   left: -60px;
   top: -35px;
 }
+
 .shape-MidLeft {
   @include elementSize(220px, unset);
   left: -12px;
   top: 30%;
 }
+
 .shape-MidRight {
   @include elementSize(180px, unset);
   right: -77px;
   top: 50%;
 }
+
 .shape-BottomLeft {
   @include elementSize(230px, unset);
   left: -92px;
   bottom: -13%;
 }
+
 .shape-BottomRight {
   @include elementSize(250px, 250px);
 
@@ -272,22 +381,369 @@ body::-webkit-scrollbar-thumb {
   width: 60px;
   height: 60px;
   background-color: $theme-first-background-color;
-  right: 20px;
-  right: 115px;
-  bottom: 20px;
+  right: 15px;
+  bottom: 10px;
   z-index: 1;
   transition-duration: 0.5s;
   border-radius: 15px;
+    
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
+}
+.scrollTop-Arrow {
+     @include laptop() {
+      
+      width: 25px;
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      width: 22px;
+  }
+
+  @include mobile() {
+      width: 20px;
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
 }
 .scrollBar-Top:hover .scrollTop-Arrow {
   // cursor: pointer;
   margin-top: -7px;
   transition-duration: 0.5s;
+    
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
 }
 
 div .active-scrollToTop {
   display: flex !important;
   transition-duration: 0.5s;
+    
+    
+  @include laptop() {
+      width: 50px;
+    height: 50px;
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+       width: 45px;
+    height: 45px;
+  }
+
+  @include mobile() {
+      
+       width: 40px;
+    height: 40px;
+  }
+    
+}
+
+body .bh-widget-page__button-main {
+  width: 70px !important;
+  height: 70px !important;
+    
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+       width: 60px !important;
+    height: 60px !important;
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+       width: 50px !important;
+    height: 50px !important;
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
+}
+
+body .bh-w-button-whatsapp-chat > img {
+  width: 40px !important;
+  height: 40px !important;
+    
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+       width: 35px !important;
+    height: 35px !important;
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      width: 28px !important;
+    height: 28px !important;
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
+}
+
+body .bh-active .bh-w-button-whatsapp-chat:after {
+  height: 40px !important;
+  width: 40px !important;
+    
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      height: 35px !important;
+    width: 35px !important;
+}
+      
+  
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
+}
+
+body .bh-widget-page-wrapper {
+  bottom: 90px !important;
+  right: 15px !important;
+    
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      right: 12px !important;
+        bottom: 75px !important;
+
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+          bottom: 67px !important;
+
+  }
+
+  @include mobile() {
+      
+          bottom: 60px !important;
+
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
+}
+
+ 
+
+body .bh-widget-page--right .bh-widget-page__call-to-action {
+  justify-content: flex-end;
+  right: 84px;
+  top: 20px;
+    
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      right: 73px;
+    top: 15px;
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+     right: 63px;
+    top: 8px; 
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
+}
+
+.bh-w-call-to-action {
+
+    @include mobile() {
+      
+          font-size: 12.5px;
+
+  }
+    
+}
+
+
+body .bh-w-call-to-action-container:after {
+  content: "";
+  display: block;
+  left: 98%;
+  bottom: 24px;
+  position: relative;
+    
+    
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+    
+  // animation-de
 }
 
 // .theme-background-second-layer {
@@ -296,7 +752,7 @@ div .active-scrollToTop {
 
 .cards-parent:hover {
   // box-shadow: 0px 5px 130px 5px $cards-hover-color;
-  box-shadow: 0px 0px 70px 10px  $cards-hover-color;
+  box-shadow: 0px 0px 70px 10px $cards-hover-color;
   transition-duration: 0.5s;
 }
 

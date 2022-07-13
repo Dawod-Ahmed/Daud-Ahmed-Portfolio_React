@@ -51,12 +51,10 @@ const SkillsSections = () => {
             <span className="heading-second"> Skills</span>
           </h1>
           <p className="heading-detail text-center">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry's standard dummy text
-            ever since the 1500s, when an unknown printer took..
+           I use these technologies to design and develop full custom, reliable, blazing-fast, and secure websites and web applications. I also used many other tools for web development, but here I showed the major tools.
           </p>
         </div>
-        <div className="skills-parent p-y ">
+        <div className="skills-parent p-y row py-3  g-4 g-md-0 ">
           {skillsData.map((value, index) => {
             return (
               <>

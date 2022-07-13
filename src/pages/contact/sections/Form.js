@@ -1,26 +1,27 @@
-import React from "react";
-// import { FormField } from "../../components/pagesExport";
-// import { Formik, Form, Field } from "formik";
-// import * as Yup from "yup";
+import React, { useEffect } from "react";
+import { FormField } from "../../components/pagesExport";
+import { Formik, Form, Field } from "formik";
+import * as Yup from "yup";
 import {
   ContactRightArrow,
   SelfHireImage,
   // Upworklogo,
 } from "../../../assets/assets";
-// import axios from "axios";
+import axios from "axios";
 // import { useForm } from "@formspree/react";
 
 import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
+import Swal from "sweetalert2";
 
-// const SignupSchema = Yup.object().shape({
-//   name: Yup.string().required("Name is required"),
-//   email: Yup.string().email("Email is Invalid").required("Email is required"),
-//   subject: Yup.string().required("Subject is required"),
-//   detail: Yup.string().required("Detail is required"),
-// });
+const SignupSchema = Yup.object().shape({
+  name: Yup.string().required("Name is required"),
+  email: Yup.string().email("Email is Invalid").required("Email is required"),
+  subject: Yup.string().required("Subject is required"),
+  detail: Yup.string().required("Detail is required"),
+});
 
 const ContactForm = () => {
   // const [state, handleSubmit] = useForm("mayvzygj");
@@ -31,9 +32,22 @@ const ContactForm = () => {
       "https://www.upwork.com/freelancers/~01b5302c92f0a61e20";
   };
 
+  const verifyVideo = () => {
+    Swal.fire({
+      text: "Your Message is sent!,Thanks",
+      icon: "success",
+      showConfirmButton: false,
+      timer: 3000000,
+    });
+  };
+
+  useEffect(() => {
+    // Update the document title using the browser API
+  });
+
   return (
     <>
-      <section className="contact-section-parent py-5 mb-5">
+      <section className="contact-section-parent py-5 mb-5 flex-column flex-lg-row ">
         <div className="contact-left-content position-relative">
           <h1 className="heading  freelancing-heading">
             <span className="heading-first">Let's</span>
@@ -46,13 +60,13 @@ const ContactForm = () => {
             <br />
             <span className="heading-second ">Connect</span>
           </h1>
-          <p id="testpara" className="general-text pt-3 pb-5">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the 1500s, when an unknown printer
-            took.
+          <p id="testpara" className="general-text pt-3 pb-5 px-md-2 px-md-3">
+            If you have any queries, please do not hesitate to send me a
+            message. I will reply to you in just a few minutes, and I will be
+            happy to help you with your web development query.
           </p>
 
-          <div className="open-for-porject position-absolute rounded-circle d-flex justify-content-center align-items-center text-center p-2">
+          <div className="open-for-porject position-absolute rounded-circle d-flex justify-content-center align-items-center text-center p-lg-4 p-xl-3">
             Open for new project{" "}
           </div>
           <div className="background-text">Inquires</div>
@@ -83,13 +97,13 @@ const ContactForm = () => {
             </MouseParallaxChild>
           </MouseParallaxContainer>
           <div className="card-body">
-            <h5 className="card-title general-text">Upwork</h5>
+            <h5 className="card-title general-text ">Upwork</h5>
             <p className="card-text general-text">
               The world best freelancing marketplace to hire professional
               freelancers.
             </p>
-            <div className="hireme-cta-parent d-flex align-items-center justify-content-around">
-              <p className="hireMe-text general-text mb-0">Hire me on</p>
+            <div className="hireme-cta-parent d-flex align-items-center justify-content-center py-3">
+              <p className="hireMe-text general-text mb-0 px-4">Hire me on</p>
               <div
                 className="btn btn-primary hireme-cta"
                 onClick={UpworkProfileCTA}
@@ -118,7 +132,9 @@ const ContactForm = () => {
                 })
                 .then(function (response) {
                   if (response.status === 200) {
-                    alert("Your form is submmitted,We will get back to you soon,Thanks");
+                    alert(
+                      "Your form is submmitted,We will get back to you soon,Thanks"
+                    );
                   }
                 })
                 .catch(function (error) {
@@ -181,7 +197,11 @@ const ContactForm = () => {
                   placeholder="Please write details here"
                 />
 
-                <button type="submit" className="btn form-btn mx-2">
+                <button
+                  type="submit"
+                  className="btn form-btn mx-2"
+                  onClick={() => verifyVideo()}
+                >
                   Send
                 </button>
               </Form>

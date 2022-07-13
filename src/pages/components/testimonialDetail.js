@@ -2,7 +2,6 @@ import React from "react";
 
 const TestimonialComp = (props) => {
   const {
-    
     personImage,
     commaTop,
     fullStar,
@@ -14,11 +13,10 @@ const TestimonialComp = (props) => {
     commaBottom,
   } = props;
   return (
-    < >
-    
+    <>
       <img
         src={personImage}
-        className="testimonial-image d-block w-100 "
+        className="testimonial-image d-block w-100 mx-auto mx-sm-0"
         alt="img"
       />
       <div className="carousel-caption d-none d-md-block ">

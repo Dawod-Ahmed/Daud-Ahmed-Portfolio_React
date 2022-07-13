@@ -5,10 +5,10 @@ const card = (props) => {
     props;
   return (
     <div
-      className={`cards-parent ${className} d-flex flex-column justify-content-start  align-items-center my-3 mx-4`}
+      className={`${className} `}
     >
-      <div className={`card-img ${cardImageClassname}-img `}></div>
-      <div className="card-img-underline mx-auto mt-xl-3 mb-xl-3 "></div>
+      <div className={`card-img ${cardImageClassname}`}></div>
+      <div className="card-img-underline mx-auto mt-xl-3 my-3 my-sm-3 my-md-4 "></div>
       <h4 className={`cards-title pt-4 pb-2 text-center`}>
         {title}
         <br />

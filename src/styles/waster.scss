@@ -1,0 +1,385 @@
+
+ 
+
+  @include desktop() {
+  }
+
+
+
+  @include laptop() {
+      
+      
+  }
+
+
+  @include tablet() {
+      
+  }
+
+  @include largeWidthSizeMobiles() {
+      
+  }
+
+  @include mobile() {
+      
+      
+  }
+ @include customSmallBp() {
+      
+      
+  }
+ @include desktopSecondBpMixin() {
+      
+      
+  }
+
+
+   
+
+---------Max 1399-------- 
+
+ 
+ 
+ 
+
+
+
+---------Max 1199--------    
+  
+ 
+ 
+ 
+ 
+
+---------Max 990-------- 
+ 
+  
+
+ 
+ 
+.home-background-text {
+    top: 41%;
+    left: 6%;
+}
+
+
+ 
+---------Max 768--------  
+  
+ .home-background-text {
+    left: 0%;
+}
+
+
+
+ 
+
+---------MAX Mobile------- 
+
+ 
+ .home-background-text {
+    top: 46%;
+}
+ 
+
+---------Max 450--------  
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+//@media (max-width: 1399px)
+//.exp-digit {
+//    font-size: 4.5rem;
+//}
+//
+//.carousel-inner {
+//    position: relative;
+//    width: 100%;
+//    overflow-y: visible;
+//    overflow-x: hidden;
+//}
+//
+//
+//
+////----
+//
+//
+//@media (max-width: 1399px)
+//.right-img-part {
+//    width: 740px;
+//    height: 510px;
+//    position: relative;
+//    right: 190px;
+//}
+//
+//
+//
+//@media (max-width: 1399px)
+//.h-sec-right-part {
+//    width: 520px;
+//}
+//
+//.btn{
+//    font-size: 21px;
+//}
+//
+//short-about-para{
+//    margin-top: 3.8rem;
+//}
+//
+//
+//
+//
+//@media (max-width: 1399px)
+//section:not(.video-section, .portfolio-section), .header, .footer {
+//    padding-right: 30px;
+//    padding-left: 30px;
+//}
+//
+//.cards-parent {
+//    
+//    padding: 35px 20px 35px 20px;
+//}
+//
+//
+//
+//
+//.pages-parent .carousel-item {
+//    left: 0%;
+//}
+//
+// 
+//
+//.carousel-caption {
+//    width: 590px;
+//    left: 270px;
+//    /* padding: 50px 80px 20px 30px !important; */
+//    top: -19px;
+//    
+//}
+//
+// 
+//
+//.scroll-events-parent {
+//    bottom: -70px;
+//}
+//
+//
+//.carousel-heading {
+//   
+//    font-size: 2rem !important;
+//    
+//}
+//
+//commaUp {
+//    margin-top: 6px;
+//}
+//
+//
+//.testimonials-section {
+//    padding-top: 100px;
+//    padding-bottom: 80px;
+//}
+//
+//
+// 
+//.carousel {
+//    height: auto;
+//    display: flex;
+//    align-items: center;
+//     padding-top:none;
+//    
+//}
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//

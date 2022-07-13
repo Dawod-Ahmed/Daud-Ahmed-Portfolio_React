@@ -13,6 +13,7 @@ import {
 } from "./pages/components/pagesExport";
 
 import { Route, Switch, Redirect } from "react-router-dom";
+
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 // import { Bars } from "react-loader-spinner";
 const App = () => {
@@ -54,8 +55,7 @@ const App = () => {
       </MouseParallaxContainer> */}
       {/* <Fade duration={4000} opposite collapse> */}
       <div className="pages-parent mx-auto bg-transparent">
-        <Header />
-
+          <Header />  
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route exact path="/aboutme" component={AboutMe} />
@@ -64,8 +64,7 @@ const App = () => {
           <Route exact path="/contact" component={ContactPage} />
           <Redirect exact to="/home" />
         </Switch>
-
-        <Footer />
+          <Footer />  
       </div>
       {/* </Fade> */}
 

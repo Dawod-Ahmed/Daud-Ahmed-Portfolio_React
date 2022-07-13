@@ -17,8 +17,8 @@ const AboutUs = () => {
       <Fade duration={4000} opposite collapse></Fade>
       <main className="w-100 d-flex-direction about-main pt-0">
         <AboutvideoSec />
-        <AboutSection />
-        <ExperienceSection />
+          <AboutSection />
+          <ExperienceSection />
         <SkillsSection />
       </main>
       <Fade />

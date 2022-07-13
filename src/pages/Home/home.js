@@ -20,7 +20,7 @@ const Home = () => {
           <ShortIntroSection />
           <HomeCardsSec />
 
-          <TestimonialsSec />
+//          <TestimonialsSec />
         </main>
       {/* </Fade> */}
     </>

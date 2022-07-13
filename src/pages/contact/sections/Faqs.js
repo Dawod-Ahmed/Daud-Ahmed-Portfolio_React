@@ -15,20 +15,17 @@ const Faqs = () => {
   return (
     <>
       <section className="accordion-section  py-5">
-        <div className="faq-heading-parent pb-5 ">
+        <div className="faq-heading-parent   ">
           <h1 className="faq-headingg">
             <span className=" heading-first">FAQ</span>
             <span className=" heading-second">'S</span>
           </h1>
           <p className="faqs-para general-text text-center">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex enim
-            architecto illo repellat officia nemo ipsam dolore rerum pariatur
-            ducimus cumque dicta odit nam earum fuga magni quaerat, quas
-            reiciendis?
+            To save your valuable time I mentioned some frequently ask questions, let's check if you have one of these, otherwise contact me and as a full-time freelancer, I will reply to your query within the hour.
           </p>
         </div>
 
-        <div className="faq-accordion-image-parent w-100">
+        <div className="faq-accordion-image-parent   w-100 flex-column flex-lg-row align-items-center align-items-lg-start">
           <MouseParallaxContainer
             className="parallax"
             containerStyles={{
@@ -57,7 +54,7 @@ const Faqs = () => {
               <img
                 src={FaqsMobileView}
                 alt="img"
-                className="faqs-mobileview-img faqs-img d-lg-none"
+                className="faqs-mobileview-img faqs-img mb-5 d-lg-none"
               />
             </MouseParallaxChild>
           </MouseParallaxContainer>

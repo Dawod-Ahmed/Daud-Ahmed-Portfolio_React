@@ -5,12 +5,18 @@ import {
   MouseParallaxChild,
   MouseParallaxContainer,
 } from "react-parallax-mouse";
+import { AboutBackImg } from "../../../assets/assets";
 
 
 const AboutMe = () => {
   return (
     <>
-      <section className="about-me-section d-flex justify-content-between ali position-relative py-5">
+      <section className="about-me-section d-flex flex-column flex-lg-row align-items-center justify-content-between ali position-relative py-5">
+      <img
+          src={AboutBackImg}
+          alt="img"
+          className="position-absolute aboutme-background-text mx-auto"
+        />
       <MouseParallaxContainer
  
  className="parallax"
@@ -44,21 +50,16 @@ const AboutMe = () => {
                
 </MouseParallaxChild>
         </MouseParallaxContainer>
-        <div className="about-right-part-part">
+        <div className="about-right-part px-sm-4 px-md-5">
           <h1 className="about-heading">
             <span className=" heading-first">About</span>
             <span className=" heading-second"> me</span>
           </h1>
           <p className="about-para general-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex enim
-            architecto illo repellat officia nemo ipsam dolore rerum pariatur
-            ducimus cumque dicta odit nam earum fuga magni quaerat, quas
-            reiciendis?
-            <br /> <br />
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi
-            facilis dolorem, omnis doloribus ea dolor, numquam quo reiciendis
-            temporibus harum fuga consectetur dolore adipisci. Maiores
-            architecto consequuntur officia nihil ratione?
+            I started my software development journey at the start of 2018. During this period, I spent massive time on JavaScript and its related tools and technologies and primarily in real-time industry work experience to learn and develop web development projects.
+
+            <br />    <br /> 
+           I am a Full-stack web developer and web designer with a Specialization in front-end development. I like to create a modern, fully responsive, clean UI interface, maintainable code, and bugs-free website and web application with React.js, Gatsby.js, Next.js, Html 5, CSS 3, JavaScript, Bootstrap, and many other helpful web technologies.
           </p>
           <Link to="" className="cv-btn btn resume-btn">Resume</Link>
         </div>
