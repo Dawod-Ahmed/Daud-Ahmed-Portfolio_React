@@ -25,3 +25,4 @@ const SkillsIcnos = (props) => {
 };
 
 export default SkillsIcnos;
+// Adobe XD is a vector-based software that can be used for designing anything from smartwatches to fully-fledged mobile and web applications.

@@ -457,7 +457,7 @@
 .h-second-sec {
     @include VerticalPadding(60px, 130px);
     overflow: hidden;
-
+ margin-top: 70px;
     @include desktop() {}
 
     @include laptop() {}

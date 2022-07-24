@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Logo, Toggle, CrossToggle } from "../../../assets/assets";
 import { NavLink } from "react-router-dom";
 
@@ -13,16 +13,25 @@ const Header = () => {
     { li: "Contact", path: "contact" },
   ]);
   const navExpand = () => {
-    setNavExp(!navExp);
+    if (window.innerWidth <= 991) {
+      setNavExp(!navExp);
+    }
   };
+  useEffect(() => {
+    if (window.innerWidth >= 992) {
+      setNavExp(true);
+        console.log("its working with out event listener")
+    }
+      else if(window.innerWidth < 992){
+                  console.log("its working with out event listener")
 
+      }
+  }, []);
   return (
     <>
       {/* <HidingHeader> */}
 
-      <header
-        className={`header w-100 d-flex ${navExp ? "sticky-header" : ""} `}
-      >
+      <header className={`header w-100  ${navExp ? "sticky-header" : ""} `}>
         <NavLink to={"/"}>
           <img
             src={Logo}

@@ -61,6 +61,8 @@ export { default as reactJs } from "./About/icons/skills icons/reactJs.svg";
 export { default as redux } from "./About/icons/skills icons/redux.svg";
 export { default as sass } from "./About/icons/skills icons/sass.svg";
 export { default as firebase } from "./About/icons/skills icons/firebase.svg";
+export { default as mongoDb } from "./About/icons/skills icons/mongodb.png";
+export { default as nodejs } from "./About/icons/skills icons/nodejs.png";
 
 // ------  Portfolio Page  -------
 

@@ -13,11 +13,11 @@ const ProjectComponents = (props) => {
             <a href="" className="project-img-parent text-decoration-none">
               <img src={image} alt="img" className="project-img img-fluid" />
 
-              <h1 className="project-img-text text-center fw-bold text-white position-relative ">
+              {/* <h1 className="project-img-text text-center fw-bold text-white position-relative ">
                 {projectTitle1}&nbsp;{projectTitle2}
                 <br />
                 <h3 clasName="fw-bold"> Preview Live</h3>
-              </h1>
+              </h1> */}
             </a>
             <div className="projet-detail-parent mt-5 mt-lg-0">
               <h2 className="project-name">
@@ -66,11 +66,11 @@ const ProjectComponents = (props) => {
             <a href="" className="project-img-parent text-decoration-none">
               <img src={image} alt="img" className="project-img img-fluid" />
 
-              <h1 className="project-img-text text-center fw-bold text-white position-relative">
+              {/* <h1 className="project-img-text text-center fw-bold text-white position-relative">
                 {projectTitle1}&nbsp;{projectTitle2}
                 <br />
                 <h3 clasName="fw-bold"> Preview Live</h3>
-              </h1>
+              </h1> */}
             </a>
           </div>
         </>

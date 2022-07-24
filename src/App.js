@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./styles/general/main.scss";
 import {
   Home,
@@ -13,6 +13,7 @@ import {
 } from "./pages/components/pagesExport";
 
 import { Route, Switch, Redirect } from "react-router-dom";
+import Headroom from "react-headroom";
 
 // import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 // import { Bars } from "react-loader-spinner";
@@ -28,6 +29,35 @@ const App = () => {
   //   }, 4000);
   //   // return () => clearInterval(interval);
   // }, []);
+
+  function getWindowWidth() {
+    const innerWidth = window.innerWidth;
+    return innerWidth;
+  }
+
+  const [headroom, setHeadroom] = useState(false);
+  // const [windowWidth, setWindowWidth] = useState();
+
+  useEffect(() => {
+   
+    function handleWindowResize() {
+     // setWindowWidth(getWindowWidth());
+        
+      console.log("Testing", getWindowWidth());
+         if (getWindowWidth() < 992) {
+      setHeadroom(true);
+    } else {
+      setHeadroom(false);
+    }
+
+    }
+
+    window.addEventListener("resize", handleWindowResize);
+
+    return () => {
+      window.removeEventListener("resize", handleWindowResize);
+    };
+  }, []);
 
   return (
     <>
@@ -55,7 +85,16 @@ const App = () => {
       </MouseParallaxContainer> */}
       {/* <Fade duration={4000} opposite collapse> */}
       <div className="pages-parent mx-auto bg-transparent">
-          <Header />  
+        {headroom ? (
+          <Headroom>
+            <Header />
+          </Headroom>
+        ) : (
+          <Header />
+        )}
+        {/* <Headroom>
+          <Header />
+        </Headroom> */}
         <Switch>
           <Route exact path="/home" component={Home} />
           <Route exact path="/aboutme" component={AboutMe} />
@@ -64,7 +103,7 @@ const App = () => {
           <Route exact path="/contact" component={ContactPage} />
           <Redirect exact to="/home" />
         </Switch>
-          <Footer />  
+        <Footer />
       </div>
       {/* </Fade> */}
 

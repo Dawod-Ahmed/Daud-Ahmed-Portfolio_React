@@ -8,6 +8,7 @@ import {
 import { AboutBackImg } from "../../../assets/assets";
 
 
+
 const AboutMe = () => {
   return (
     <>
@@ -56,10 +57,8 @@ const AboutMe = () => {
             <span className=" heading-second"> me</span>
           </h1>
           <p className="about-para general-text">
-            I started my software development journey at the start of 2018. During this period, I spent massive time on JavaScript and its related tools and technologies and primarily in real-time industry work experience to learn and develop web development projects.
-
-            <br />    <br /> 
-           I am a Full-stack web developer and web designer with a Specialization in front-end development. I like to create a modern, fully responsive, clean UI interface, maintainable code, and bugs-free website and web application with React.js, Gatsby.js, Next.js, Html 5, CSS 3, JavaScript, Bootstrap, and many other helpful web technologies.
+           I started my software development journey at the start of 2018. During this period, I spent massive time on web development and its 
+ almost all related technologies and primarily in real-time industry work experience to learn and develop web development projects. I like to create a modern, fully responsive, clean UI interface, maintainable code, and bugs-free website and web application
           </p>
           <Link to="" className="cv-btn btn resume-btn">Resume</Link>
         </div>

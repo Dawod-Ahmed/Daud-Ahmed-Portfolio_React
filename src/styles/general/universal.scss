@@ -201,6 +201,10 @@ section:not(.video-section, .portfolio-section),
 main,
 header {
   margin: 0 50px !important;
+    
+  @include tablet() {
+      margin: 0 0px !important; 
+  }
 }
 
 main {
@@ -235,6 +239,15 @@ main {
   100% {
     opacity: 1;
   }
+}
+.headroom-wrapper{
+margin: auto 0;
+width: 100%;
+    z-index: 101;
+ @include tablet() {
+  
+  }
+    
 }
 
 .pages-parent {

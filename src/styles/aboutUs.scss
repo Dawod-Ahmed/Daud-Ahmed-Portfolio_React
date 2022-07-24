@@ -806,12 +806,15 @@ button:before {
   }
 
   @include laptop() {
+       margin-bottom: 55px;
   }
 
   @include tablet() {
+        margin-bottom: 85px;
   }
 
   @include largeWidthSizeMobiles() {
+      margin-bottom: 80px;
   }
 
   @include mobile() {
@@ -949,12 +952,12 @@ button:before {
 
  
 .aboutme-background-text {
-  top: 57%;
+  top: 58%;
   width: 92%;
 
      @include desktopSecondBpMixin() {
           
-    top: 62%;
+    top: 61%;
 
       
   }
@@ -962,8 +965,11 @@ button:before {
     
     
   @include desktop() {
-          top: 8%;
+          
 
+      
+      
+      top: 68%;
 
   }
 
@@ -974,16 +980,33 @@ button:before {
   }
 
   @include tablet() {
-      top: 42%;
+       
+      
+      
+       top: 49%;
   }
 
   @include largeWidthSizeMobiles() {
+      
+      
+      top: 49%;
   }
 
   @include mobile() {
-          top: 41%;
+      
+      
+      
+          top: 48%;
 
   }
+    
+     @include customSmallBp() {
+      
+          top: 46%;
+
+  }
+    
+    
 }
 
 // -------------Experiennce  Section -----------
@@ -1038,8 +1061,10 @@ button:before {
   border-left: 4px solid $theme-green-color;
   @include elementSize(550px, 320px);
 
+     margin-bottom: 55px!important;
   @include desktop() {
     @include elementSize(490px, 320px);
+      margin-bottom: 50px!important;
   }
 
   @include laptop() {
@@ -1051,9 +1076,11 @@ button:before {
   }
 
   @include largeWidthSizeMobiles() {
+      margin-bottom: 43px!important;
   }
 
   @include mobile() {
+      margin-bottom: 30px!important;
     @include elementSize(auto, auto);
   }
 }

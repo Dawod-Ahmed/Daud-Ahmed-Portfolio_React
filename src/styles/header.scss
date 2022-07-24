@@ -114,18 +114,22 @@
   }
 
   @include laptop() {
+      box-shadow: 0px 25px 100px 0px #6264b1;
   }
 
   @include tablet() {
     border-radius: 0 !important;
+       box-shadow: 0px 20px 100px 0px #6264b1;
   }
 
   @include largeWidthSizeMobiles() {
       height: 95px;
+       box-shadow: 0px 15px 85px 0px #6264b1;
   }
 
   @include mobile() {
       height: 80px;
+       box-shadow: 0px 10px 75px 0px #6264b1;
   }
   @include customSmallBp() {
   }
@@ -134,6 +138,7 @@
 .sticky-header {
   position: sticky;
   top: -1px;
+
 }
 
 menu {

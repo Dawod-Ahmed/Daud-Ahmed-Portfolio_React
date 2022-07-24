@@ -6,7 +6,7 @@ const Freelancing = () => {
   return (
     <>
       <section className="freelancing-section-parent mt-5">
-        <div className="freelancing-left-content mt-5">
+        <div className="freelancing-left-content py-5 mb-5  my-lg-0  py-lg-0">
           <h1 className="heading  freelancing-heading">
             <span className="heading-first freelancing-heading-one">
               Hire Me for
@@ -34,3 +34,4 @@ const Freelancing = () => {
 };
 
 export default Freelancing;
+ 
