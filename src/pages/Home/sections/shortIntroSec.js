@@ -31,15 +31,15 @@ const ShortIntro = () => {
             <div className="exp1  d-flex justify-content-center justify-content-sm-between align-items-center pb-5 pb-sm-0">
               <span className="exp-digit">2.5+</span>
               <span className="exp-txt">
-                Years of <br />
-                experience.
+                Years n <br />
+                Web Development..
               </span>
             </div>
             <div className="exp2 d-flex justify-content-center justify-content-sm-between align-items-center pb-5 pb-sm-0 ">
               <span className="exp-digit">5+</span>
               <span className="exp-txt">
-                Years of <br />
-                experience.
+                Years In<br />
+                Software Development.
               </span>
             </div>
           </div>

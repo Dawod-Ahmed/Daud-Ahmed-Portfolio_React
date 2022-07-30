@@ -36,7 +36,8 @@
   }
  
 
- 
+
+
  
 
 
@@ -52,21 +53,26 @@
 ---------Max 1199--------    
   
  
- pages-parent mx-auto bg-transparent
  
- .about-me-section {
-    margin-bottom: 55px;
+
+.scroll-events-parent {
+     
+    bottom: -100px;
 }
+ 
+
+
 
 ---------Max 990-------- 
   
-  
-.about-me-section {
-    margin-bottom: 85px;
+ 
+ 
+ .scroll-events-parent {
+    position: relative;
+    bottom: -85px;
 }
-   
- 
- 
+
+
 
  
 ---------Max 768--------  
@@ -74,10 +80,6 @@
  
 
  
-
-.about-me-section {
-    margin-bottom: 80px;
-}
  
 
 
@@ -96,15 +98,7 @@
 
  
 
-
-
-
-
-max 400
-
-.aboutme-background-text {
-    top: 45%;
-}
+ 
 
 
 
